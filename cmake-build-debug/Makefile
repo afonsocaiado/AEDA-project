@@ -123,6 +123,87 @@ TrabalhoAEDAParte1/fast:
 	$(MAKE) -f CMakeFiles/TrabalhoAEDAParte1.dir/build.make CMakeFiles/TrabalhoAEDAParte1.dir/build
 .PHONY : TrabalhoAEDAParte1/fast
 
+competicao.o: competicao.cpp.o
+
+.PHONY : competicao.o
+
+# target to build an object file
+competicao.cpp.o:
+	$(MAKE) -f CMakeFiles/TrabalhoAEDAParte1.dir/build.make CMakeFiles/TrabalhoAEDAParte1.dir/competicao.cpp.o
+.PHONY : competicao.cpp.o
+
+competicao.i: competicao.cpp.i
+
+.PHONY : competicao.i
+
+# target to preprocess a source file
+competicao.cpp.i:
+	$(MAKE) -f CMakeFiles/TrabalhoAEDAParte1.dir/build.make CMakeFiles/TrabalhoAEDAParte1.dir/competicao.cpp.i
+.PHONY : competicao.cpp.i
+
+competicao.s: competicao.cpp.s
+
+.PHONY : competicao.s
+
+# target to generate assembly for a file
+competicao.cpp.s:
+	$(MAKE) -f CMakeFiles/TrabalhoAEDAParte1.dir/build.make CMakeFiles/TrabalhoAEDAParte1.dir/competicao.cpp.s
+.PHONY : competicao.cpp.s
+
+data.o: data.cpp.o
+
+.PHONY : data.o
+
+# target to build an object file
+data.cpp.o:
+	$(MAKE) -f CMakeFiles/TrabalhoAEDAParte1.dir/build.make CMakeFiles/TrabalhoAEDAParte1.dir/data.cpp.o
+.PHONY : data.cpp.o
+
+data.i: data.cpp.i
+
+.PHONY : data.i
+
+# target to preprocess a source file
+data.cpp.i:
+	$(MAKE) -f CMakeFiles/TrabalhoAEDAParte1.dir/build.make CMakeFiles/TrabalhoAEDAParte1.dir/data.cpp.i
+.PHONY : data.cpp.i
+
+data.s: data.cpp.s
+
+.PHONY : data.s
+
+# target to generate assembly for a file
+data.cpp.s:
+	$(MAKE) -f CMakeFiles/TrabalhoAEDAParte1.dir/build.make CMakeFiles/TrabalhoAEDAParte1.dir/data.cpp.s
+.PHONY : data.cpp.s
+
+funcionario.o: funcionario.cpp.o
+
+.PHONY : funcionario.o
+
+# target to build an object file
+funcionario.cpp.o:
+	$(MAKE) -f CMakeFiles/TrabalhoAEDAParte1.dir/build.make CMakeFiles/TrabalhoAEDAParte1.dir/funcionario.cpp.o
+.PHONY : funcionario.cpp.o
+
+funcionario.i: funcionario.cpp.i
+
+.PHONY : funcionario.i
+
+# target to preprocess a source file
+funcionario.cpp.i:
+	$(MAKE) -f CMakeFiles/TrabalhoAEDAParte1.dir/build.make CMakeFiles/TrabalhoAEDAParte1.dir/funcionario.cpp.i
+.PHONY : funcionario.cpp.i
+
+funcionario.s: funcionario.cpp.s
+
+.PHONY : funcionario.s
+
+# target to generate assembly for a file
+funcionario.cpp.s:
+	$(MAKE) -f CMakeFiles/TrabalhoAEDAParte1.dir/build.make CMakeFiles/TrabalhoAEDAParte1.dir/funcionario.cpp.s
+.PHONY : funcionario.cpp.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -150,6 +231,60 @@ main.cpp.s:
 	$(MAKE) -f CMakeFiles/TrabalhoAEDAParte1.dir/build.make CMakeFiles/TrabalhoAEDAParte1.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+modalidade.o: modalidade.cpp.o
+
+.PHONY : modalidade.o
+
+# target to build an object file
+modalidade.cpp.o:
+	$(MAKE) -f CMakeFiles/TrabalhoAEDAParte1.dir/build.make CMakeFiles/TrabalhoAEDAParte1.dir/modalidade.cpp.o
+.PHONY : modalidade.cpp.o
+
+modalidade.i: modalidade.cpp.i
+
+.PHONY : modalidade.i
+
+# target to preprocess a source file
+modalidade.cpp.i:
+	$(MAKE) -f CMakeFiles/TrabalhoAEDAParte1.dir/build.make CMakeFiles/TrabalhoAEDAParte1.dir/modalidade.cpp.i
+.PHONY : modalidade.cpp.i
+
+modalidade.s: modalidade.cpp.s
+
+.PHONY : modalidade.s
+
+# target to generate assembly for a file
+modalidade.cpp.s:
+	$(MAKE) -f CMakeFiles/TrabalhoAEDAParte1.dir/build.make CMakeFiles/TrabalhoAEDAParte1.dir/modalidade.cpp.s
+.PHONY : modalidade.cpp.s
+
+prova.o: prova.cpp.o
+
+.PHONY : prova.o
+
+# target to build an object file
+prova.cpp.o:
+	$(MAKE) -f CMakeFiles/TrabalhoAEDAParte1.dir/build.make CMakeFiles/TrabalhoAEDAParte1.dir/prova.cpp.o
+.PHONY : prova.cpp.o
+
+prova.i: prova.cpp.i
+
+.PHONY : prova.i
+
+# target to preprocess a source file
+prova.cpp.i:
+	$(MAKE) -f CMakeFiles/TrabalhoAEDAParte1.dir/build.make CMakeFiles/TrabalhoAEDAParte1.dir/prova.cpp.i
+.PHONY : prova.cpp.i
+
+prova.s: prova.cpp.s
+
+.PHONY : prova.s
+
+# target to generate assembly for a file
+prova.cpp.s:
+	$(MAKE) -f CMakeFiles/TrabalhoAEDAParte1.dir/build.make CMakeFiles/TrabalhoAEDAParte1.dir/prova.cpp.s
+.PHONY : prova.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -159,9 +294,24 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... TrabalhoAEDAParte1"
+	@echo "... competicao.o"
+	@echo "... competicao.i"
+	@echo "... competicao.s"
+	@echo "... data.o"
+	@echo "... data.i"
+	@echo "... data.s"
+	@echo "... funcionario.o"
+	@echo "... funcionario.i"
+	@echo "... funcionario.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... modalidade.o"
+	@echo "... modalidade.i"
+	@echo "... modalidade.s"
+	@echo "... prova.o"
+	@echo "... prova.i"
+	@echo "... prova.s"
 .PHONY : help
 
 

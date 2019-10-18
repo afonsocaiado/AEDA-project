@@ -80,7 +80,37 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/Users/afonsocaiado/Desktop/FACULDADE/ANO 2 /SEM 1/AEDA/TRABALHO AEDA/TrabalhoAEDAParte1/competicao.cpp">
+			<Option target="TrabalhoAEDAParte1"/>
+		</Unit>
+		<Unit filename="/Users/afonsocaiado/Desktop/FACULDADE/ANO 2 /SEM 1/AEDA/TRABALHO AEDA/TrabalhoAEDAParte1/competicao.h">
+			<Option target="TrabalhoAEDAParte1"/>
+		</Unit>
+		<Unit filename="/Users/afonsocaiado/Desktop/FACULDADE/ANO 2 /SEM 1/AEDA/TRABALHO AEDA/TrabalhoAEDAParte1/data.cpp">
+			<Option target="TrabalhoAEDAParte1"/>
+		</Unit>
+		<Unit filename="/Users/afonsocaiado/Desktop/FACULDADE/ANO 2 /SEM 1/AEDA/TRABALHO AEDA/TrabalhoAEDAParte1/data.h">
+			<Option target="TrabalhoAEDAParte1"/>
+		</Unit>
+		<Unit filename="/Users/afonsocaiado/Desktop/FACULDADE/ANO 2 /SEM 1/AEDA/TRABALHO AEDA/TrabalhoAEDAParte1/funcionario.cpp">
+			<Option target="TrabalhoAEDAParte1"/>
+		</Unit>
+		<Unit filename="/Users/afonsocaiado/Desktop/FACULDADE/ANO 2 /SEM 1/AEDA/TRABALHO AEDA/TrabalhoAEDAParte1/funcionario.h">
+			<Option target="TrabalhoAEDAParte1"/>
+		</Unit>
 		<Unit filename="/Users/afonsocaiado/Desktop/FACULDADE/ANO 2 /SEM 1/AEDA/TRABALHO AEDA/TrabalhoAEDAParte1/main.cpp">
+			<Option target="TrabalhoAEDAParte1"/>
+		</Unit>
+		<Unit filename="/Users/afonsocaiado/Desktop/FACULDADE/ANO 2 /SEM 1/AEDA/TRABALHO AEDA/TrabalhoAEDAParte1/modalidade.cpp">
+			<Option target="TrabalhoAEDAParte1"/>
+		</Unit>
+		<Unit filename="/Users/afonsocaiado/Desktop/FACULDADE/ANO 2 /SEM 1/AEDA/TRABALHO AEDA/TrabalhoAEDAParte1/modalidade.h">
+			<Option target="TrabalhoAEDAParte1"/>
+		</Unit>
+		<Unit filename="/Users/afonsocaiado/Desktop/FACULDADE/ANO 2 /SEM 1/AEDA/TRABALHO AEDA/TrabalhoAEDAParte1/prova.cpp">
+			<Option target="TrabalhoAEDAParte1"/>
+		</Unit>
+		<Unit filename="/Users/afonsocaiado/Desktop/FACULDADE/ANO 2 /SEM 1/AEDA/TRABALHO AEDA/TrabalhoAEDAParte1/prova.h">
 			<Option target="TrabalhoAEDAParte1"/>
 		</Unit>
 		<Unit filename="/Users/afonsocaiado/Desktop/FACULDADE/ANO 2 /SEM 1/AEDA/TRABALHO AEDA/TrabalhoAEDAParte1/CMakeLists.txt">

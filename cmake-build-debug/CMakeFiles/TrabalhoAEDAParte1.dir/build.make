@@ -70,17 +70,92 @@ CMakeFiles/TrabalhoAEDAParte1.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/TrabalhoAEDAParte1.dir/main.cpp.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/afonsocaiado/Desktop/FACULDADE/ANO 2 /SEM 1/AEDA/TRABALHO AEDA/TrabalhoAEDAParte1/main.cpp" -o CMakeFiles/TrabalhoAEDAParte1.dir/main.cpp.s
 
+CMakeFiles/TrabalhoAEDAParte1.dir/funcionario.cpp.o: CMakeFiles/TrabalhoAEDAParte1.dir/flags.make
+CMakeFiles/TrabalhoAEDAParte1.dir/funcionario.cpp.o: ../funcionario.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/afonsocaiado/Desktop/FACULDADE/ANO 2 /SEM 1/AEDA/TRABALHO AEDA/TrabalhoAEDAParte1/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/TrabalhoAEDAParte1.dir/funcionario.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/TrabalhoAEDAParte1.dir/funcionario.cpp.o -c "/Users/afonsocaiado/Desktop/FACULDADE/ANO 2 /SEM 1/AEDA/TRABALHO AEDA/TrabalhoAEDAParte1/funcionario.cpp"
+
+CMakeFiles/TrabalhoAEDAParte1.dir/funcionario.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/TrabalhoAEDAParte1.dir/funcionario.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/afonsocaiado/Desktop/FACULDADE/ANO 2 /SEM 1/AEDA/TRABALHO AEDA/TrabalhoAEDAParte1/funcionario.cpp" > CMakeFiles/TrabalhoAEDAParte1.dir/funcionario.cpp.i
+
+CMakeFiles/TrabalhoAEDAParte1.dir/funcionario.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/TrabalhoAEDAParte1.dir/funcionario.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/afonsocaiado/Desktop/FACULDADE/ANO 2 /SEM 1/AEDA/TRABALHO AEDA/TrabalhoAEDAParte1/funcionario.cpp" -o CMakeFiles/TrabalhoAEDAParte1.dir/funcionario.cpp.s
+
+CMakeFiles/TrabalhoAEDAParte1.dir/data.cpp.o: CMakeFiles/TrabalhoAEDAParte1.dir/flags.make
+CMakeFiles/TrabalhoAEDAParte1.dir/data.cpp.o: ../data.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/afonsocaiado/Desktop/FACULDADE/ANO 2 /SEM 1/AEDA/TRABALHO AEDA/TrabalhoAEDAParte1/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/TrabalhoAEDAParte1.dir/data.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/TrabalhoAEDAParte1.dir/data.cpp.o -c "/Users/afonsocaiado/Desktop/FACULDADE/ANO 2 /SEM 1/AEDA/TRABALHO AEDA/TrabalhoAEDAParte1/data.cpp"
+
+CMakeFiles/TrabalhoAEDAParte1.dir/data.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/TrabalhoAEDAParte1.dir/data.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/afonsocaiado/Desktop/FACULDADE/ANO 2 /SEM 1/AEDA/TRABALHO AEDA/TrabalhoAEDAParte1/data.cpp" > CMakeFiles/TrabalhoAEDAParte1.dir/data.cpp.i
+
+CMakeFiles/TrabalhoAEDAParte1.dir/data.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/TrabalhoAEDAParte1.dir/data.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/afonsocaiado/Desktop/FACULDADE/ANO 2 /SEM 1/AEDA/TRABALHO AEDA/TrabalhoAEDAParte1/data.cpp" -o CMakeFiles/TrabalhoAEDAParte1.dir/data.cpp.s
+
+CMakeFiles/TrabalhoAEDAParte1.dir/modalidade.cpp.o: CMakeFiles/TrabalhoAEDAParte1.dir/flags.make
+CMakeFiles/TrabalhoAEDAParte1.dir/modalidade.cpp.o: ../modalidade.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/afonsocaiado/Desktop/FACULDADE/ANO 2 /SEM 1/AEDA/TRABALHO AEDA/TrabalhoAEDAParte1/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/TrabalhoAEDAParte1.dir/modalidade.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/TrabalhoAEDAParte1.dir/modalidade.cpp.o -c "/Users/afonsocaiado/Desktop/FACULDADE/ANO 2 /SEM 1/AEDA/TRABALHO AEDA/TrabalhoAEDAParte1/modalidade.cpp"
+
+CMakeFiles/TrabalhoAEDAParte1.dir/modalidade.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/TrabalhoAEDAParte1.dir/modalidade.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/afonsocaiado/Desktop/FACULDADE/ANO 2 /SEM 1/AEDA/TRABALHO AEDA/TrabalhoAEDAParte1/modalidade.cpp" > CMakeFiles/TrabalhoAEDAParte1.dir/modalidade.cpp.i
+
+CMakeFiles/TrabalhoAEDAParte1.dir/modalidade.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/TrabalhoAEDAParte1.dir/modalidade.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/afonsocaiado/Desktop/FACULDADE/ANO 2 /SEM 1/AEDA/TRABALHO AEDA/TrabalhoAEDAParte1/modalidade.cpp" -o CMakeFiles/TrabalhoAEDAParte1.dir/modalidade.cpp.s
+
+CMakeFiles/TrabalhoAEDAParte1.dir/competicao.cpp.o: CMakeFiles/TrabalhoAEDAParte1.dir/flags.make
+CMakeFiles/TrabalhoAEDAParte1.dir/competicao.cpp.o: ../competicao.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/afonsocaiado/Desktop/FACULDADE/ANO 2 /SEM 1/AEDA/TRABALHO AEDA/TrabalhoAEDAParte1/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/TrabalhoAEDAParte1.dir/competicao.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/TrabalhoAEDAParte1.dir/competicao.cpp.o -c "/Users/afonsocaiado/Desktop/FACULDADE/ANO 2 /SEM 1/AEDA/TRABALHO AEDA/TrabalhoAEDAParte1/competicao.cpp"
+
+CMakeFiles/TrabalhoAEDAParte1.dir/competicao.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/TrabalhoAEDAParte1.dir/competicao.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/afonsocaiado/Desktop/FACULDADE/ANO 2 /SEM 1/AEDA/TRABALHO AEDA/TrabalhoAEDAParte1/competicao.cpp" > CMakeFiles/TrabalhoAEDAParte1.dir/competicao.cpp.i
+
+CMakeFiles/TrabalhoAEDAParte1.dir/competicao.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/TrabalhoAEDAParte1.dir/competicao.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/afonsocaiado/Desktop/FACULDADE/ANO 2 /SEM 1/AEDA/TRABALHO AEDA/TrabalhoAEDAParte1/competicao.cpp" -o CMakeFiles/TrabalhoAEDAParte1.dir/competicao.cpp.s
+
+CMakeFiles/TrabalhoAEDAParte1.dir/prova.cpp.o: CMakeFiles/TrabalhoAEDAParte1.dir/flags.make
+CMakeFiles/TrabalhoAEDAParte1.dir/prova.cpp.o: ../prova.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/afonsocaiado/Desktop/FACULDADE/ANO 2 /SEM 1/AEDA/TRABALHO AEDA/TrabalhoAEDAParte1/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/TrabalhoAEDAParte1.dir/prova.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/TrabalhoAEDAParte1.dir/prova.cpp.o -c "/Users/afonsocaiado/Desktop/FACULDADE/ANO 2 /SEM 1/AEDA/TRABALHO AEDA/TrabalhoAEDAParte1/prova.cpp"
+
+CMakeFiles/TrabalhoAEDAParte1.dir/prova.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/TrabalhoAEDAParte1.dir/prova.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/afonsocaiado/Desktop/FACULDADE/ANO 2 /SEM 1/AEDA/TRABALHO AEDA/TrabalhoAEDAParte1/prova.cpp" > CMakeFiles/TrabalhoAEDAParte1.dir/prova.cpp.i
+
+CMakeFiles/TrabalhoAEDAParte1.dir/prova.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/TrabalhoAEDAParte1.dir/prova.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/afonsocaiado/Desktop/FACULDADE/ANO 2 /SEM 1/AEDA/TRABALHO AEDA/TrabalhoAEDAParte1/prova.cpp" -o CMakeFiles/TrabalhoAEDAParte1.dir/prova.cpp.s
+
 # Object files for target TrabalhoAEDAParte1
 TrabalhoAEDAParte1_OBJECTS = \
-"CMakeFiles/TrabalhoAEDAParte1.dir/main.cpp.o"
+"CMakeFiles/TrabalhoAEDAParte1.dir/main.cpp.o" \
+"CMakeFiles/TrabalhoAEDAParte1.dir/funcionario.cpp.o" \
+"CMakeFiles/TrabalhoAEDAParte1.dir/data.cpp.o" \
+"CMakeFiles/TrabalhoAEDAParte1.dir/modalidade.cpp.o" \
+"CMakeFiles/TrabalhoAEDAParte1.dir/competicao.cpp.o" \
+"CMakeFiles/TrabalhoAEDAParte1.dir/prova.cpp.o"
 
 # External object files for target TrabalhoAEDAParte1
 TrabalhoAEDAParte1_EXTERNAL_OBJECTS =
 
 TrabalhoAEDAParte1: CMakeFiles/TrabalhoAEDAParte1.dir/main.cpp.o
+TrabalhoAEDAParte1: CMakeFiles/TrabalhoAEDAParte1.dir/funcionario.cpp.o
+TrabalhoAEDAParte1: CMakeFiles/TrabalhoAEDAParte1.dir/data.cpp.o
+TrabalhoAEDAParte1: CMakeFiles/TrabalhoAEDAParte1.dir/modalidade.cpp.o
+TrabalhoAEDAParte1: CMakeFiles/TrabalhoAEDAParte1.dir/competicao.cpp.o
+TrabalhoAEDAParte1: CMakeFiles/TrabalhoAEDAParte1.dir/prova.cpp.o
 TrabalhoAEDAParte1: CMakeFiles/TrabalhoAEDAParte1.dir/build.make
 TrabalhoAEDAParte1: CMakeFiles/TrabalhoAEDAParte1.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/Users/afonsocaiado/Desktop/FACULDADE/ANO 2 /SEM 1/AEDA/TRABALHO AEDA/TrabalhoAEDAParte1/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable TrabalhoAEDAParte1"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/Users/afonsocaiado/Desktop/FACULDADE/ANO 2 /SEM 1/AEDA/TRABALHO AEDA/TrabalhoAEDAParte1/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable TrabalhoAEDAParte1"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/TrabalhoAEDAParte1.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

@@ -7,11 +7,22 @@
 
 class competicao {
 
-    vector <prova> provas;
+private:
+    vector <*prova> provas;
     bool individual;
-    int atletasinscritos;
+    vector<*atleta> atletasinscritos;
     vector<string> medalhados;
 
-};
+public:
+    competicao();
+    vector <*prova> getProvas();
+    bool getIndividual();
+    vector<*atleta> getAtletasInscritos();
+    vector<string> getMedalhados();
+    void setProvas(vector<*prova> provas);
+    void setIndividual(bool individual);
+    void setAtletasInscritos(vector<*atleta> atletas);
+    void setMedalhados(vector<string> medalhados);
 
+};
 #endif //TRABALHOAEDAPARTE1_COMPETICAO_H

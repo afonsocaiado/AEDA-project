@@ -6,7 +6,7 @@
 #include <vector>
 
 class prova {
-
+private:
     data dataprova;
     vector <atleta> atletasparticipantes;
 

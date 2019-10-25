@@ -9,7 +9,8 @@ class competicao {
 
     vector <prova> provas;
     bool individual;
-
+    int atletasinscritos;
+    vector<string> medalhados;
 
 };
 

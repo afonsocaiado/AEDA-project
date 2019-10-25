@@ -204,6 +204,33 @@ funcionario.cpp.s:
 	$(MAKE) -f CMakeFiles/TrabalhoAEDAParte1.dir/build.make CMakeFiles/TrabalhoAEDAParte1.dir/funcionario.cpp.s
 .PHONY : funcionario.cpp.s
 
+jogosol.o: jogosol.cpp.o
+
+.PHONY : jogosol.o
+
+# target to build an object file
+jogosol.cpp.o:
+	$(MAKE) -f CMakeFiles/TrabalhoAEDAParte1.dir/build.make CMakeFiles/TrabalhoAEDAParte1.dir/jogosol.cpp.o
+.PHONY : jogosol.cpp.o
+
+jogosol.i: jogosol.cpp.i
+
+.PHONY : jogosol.i
+
+# target to preprocess a source file
+jogosol.cpp.i:
+	$(MAKE) -f CMakeFiles/TrabalhoAEDAParte1.dir/build.make CMakeFiles/TrabalhoAEDAParte1.dir/jogosol.cpp.i
+.PHONY : jogosol.cpp.i
+
+jogosol.s: jogosol.cpp.s
+
+.PHONY : jogosol.s
+
+# target to generate assembly for a file
+jogosol.cpp.s:
+	$(MAKE) -f CMakeFiles/TrabalhoAEDAParte1.dir/build.make CMakeFiles/TrabalhoAEDAParte1.dir/jogosol.cpp.s
+.PHONY : jogosol.cpp.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -230,6 +257,33 @@ main.s: main.cpp.s
 main.cpp.s:
 	$(MAKE) -f CMakeFiles/TrabalhoAEDAParte1.dir/build.make CMakeFiles/TrabalhoAEDAParte1.dir/main.cpp.s
 .PHONY : main.cpp.s
+
+menu.o: menu.cpp.o
+
+.PHONY : menu.o
+
+# target to build an object file
+menu.cpp.o:
+	$(MAKE) -f CMakeFiles/TrabalhoAEDAParte1.dir/build.make CMakeFiles/TrabalhoAEDAParte1.dir/menu.cpp.o
+.PHONY : menu.cpp.o
+
+menu.i: menu.cpp.i
+
+.PHONY : menu.i
+
+# target to preprocess a source file
+menu.cpp.i:
+	$(MAKE) -f CMakeFiles/TrabalhoAEDAParte1.dir/build.make CMakeFiles/TrabalhoAEDAParte1.dir/menu.cpp.i
+.PHONY : menu.cpp.i
+
+menu.s: menu.cpp.s
+
+.PHONY : menu.s
+
+# target to generate assembly for a file
+menu.cpp.s:
+	$(MAKE) -f CMakeFiles/TrabalhoAEDAParte1.dir/build.make CMakeFiles/TrabalhoAEDAParte1.dir/menu.cpp.s
+.PHONY : menu.cpp.s
 
 modalidade.o: modalidade.cpp.o
 
@@ -285,6 +339,33 @@ prova.cpp.s:
 	$(MAKE) -f CMakeFiles/TrabalhoAEDAParte1.dir/build.make CMakeFiles/TrabalhoAEDAParte1.dir/prova.cpp.s
 .PHONY : prova.cpp.s
 
+resultado.o: resultado.cpp.o
+
+.PHONY : resultado.o
+
+# target to build an object file
+resultado.cpp.o:
+	$(MAKE) -f CMakeFiles/TrabalhoAEDAParte1.dir/build.make CMakeFiles/TrabalhoAEDAParte1.dir/resultado.cpp.o
+.PHONY : resultado.cpp.o
+
+resultado.i: resultado.cpp.i
+
+.PHONY : resultado.i
+
+# target to preprocess a source file
+resultado.cpp.i:
+	$(MAKE) -f CMakeFiles/TrabalhoAEDAParte1.dir/build.make CMakeFiles/TrabalhoAEDAParte1.dir/resultado.cpp.i
+.PHONY : resultado.cpp.i
+
+resultado.s: resultado.cpp.s
+
+.PHONY : resultado.s
+
+# target to generate assembly for a file
+resultado.cpp.s:
+	$(MAKE) -f CMakeFiles/TrabalhoAEDAParte1.dir/build.make CMakeFiles/TrabalhoAEDAParte1.dir/resultado.cpp.s
+.PHONY : resultado.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -303,15 +384,24 @@ help:
 	@echo "... funcionario.o"
 	@echo "... funcionario.i"
 	@echo "... funcionario.s"
+	@echo "... jogosol.o"
+	@echo "... jogosol.i"
+	@echo "... jogosol.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... menu.o"
+	@echo "... menu.i"
+	@echo "... menu.s"
 	@echo "... modalidade.o"
 	@echo "... modalidade.i"
 	@echo "... modalidade.s"
 	@echo "... prova.o"
 	@echo "... prova.i"
 	@echo "... prova.s"
+	@echo "... resultado.o"
+	@echo "... resultado.i"
+	@echo "... resultado.s"
 .PHONY : help
 
 

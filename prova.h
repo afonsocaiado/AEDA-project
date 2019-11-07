@@ -5,11 +5,14 @@
 #include "funcionario.h"
 #include <vector>
 
-class prova {
+class Prova {
 private:
-    data dataprova;
-    vector <atleta> atletasparticipantes;
-
+    data data;
+    vector <atleta> atletasParticipantes;
+public:
+    Prova(Data data);
+    Data getData();
+    void setData(int dia, int mes, int ano);
 };
 
 #endif //TRABALHOAEDAPARTE1_PROVA_H

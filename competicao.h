@@ -5,7 +5,7 @@
 
 #include <vector>
 
-class competicao {
+class Competicao {
 
 private:
     vector <*prova> provas;
@@ -14,7 +14,7 @@ private:
     vector<string> medalhados;
 
 public:
-    competicao();
+    Competicao();
     vector <*prova> getProvas();
     bool getIndividual();
     vector<*atleta> getAtletasInscritos();

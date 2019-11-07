@@ -6,41 +6,41 @@
 
 using namespace std;
 
-competicao::competicao()
+Competicao::Competicao()
 {
 
 }
 
-vector <*prova> competicao::getProvas()
+vector <*prova> Competicao::getProvas()
 {
     return provas;
 }
-bool competicao::getIndividual()
+bool Competicao::getIndividual()
 {
     return individual;
 }
-vector<*atleta> competicao::getAtletasInscritos()
+vector<*atleta> Competicao::getAtletasInscritos()
 {
     return atletasinscritos;
 }
-vector<string> competicao::getMedalhados()
+vector<string> Competicao::getMedalhados()
 {
     return medalhados;
 }
 
-void competicao::setProvas(vector<*prova> provas)
+void Competicao::setProvas(vector<*prova> provas)
 {
     this->provas = provas;
 }
-void competicao::setIndividual(bool individual)
+void Competicao::setIndividual(bool individual)
 {
     this->individual = individual;
 }
-void competicao::setAtletasInscritos(vector<*atleta> atletas)
+void Competicao::setAtletasInscritos(vector<*atleta> atletas)
 {
     atletasinscritos = atletas;
 }
-void competicao::setMedalhados(vector<string> medalhados)
+void Competicao::setMedalhados(vector<string> medalhados)
 {
     this->medalhados = medalhados;
 }

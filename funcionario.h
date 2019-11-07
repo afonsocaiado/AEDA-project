@@ -10,7 +10,7 @@
 
 using namespace std;
 
-class funcionario {
+class Funcionario {
 
 protected:
     string nome;
@@ -20,6 +20,9 @@ protected:
     data datachegada;
     data datapartida;
     double custodiário;
+
+public:
+    Funcionario();
 
 };
 

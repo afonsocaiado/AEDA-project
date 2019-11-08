@@ -170,6 +170,10 @@ void Menu::programacaoDiaria() {
     cout << "|_______________________________________|" << endl;
 }
 
+void Menu::diasAnteriores() {
+    //Lista com dias passados, nao sei, e dificil
+}
+
 //--------------------------------------------------------------------------
 
 void Menu::tabelaDeMedalhados() {

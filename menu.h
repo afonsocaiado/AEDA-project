@@ -25,6 +25,7 @@ public:
     void listaCompeticoes();
     void competicao();
     void programacaoDiaria();
+    void diasAnteriores();
     void tabelaDeMedalhados();
 };
 

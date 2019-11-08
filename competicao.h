@@ -2,6 +2,7 @@
 #define TRABALHOAEDAPARTE1_COMPETICAO_H
 
 #include "prova.h"
+#include "funcionario.h"
 
 #include <vector>
 

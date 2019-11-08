@@ -7,33 +7,43 @@
 #include "data.h"
 #include "competicao.h"
 #include "resultado.h"
+#include "jogosol.h"
 
 using namespace std;
 
 class Funcionario {
 
 protected:
-    string nome;
-    data datanascimento;
-    int passaporte;
-    string funcao;
-    data datachegada;
-    data datapartida;
-    double custodiário;
+    const string nome;
+    const char sexo;
+    const Data dataNascimento;
+    const int passaporte;
+    const string funcao;
+    Data dataChegada;
+    Data dataPartida;
+    const double custoDiario;
 
 public:
-    Funcionario();
-
+    Funcionario(string nome, char sexo, Data dataNascimento, int passaporte, string funcao, Data dataChegada, Data dataPartida, double custoDiario);
+    bool criarFuncionario(Funcionario funcionario);
+    bool eliminarFuncionario(Funcionario funcionario);
+    Data getDataChegada();
+    Data getDataPartida();
+    void setDataChegada(Data dataChegada);
+    void setDataPartida(Data dataPartida);
 };
 
-class atleta:public funcionario {
-
-    string modalidade;
-    double peso, altura;
+class Atleta:public Funcionario{
+private:
+    const string modalidade;
+    const double peso, altura;
     int ranking;
-    vector<competicao> competicoes;
+    vector<Competicao> competicoes;
     vector<vector<string>> historico;
     vector<resultado> resultados;
+public:
+    Atleta(string nome, Data dataNascimento, int passaporte, string funcao, Data dataChegada, Data dataPartida, double custoDiario, string modalidade, double peso, double altura, int ranking);
+    ~Atleta();
 
 };
 

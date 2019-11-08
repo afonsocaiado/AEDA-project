@@ -7,8 +7,8 @@
 
 class Prova {
 private:
-    data data;
-    vector <atleta> atletasParticipantes;
+    Data data;
+    vector<Atleta> atletasParticipantes;
 public:
     Prova(Data data);
     Data getData();

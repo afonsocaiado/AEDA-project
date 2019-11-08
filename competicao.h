@@ -8,20 +8,20 @@
 class Competicao {
 
 private:
-    vector <*prova> provas;
+    vector<*Prova> provas;
     bool individual;
-    vector<*atleta> atletasinscritos;
+    vector<*Atleta> atletasInscritos;
     vector<string> medalhados;
 
 public:
     Competicao();
-    vector <*prova> getProvas();
+    vector <Prova> getProvas();
     bool getIndividual();
-    vector<*atleta> getAtletasInscritos();
+    vector<*Atleta> getAtletasInscritos();
     vector<string> getMedalhados();
-    void setProvas(vector<*prova> provas);
+    void setProvas(vector<*Prova> provas);
     void setIndividual(bool individual);
-    void setAtletasInscritos(vector<*atleta> atletas);
+    void setAtletasInscritos(vector<*Atleta> atletas);
     void setMedalhados(vector<string> medalhados);
 
 };

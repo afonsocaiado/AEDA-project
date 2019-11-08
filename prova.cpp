@@ -6,6 +6,8 @@
 
 using namespace std;
 
+Prova::Prova() {}
+
 Prova::Prova(Data data)
 {
     this->data = data;

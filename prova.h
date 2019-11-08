@@ -10,6 +10,7 @@ private:
     Data data;
     vector<Atleta> atletasParticipantes;
 public:
+    Prova();
     Prova(Data data);
     Data getData();
     void setData(int dia, int mes, int ano);

@@ -11,7 +11,7 @@ Competicao::Competicao()
 
 }
 
-vector <*prova> Competicao::getProvas()
+vector <*Prova> Competicao::getProvas()
 {
     return provas;
 }
@@ -19,16 +19,16 @@ bool Competicao::getIndividual()
 {
     return individual;
 }
-vector<*atleta> Competicao::getAtletasInscritos()
+vector<*Atleta> Competicao::getAtletasInscritos()
 {
-    return atletasinscritos;
+    return atletasInscritos;
 }
 vector<string> Competicao::getMedalhados()
 {
     return medalhados;
 }
 
-void Competicao::setProvas(vector<*prova> provas)
+void Competicao::setProvas(vector<*Prova> provas)
 {
     this->provas = provas;
 }
@@ -36,9 +36,9 @@ void Competicao::setIndividual(bool individual)
 {
     this->individual = individual;
 }
-void Competicao::setAtletasInscritos(vector<*atleta> atletas)
+void Competicao::setAtletasInscritos(vector<*Atleta> atletas)
 {
-    atletasinscritos = atletas;
+    atletasInscritos = atletas;
 }
 void Competicao::setMedalhados(vector<string> medalhados)
 {

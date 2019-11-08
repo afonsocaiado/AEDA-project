@@ -7,6 +7,7 @@
 #include "data.h"
 #include "competicao.h"
 #include "resultado.h"
+#include "jogosol.h"
 
 using namespace std;
 
@@ -23,9 +24,13 @@ protected:
     const double custoDiario;
 
 public:
-    Funcionario(string nome, Data dataNascimento, int passaporte, string funcao, Data dataChegada, Data dataPartida, double custoDiario);
+    Funcionario(string nome, char sexo, Data dataNascimento, int passaporte, string funcao, Data dataChegada, Data dataPartida, double custoDiario);
     bool criarFuncionario(Funcionario funcionario);
     bool eliminarFuncionario(Funcionario funcionario);
+    Data getDataChegada();
+    Data getDataPartida();
+    void setDataChegada(Data dataChegada);
+    void setDataPartida(Data dataPartida);
 };
 
 class Atleta:public Funcionario{
@@ -39,6 +44,7 @@ private:
 public:
     Atleta(string nome, Data dataNascimento, int passaporte, string funcao, Data dataChegada, Data dataPartida, double custoDiario, string modalidade, double peso, double altura, int ranking);
     ~Atleta();
+
 };
 
 #endif //TRABALHOAEDAPARTE1_FUNCIONARIO_H

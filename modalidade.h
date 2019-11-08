@@ -4,9 +4,9 @@
 #include "competicao.h"
 #include <vector>
 
-class modalidade {
+class Modalidade {
 
-    vector <competicao> competicoes;
+    vector <Competicao> competicoes;
 
 };
 

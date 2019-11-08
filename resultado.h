@@ -3,9 +3,9 @@
 
 #include "prova.h"
 
-class resultado {
+class Resultado {
 
-    prova prova;
+    Prova prova;
     int classificacao;
     bool passou;
 

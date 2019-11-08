@@ -6,7 +6,7 @@
 
 using namespace std;
 
-class jogosol {
+class Jogosol {
 
     vector<vector<string>> medalhas;
 

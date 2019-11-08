@@ -8,9 +8,9 @@
 class Competicao {
 
 private:
-    vector <*prova> provas;
+    vector<*prova> provas;
     bool individual;
-    vector<*atleta> atletasinscritos;
+    vector<*atleta> atletasInscritos;
     vector<string> medalhados;
 
 public:

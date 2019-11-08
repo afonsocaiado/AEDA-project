@@ -13,7 +13,8 @@ public:
     Prova(Data data);
     Data getData();
     void setData(int dia, int mes, int ano);
-
+    void addAtleta(Atleta &a);
+    bool removeAtleta(Atleta &a);
 };
 
 #endif //TRABALHOAEDAPARTE1_PROVA_H

@@ -46,6 +46,7 @@ public:
     ~Atleta();
 
     void addCompeticao(Competicao competicao);
+    void addResultado(Resultado resultado);
 
     bool operator== (const Atleta atleta) const;
 };

@@ -43,6 +43,11 @@ void Atleta::addCompeticao(Competicao competicao)
     competicoes.push_back(competicao);
 }
 
+void Atleta::addResultado(Resultado resultado)
+{
+    resultados.push_back(resultado);
+}
+
 bool Atleta::operator== (const Atleta atleta) const
 {
     return this->passaporte == atleta.passaporte;

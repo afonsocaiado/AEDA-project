@@ -38,6 +38,11 @@ Atleta::~Atleta()
     //Jogosol::atletas.erase()
 }
 
+void Atleta::addCompeticao(Competicao competicao)
+{
+    competicoes.push_back(competicao);
+}
+
 bool Atleta::operator== (const Atleta atleta) const
 {
     return this->passaporte == atleta.passaporte;

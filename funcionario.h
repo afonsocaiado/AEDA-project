@@ -45,7 +45,7 @@ public:
     Atleta(string nome, Data dataNascimento, int passaporte, string funcao, Data dataChegada, Data dataPartida, double custoDiario, string modalidade, double peso, double altura, int ranking);
     ~Atleta();
 
-    bool addCompeticao(Competicao competicao);
+    void addCompeticao(Competicao competicao);
 
     bool operator== (const Atleta atleta) const;
 };

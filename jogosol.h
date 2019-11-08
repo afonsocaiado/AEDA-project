@@ -10,7 +10,8 @@ using namespace std;
 class Jogosol {
 public:
     vector<vector<string>> medalhas;
-    static vector<Atleta> atletas;
+    static vector<Funcionario> funcionarios;
+
 };
 
 #endif //TRABALHOAEDAPARTE1_JOGOSOL_H

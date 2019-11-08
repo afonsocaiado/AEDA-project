@@ -60,3 +60,18 @@ void Resultado::setPassou(bool passou)
 {
     this->passou = passou;
 }
+
+ostream & operator<<(ostream &o, Resultado resultado)
+{
+    o << "Prova: " << resultado.prova.getNome() << endl;
+    o << "Classificacao: " << resultado.classificacao << endl;
+    if ((resultado.prova.getNome() == "Final") || (resultado.prova.getNome() == "final"))
+    {
+        if ((resultado.classificacao > 0) && (resultado.classificacao <= 3))
+            o << "Medalha de ";
+
+        o << resultado.getMedalha(resultado.classificacao) << endl;
+    }
+}
+
+

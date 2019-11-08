@@ -8,14 +8,15 @@ using namespace std;
 
 Prova::Prova() {}
 
-Prova::Prova(Data data)
-{
-    this->data = data;
-}
+Prova::Prova(string nome):nome(nome){}
 
 Data Prova::getData()
 {
     return data;
+}
+
+string Prova::getNome() const {
+    return nome;
 }
 
 void Prova::setData(int dia, int mes, int ano)
@@ -29,7 +30,7 @@ void Prova::addAtleta(Atleta &a) {
     atletasParticipantes.push_back(a);
 }
 bool Prova::removeAtleta(Atleta &a) {
-    for(int i=0;i<atletasParticipantes.size();i++){
+    for(unsigned int i=0;i<atletasParticipantes.size();i++){
         if (atletasParticipantes[i] == a){
             atletasParticipantes.erase(atletasParticipantes.begin()+i);
             cout << "Atleta removido com sucesso" << endl;
@@ -37,7 +38,7 @@ bool Prova::removeAtleta(Atleta &a) {
         }
 
     }
-    cout << "Impossível remover atleta" << endl;
+    cout << "Impossivel remover atleta" << endl;
     return 0;
 }
 

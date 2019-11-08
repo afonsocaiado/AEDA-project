@@ -20,7 +20,7 @@ public:
     void setClassificacao(int classificacao);
     void setPassou(bool passou);
 
-    ostream & operator<<(ostream &o, const Resultado &resultado);
+    friend ostream & operator<<(ostream &o, const Resultado &resultado);
 
 };
 

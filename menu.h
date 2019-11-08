@@ -10,7 +10,22 @@ class Menu {
 public:
     void mainMenu();
     void funcionariosEAtletas();
-    void modalidades();
+    void atletas();
+    void funcionario();
+    void visualizarAtletas();
+    void editar();
+    void resultados();
+    void listaAtletas();
+    void listaFuncionarios();
+    void modificarAtleta();
+    void modificarInfoPessoalFuncionario();
+    void modificarInfoPessoalAtleta();
+    void listamodalidades();
+    void modalidade();
+    void listaCompeticoes();
+    void competicao();
+    void programacaoDiaria();
+    void tabelaDeMedalhados();
 };
 
 

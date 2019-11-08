@@ -15,9 +15,13 @@ public:
     Prova getProva();
     int getClassificacao();
     bool getPassou();
+    string getMedalha(int classificacao);
     void setProva(Prova prova);
     void setClassificacao(int classificacao);
     void setPassou(bool passou);
+
+    ostream & operator<<(ostream &o, const Resultado &resultado);
+
 };
 
 #endif //TRABALHOAEDAPARTE1_RESULTADO_H

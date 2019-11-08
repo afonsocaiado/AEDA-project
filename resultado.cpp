@@ -24,6 +24,28 @@ bool Resultado::getPassou()
     return passou;
 }
 
+string Resultado::getMedalha(int classificacao)
+{
+    switch (classificacao)
+    {
+        case 1:
+            return "Ouro";
+            break;
+
+        case 2:
+            return "Prata";
+            break;
+
+        case 3:
+            return "Bronze";
+            break;
+
+        default:
+            return "Nao Medalhado";
+            break;
+    }
+}
+
 void Resultado::setProva(Prova prova)
 {
     this->prova = prova;

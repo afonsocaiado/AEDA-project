@@ -23,9 +23,9 @@ public:
     bool getIndividual();
     vector<Atleta> getAtletasInscritos();
     vector<string> getMedalhados();
-    void setProvas(vector<*Prova> provas);
+    void setProvas(vector<Prova*> provas);
     void setIndividual(bool individual);
-    void setAtletasInscritos(vector<*Atleta> atletas);
+    void setAtletasInscritos(vector<Atleta*> atletas);
     void setMedalhados(vector<string> medalhados);
 
 };

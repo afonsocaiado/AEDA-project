@@ -13,6 +13,7 @@ public:
     Prova(Data data);
     Data getData();
     void setData(int dia, int mes, int ano);
+
 };
 
 #endif //TRABALHOAEDAPARTE1_PROVA_H

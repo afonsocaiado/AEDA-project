@@ -37,3 +37,8 @@ Atleta::~Atleta()
 {
     //Jogosol::atletas.erase()
 }
+
+bool Atleta::operator== (const Atleta atleta) const
+{
+    return this->passaporte == atleta.passaporte;
+}

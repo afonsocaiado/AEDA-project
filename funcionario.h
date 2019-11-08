@@ -32,6 +32,8 @@ public:
     Data getDataPartida();
     void setDataChegada(Data dataChegada);
     void setDataPartida(Data dataPartida);
+
+    bool operator== (const Funcionario funcionario) const;
 };
 
 class Atleta:public Funcionario{
@@ -47,7 +49,7 @@ public:
     ~Atleta();
     void addCompeticao(Competicao competicao);
     void addResultado(Resultado resultado);
-    bool operator== (const Atleta atleta) const;
+
 };
 
 #endif //TRABALHOAEDAPARTE1_FUNCIONARIO_H

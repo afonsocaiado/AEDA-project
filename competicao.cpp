@@ -1,5 +1,4 @@
 #include "competicao.h"
-#include "prova.h"
 
 #include <vector>
 #include <string>

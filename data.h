@@ -1,8 +1,9 @@
 #ifndef TRABALHOAEDAPARTE1_DATA_H
 #define TRABALHOAEDAPARTE1_DATA_H
-using namespace std;
+
 #include <iostream>
 
+using namespace std;
 
 class Data {
 private:

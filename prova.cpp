@@ -1,5 +1,4 @@
 #include "prova.h"
-#include "funcionario.h"
 
 #include <vector>
 #include <string>

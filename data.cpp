@@ -1,5 +1,6 @@
 #include "data.h"
 #include <iostream>
+#include <sstream>
 
 using namespace std;
 
@@ -45,3 +46,22 @@ void Data::setAno(int ano)
 {
     this->ano = ano;
 }
+
+ostream & operator<<(ostream & o, const Data & d) {
+    o << d.dia << '/' << d.mes << '/' << d.ano;
+    return o;
+}
+
+istream &operator>>(istream &i, Data &d){
+    string s,tempd,tempm,tempa;
+    stringstream ss;
+
+    i >> s;
+    replace(s.begin(),s.end(),'/',' ');
+    ss << s;
+    ss >> tempd >> tempm >> tempa;
+
+    d.dia=stoi(tempd); d.mes = stoi(tempm); d.ano=stoi(tempa);
+
+}
+

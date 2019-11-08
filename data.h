@@ -1,3 +1,4 @@
+#pragma once
 #ifndef TRABALHOAEDAPARTE1_DATA_H
 #define TRABALHOAEDAPARTE1_DATA_H
 

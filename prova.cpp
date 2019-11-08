@@ -41,4 +41,3 @@ bool Prova::removeAtleta(Atleta &a) {
     return 0;
 }
 
-

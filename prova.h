@@ -1,3 +1,4 @@
+#pragma once
 #ifndef TRABALHOAEDAPARTE1_PROVA_H
 #define TRABALHOAEDAPARTE1_PROVA_H
 
@@ -13,7 +14,7 @@ private:
     vector<Atleta> atletasParticipantes;
 public:
     Prova();
-    Prova(string nome);
+    explicit Prova(string nome);
     Data getData();
     string getNome() const;
     void setData(int dia, int mes, int ano);

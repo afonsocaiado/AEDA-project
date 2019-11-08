@@ -6,109 +6,113 @@
 
 #IncludeRegexTransform: 
 
-/Users/afonsocaiado/Desktop/FACULDADE/ANO 2 /SEM 1/AEDA/TRABALHO AEDA/TrabalhoAEDAParte1/competicao.cpp
+C:/Users/Fisica1/Desktop/AEDA/Trabalho/TrabalhoAEDAParte1/competicao.cpp
 competicao.h
-/Users/afonsocaiado/Desktop/FACULDADE/ANO 2 /SEM 1/AEDA/TRABALHO AEDA/TrabalhoAEDAParte1/competicao.h
+C:/Users/Fisica1/Desktop/AEDA/Trabalho/TrabalhoAEDAParte1/competicao.h
 vector
 -
 string
 -
 
-/Users/afonsocaiado/Desktop/FACULDADE/ANO 2 /SEM 1/AEDA/TRABALHO AEDA/TrabalhoAEDAParte1/competicao.h
+C:/Users/Fisica1/Desktop/AEDA/Trabalho/TrabalhoAEDAParte1/competicao.h
 prova.h
-/Users/afonsocaiado/Desktop/FACULDADE/ANO 2 /SEM 1/AEDA/TRABALHO AEDA/TrabalhoAEDAParte1/prova.h
+C:/Users/Fisica1/Desktop/AEDA/Trabalho/TrabalhoAEDAParte1/prova.h
 funcionario.h
-/Users/afonsocaiado/Desktop/FACULDADE/ANO 2 /SEM 1/AEDA/TRABALHO AEDA/TrabalhoAEDAParte1/funcionario.h
+C:/Users/Fisica1/Desktop/AEDA/Trabalho/TrabalhoAEDAParte1/funcionario.h
 vector
 -
 
-/Users/afonsocaiado/Desktop/FACULDADE/ANO 2 /SEM 1/AEDA/TRABALHO AEDA/TrabalhoAEDAParte1/data.cpp
+C:/Users/Fisica1/Desktop/AEDA/Trabalho/TrabalhoAEDAParte1/data.cpp
 data.h
-/Users/afonsocaiado/Desktop/FACULDADE/ANO 2 /SEM 1/AEDA/TRABALHO AEDA/TrabalhoAEDAParte1/data.h
+C:/Users/Fisica1/Desktop/AEDA/Trabalho/TrabalhoAEDAParte1/data.h
 iostream
 -
 sstream
 -
+algorithm
+-
 
-/Users/afonsocaiado/Desktop/FACULDADE/ANO 2 /SEM 1/AEDA/TRABALHO AEDA/TrabalhoAEDAParte1/data.h
+C:/Users/Fisica1/Desktop/AEDA/Trabalho/TrabalhoAEDAParte1/data.h
 iostream
 -
 
-/Users/afonsocaiado/Desktop/FACULDADE/ANO 2 /SEM 1/AEDA/TRABALHO AEDA/TrabalhoAEDAParte1/funcionario.cpp
+C:/Users/Fisica1/Desktop/AEDA/Trabalho/TrabalhoAEDAParte1/funcionario.cpp
 funcionario.h
-/Users/afonsocaiado/Desktop/FACULDADE/ANO 2 /SEM 1/AEDA/TRABALHO AEDA/TrabalhoAEDAParte1/funcionario.h
+C:/Users/Fisica1/Desktop/AEDA/Trabalho/TrabalhoAEDAParte1/funcionario.h
 iostream
 -
 
-/Users/afonsocaiado/Desktop/FACULDADE/ANO 2 /SEM 1/AEDA/TRABALHO AEDA/TrabalhoAEDAParte1/funcionario.h
-iostream
--
-string
--
-vector
--
+C:/Users/Fisica1/Desktop/AEDA/Trabalho/TrabalhoAEDAParte1/funcionario.h
 data.h
-/Users/afonsocaiado/Desktop/FACULDADE/ANO 2 /SEM 1/AEDA/TRABALHO AEDA/TrabalhoAEDAParte1/data.h
+C:/Users/Fisica1/Desktop/AEDA/Trabalho/TrabalhoAEDAParte1/data.h
 competicao.h
-/Users/afonsocaiado/Desktop/FACULDADE/ANO 2 /SEM 1/AEDA/TRABALHO AEDA/TrabalhoAEDAParte1/competicao.h
+C:/Users/Fisica1/Desktop/AEDA/Trabalho/TrabalhoAEDAParte1/competicao.h
 resultado.h
-/Users/afonsocaiado/Desktop/FACULDADE/ANO 2 /SEM 1/AEDA/TRABALHO AEDA/TrabalhoAEDAParte1/resultado.h
+C:/Users/Fisica1/Desktop/AEDA/Trabalho/TrabalhoAEDAParte1/resultado.h
 jogosol.h
-/Users/afonsocaiado/Desktop/FACULDADE/ANO 2 /SEM 1/AEDA/TRABALHO AEDA/TrabalhoAEDAParte1/jogosol.h
+C:/Users/Fisica1/Desktop/AEDA/Trabalho/TrabalhoAEDAParte1/jogosol.h
+iostream
+-
+string
+-
+vector
+-
 
-/Users/afonsocaiado/Desktop/FACULDADE/ANO 2 /SEM 1/AEDA/TRABALHO AEDA/TrabalhoAEDAParte1/jogosol.cpp
+C:/Users/Fisica1/Desktop/AEDA/Trabalho/TrabalhoAEDAParte1/jogosol.cpp
 jogosol.h
-/Users/afonsocaiado/Desktop/FACULDADE/ANO 2 /SEM 1/AEDA/TRABALHO AEDA/TrabalhoAEDAParte1/jogosol.h
+C:/Users/Fisica1/Desktop/AEDA/Trabalho/TrabalhoAEDAParte1/jogosol.h
 
-/Users/afonsocaiado/Desktop/FACULDADE/ANO 2 /SEM 1/AEDA/TRABALHO AEDA/TrabalhoAEDAParte1/jogosol.h
+C:/Users/Fisica1/Desktop/AEDA/Trabalho/TrabalhoAEDAParte1/jogosol.h
 funcionario.h
-/Users/afonsocaiado/Desktop/FACULDADE/ANO 2 /SEM 1/AEDA/TRABALHO AEDA/TrabalhoAEDAParte1/funcionario.h
+C:/Users/Fisica1/Desktop/AEDA/Trabalho/TrabalhoAEDAParte1/funcionario.h
 vector
 -
 string
 -
 
-/Users/afonsocaiado/Desktop/FACULDADE/ANO 2 /SEM 1/AEDA/TRABALHO AEDA/TrabalhoAEDAParte1/main.cpp
-iostream
--
-
-/Users/afonsocaiado/Desktop/FACULDADE/ANO 2 /SEM 1/AEDA/TRABALHO AEDA/TrabalhoAEDAParte1/menu.cpp
+C:/Users/Fisica1/Desktop/AEDA/Trabalho/TrabalhoAEDAParte1/menu.cpp
 menu.h
-/Users/afonsocaiado/Desktop/FACULDADE/ANO 2 /SEM 1/AEDA/TRABALHO AEDA/TrabalhoAEDAParte1/menu.h
+C:/Users/Fisica1/Desktop/AEDA/Trabalho/TrabalhoAEDAParte1/menu.h
+iostream
+-
+iomanip
+-
 
-/Users/afonsocaiado/Desktop/FACULDADE/ANO 2 /SEM 1/AEDA/TRABALHO AEDA/TrabalhoAEDAParte1/menu.h
+C:/Users/Fisica1/Desktop/AEDA/Trabalho/TrabalhoAEDAParte1/menu.h
+iostream
+-
 
-/Users/afonsocaiado/Desktop/FACULDADE/ANO 2 /SEM 1/AEDA/TRABALHO AEDA/TrabalhoAEDAParte1/modalidade.cpp
+C:/Users/Fisica1/Desktop/AEDA/Trabalho/TrabalhoAEDAParte1/modalidade.cpp
 modalidade.h
-/Users/afonsocaiado/Desktop/FACULDADE/ANO 2 /SEM 1/AEDA/TRABALHO AEDA/TrabalhoAEDAParte1/modalidade.h
+C:/Users/Fisica1/Desktop/AEDA/Trabalho/TrabalhoAEDAParte1/modalidade.h
 
-/Users/afonsocaiado/Desktop/FACULDADE/ANO 2 /SEM 1/AEDA/TRABALHO AEDA/TrabalhoAEDAParte1/modalidade.h
+C:/Users/Fisica1/Desktop/AEDA/Trabalho/TrabalhoAEDAParte1/modalidade.h
 competicao.h
-/Users/afonsocaiado/Desktop/FACULDADE/ANO 2 /SEM 1/AEDA/TRABALHO AEDA/TrabalhoAEDAParte1/competicao.h
+C:/Users/Fisica1/Desktop/AEDA/Trabalho/TrabalhoAEDAParte1/competicao.h
 vector
 -
 
-/Users/afonsocaiado/Desktop/FACULDADE/ANO 2 /SEM 1/AEDA/TRABALHO AEDA/TrabalhoAEDAParte1/prova.cpp
+C:/Users/Fisica1/Desktop/AEDA/Trabalho/TrabalhoAEDAParte1/prova.cpp
 prova.h
-/Users/afonsocaiado/Desktop/FACULDADE/ANO 2 /SEM 1/AEDA/TRABALHO AEDA/TrabalhoAEDAParte1/prova.h
+C:/Users/Fisica1/Desktop/AEDA/Trabalho/TrabalhoAEDAParte1/prova.h
 vector
 -
 string
 -
 
-/Users/afonsocaiado/Desktop/FACULDADE/ANO 2 /SEM 1/AEDA/TRABALHO AEDA/TrabalhoAEDAParte1/prova.h
+C:/Users/Fisica1/Desktop/AEDA/Trabalho/TrabalhoAEDAParte1/prova.h
 data.h
-/Users/afonsocaiado/Desktop/FACULDADE/ANO 2 /SEM 1/AEDA/TRABALHO AEDA/TrabalhoAEDAParte1/data.h
+C:/Users/Fisica1/Desktop/AEDA/Trabalho/TrabalhoAEDAParte1/data.h
 funcionario.h
-/Users/afonsocaiado/Desktop/FACULDADE/ANO 2 /SEM 1/AEDA/TRABALHO AEDA/TrabalhoAEDAParte1/funcionario.h
+C:/Users/Fisica1/Desktop/AEDA/Trabalho/TrabalhoAEDAParte1/funcionario.h
 vector
 -
 
-/Users/afonsocaiado/Desktop/FACULDADE/ANO 2 /SEM 1/AEDA/TRABALHO AEDA/TrabalhoAEDAParte1/resultado.cpp
+C:/Users/Fisica1/Desktop/AEDA/Trabalho/TrabalhoAEDAParte1/resultado.cpp
 resultado.h
-/Users/afonsocaiado/Desktop/FACULDADE/ANO 2 /SEM 1/AEDA/TRABALHO AEDA/TrabalhoAEDAParte1/resultado.h
+C:/Users/Fisica1/Desktop/AEDA/Trabalho/TrabalhoAEDAParte1/resultado.h
 
-/Users/afonsocaiado/Desktop/FACULDADE/ANO 2 /SEM 1/AEDA/TRABALHO AEDA/TrabalhoAEDAParte1/resultado.h
+C:/Users/Fisica1/Desktop/AEDA/Trabalho/TrabalhoAEDAParte1/resultado.h
 prova.h
-/Users/afonsocaiado/Desktop/FACULDADE/ANO 2 /SEM 1/AEDA/TRABALHO AEDA/TrabalhoAEDAParte1/prova.h
+C:/Users/Fisica1/Desktop/AEDA/Trabalho/TrabalhoAEDAParte1/prova.h
 

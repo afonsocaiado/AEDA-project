@@ -1,3 +1,4 @@
+#pragma once
 #ifndef TRABALHOAEDAPARTE1_MENU_H
 #define TRABALHOAEDAPARTE1_MENU_H
 

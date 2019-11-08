@@ -6,19 +6,21 @@
 
 #include <vector>
 
+using namespace std;
+
 class Competicao {
 
 private:
-    vector<*Prova> provas;
+    vector<Prova> provas;
     bool individual;
-    vector<*Atleta> atletasInscritos;
+    vector<Atleta> atletasInscritos;
     vector<string> medalhados;
 
 public:
     Competicao();
     vector <Prova> getProvas();
     bool getIndividual();
-    vector<*Atleta> getAtletasInscritos();
+    vector<Atleta> getAtletasInscritos();
     vector<string> getMedalhados();
     void setProvas(vector<*Prova> provas);
     void setIndividual(bool individual);

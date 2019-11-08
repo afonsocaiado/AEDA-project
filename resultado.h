@@ -3,6 +3,8 @@
 
 #include "prova.h"
 
+using namespace std;
+
 class Resultado {
 private:
     Prova prova;

@@ -1,13 +1,14 @@
 #ifndef TRABALHOAEDAPARTE1_FUNCIONARIO_H
 #define TRABALHOAEDAPARTE1_FUNCIONARIO_H
 
-#include <iostream>
-#include <string>
-#include <vector>
 #include "data.h"
 #include "competicao.h"
 #include "resultado.h"
 #include "jogosol.h"
+
+#include <iostream>
+#include <string>
+#include <vector>
 
 using namespace std;
 
@@ -40,14 +41,12 @@ private:
     int ranking;
     vector<Competicao> competicoes;
     vector<vector<string>> historico;
-    vector<resultado> resultados;
+    vector<Resultado> resultados;
 public:
     Atleta(string nome, Data dataNascimento, int passaporte, string funcao, Data dataChegada, Data dataPartida, double custoDiario, string modalidade, double peso, double altura, int ranking);
     ~Atleta();
-
     void addCompeticao(Competicao competicao);
     void addResultado(Resultado resultado);
-
     bool operator== (const Atleta atleta) const;
 };
 

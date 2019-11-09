@@ -5,12 +5,9 @@
 
 using namespace std;
 
-Competicao::Competicao()
-{
+Competicao::Competicao(string nome, bool individual):nome(nome), individual(individual){}
 
-}
-
-vector <*Prova> Competicao::getProvas()
+vector<Prova> Competicao::getProvas()
 {
     return provas;
 }
@@ -18,7 +15,7 @@ bool Competicao::getIndividual()
 {
     return individual;
 }
-vector<*Atleta> Competicao::getAtletasInscritos()
+vector<Atleta> Competicao::getAtletasInscritos()
 {
     return atletasInscritos;
 }
@@ -27,14 +24,11 @@ vector<string> Competicao::getMedalhados()
     return medalhados;
 }
 
-void Competicao::setProvas(vector<*Prova> provas)
+void Competicao::setProvas(vector<Prova> provas)
 {
     this->provas = provas;
 }
-void Competicao::setIndividual(bool individual)
-{
-    this->individual = individual;
-}
+
 void Competicao::setAtletasInscritos(vector<*Atleta> atletas)
 {
     atletasInscritos = atletas;

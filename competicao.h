@@ -12,20 +12,21 @@ using namespace std;
 class Competicao {
 
 private:
+    const string nome;
     vector<Prova> provas;
-    bool individual;
+    const bool individual;
     vector<Atleta> atletasInscritos;
     vector<string> medalhados;
 
 public:
-    Competicao();
+    Competicao(string nome, bool individual);
     vector <Prova> getProvas();
     bool getIndividual();
     vector<Atleta> getAtletasInscritos();
     vector<string> getMedalhados();
-    void setProvas(vector<Prova*> provas);
+    void setProvas(vector<Prova> provas);
     void setIndividual(bool individual);
-    void setAtletasInscritos(vector<Atleta*> atletas);
+    void setAtletasInscritos(vector<Atleta> atletas);
     void setMedalhados(vector<string> medalhados);
 
 };

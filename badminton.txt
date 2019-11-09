@@ -1,0 +1,5 @@
+singulares masculino;individual;oitavos de final,quartos de final,meia final,bronze,final;727272722,123454321;
+singulares feminino;individual;oitavos de final,quartos de final,meia final,bronze,final;902939211,565172637;
+pares masculino;coletivo;quartos de final,meia final,bronze,final;727272722,123454321;
+pares feminino;coletivo;quartos de final,meia final,bronze,final;902939211,565172637,727272722,123454321;
+pares misto;coletivo;quartos de final,meia final,bronze,final;902939211,565172637;

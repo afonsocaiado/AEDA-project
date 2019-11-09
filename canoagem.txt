@@ -1,0 +1,29 @@
+slalom c1 masculino;individual;preliminares,semi final,final;123456789;
+slalom c2 masculino;coletivo;preliminares,semi final,final;123456789,987654321;
+slalom k1 masculino;individual;preliminares,semi final,final;872536122;
+slalom k1 feminino;individual;preliminares,semi final,final;888866661;
+k1 200 masculino;individual;preliminares,semi final,final;123456789;
+k1 500 masculino;individual;preliminares,semi final,final;123456789;
+k1 1000 masculino;individual;preliminares,semi final,final;123456789;
+c1 200 masculino;individual;preliminares,semi final,final;123456789;
+c1 500 masculino;individual;preliminares,semi final,final;123456789;
+c1 1000 masculino;individual;preliminares,semi final,final;187654329;
+k2 200 masculino;individual;preliminares,semi final,final;123456789,989898987;
+k2 500 masculino;individual;preliminares,semi final,final;123456789,989898987;
+k2 1000 masculino;individual;preliminares,semi final,final;123456789,989898987;
+c2 200 masculino;individual;preliminares,semi final,final;187654329,909018125;
+c2 500 masculino;individual;preliminares,semi final,final;187654329,909018125;
+c2 1000 masculino;individual;preliminares,semi final,final;187654329,909018125;
+k4 200 masculino;individual;preliminares,semi final,final;123456789,989898987,565656565,717171717;
+k4 500 masculino;individual;preliminares,semi final,final;123456789,989898987,565656565,717171717;
+k4 1000 masculino;individual;preliminares,semi final,final;123456789,989898987,565656565,717171717;
+
+
+
+
+
+
+
+
+
+

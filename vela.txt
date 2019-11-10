@@ -1,0 +1,4 @@
+Laser Masculino;individual;Regata 1,Regata 2,Regata 3,Regata 4,Regata 5,Regata 6,Regata 7,Regata 8,Regata 9,Regata 10,Regata 11,Regata 12,Final;222233344;
+RS:X Masculino;individual;Regata 1,Regata 2,Regata 3,Regata 4,Regata 5,Regata 6,Regata 7,Regata 8,Regata 9,Regata 10,Regata 11,Regata 12,Final;263646577;
+49er Masculino;coletivo;Regata 1,Regata 2,Regata 3,Regata 4,Regata 5,Regata 6,Regata 7,Regata 8,Regata 9,Regata 10,Regata 11,Regata 12,Final;222222222;686868686;
+Laser Radial Feminino;individual;Regata 1,Regata 2,Regata 3,Regata 4,Regata 5,Regata 6,Regata 7,Regata 8,Regata 9,Regata 10,Final;334422335;

@@ -54,5 +54,5 @@ bool Jogosol::addFuncionario()
 
     return true;
 
-    //falta verificar erros (que fariam a funcao retornar false)
+    //falta verificar erros (que fariam a funcao retornar false) e adicionar ao ficheiro funcionarios.txt
 }

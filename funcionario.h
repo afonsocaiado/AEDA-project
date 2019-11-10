@@ -35,6 +35,8 @@ public:
     void setDataPartida(Data dataPartida);
 
     bool operator== (const Funcionario funcionario) const;
+    friend ostream &operator<<(ostream & o, const Funcionario &f);
+    friend istream &operator>>(istream &i, Funcionario &f);
 };
 
 class Atleta:public Funcionario{
@@ -50,6 +52,9 @@ public:
     ~Atleta();
     void addCompeticao(Competicao competicao);
     void addResultado(Resultado resultado);
+
+    friend ostream &operator<<(ostream & o, const Atleta &a);
+    friend istream &operator>>(istream &i, Atleta &a);
 
 };
 

@@ -29,5 +29,7 @@ public:
     void setAtletasInscritos(vector<Atleta> atletas);
     void setMedalhados(vector<string> medalhados);
 
+    bool addProva();
+
 };
 #endif //TRABALHOAEDAPARTE1_COMPETICAO_H

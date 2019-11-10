@@ -10,10 +10,12 @@
 using namespace std;
 
 class Jogosol {
-public:
+private:
     vector<vector<string>> medalhas;
     static vector<Funcionario> funcionarios;
 
+public:
+    bool addFuncionario();
 };
 
 #endif //TRABALHOAEDAPARTE1_JOGOSOL_H

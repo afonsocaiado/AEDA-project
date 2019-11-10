@@ -37,3 +37,8 @@ void Competicao::setMedalhados(vector<string> medalhados)
 {
     this->medalhados = medalhados;
 }
+
+bool Competicao::addProva()
+{
+
+}

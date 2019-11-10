@@ -63,3 +63,12 @@ void Atleta::addResultado(Resultado resultado)
     resultados.push_back(resultado);
 }
 
+ostream &operator<<(ostream & o, const Funcionario &f)
+{
+    o << f.nome << ";" << f.sexo << ";" << f.dataNascimento << ";" << f.passaporte << ";" << f.funcao << ";" << f.dataPartida << ";" << f.dataChegada << ";" << f.custoDiario << ";";
+}
+
+ostream &operator<<(ostream & o, const Atleta &a);
+{
+    o << a.nome << ";" << a.sexo << ";" << a.dataNascimento << ";" << a.passaporte << ";" << a.funcao << ";" << a.dataPartida << ";" << a.dataChegada << ";" << a.custoDiario << ";" << a.modalidade << ";" << a.peso << ";" << a.altura << ";" << a.ranking << ";" << endl;
+}

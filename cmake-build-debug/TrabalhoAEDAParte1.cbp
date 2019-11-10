@@ -131,6 +131,12 @@
 		<Unit filename="C:/Users/Fisica1/Desktop/AEDA/Trabalho/TrabalhoAEDAParte1/resultado.h">
 			<Option target="TrabalhoAEDAParte1"/>
 		</Unit>
+		<Unit filename="C:/Users/Fisica1/Desktop/AEDA/Trabalho/TrabalhoAEDAParte1/util.cpp">
+			<Option target="TrabalhoAEDAParte1"/>
+		</Unit>
+		<Unit filename="C:/Users/Fisica1/Desktop/AEDA/Trabalho/TrabalhoAEDAParte1/util.h">
+			<Option target="TrabalhoAEDAParte1"/>
+		</Unit>
 		<Unit filename="C:/Users/Fisica1/Desktop/AEDA/Trabalho/TrabalhoAEDAParte1/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>

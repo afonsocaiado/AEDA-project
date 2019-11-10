@@ -365,6 +365,33 @@ resultado.cpp.s:
 	$(MAKE) -f CMakeFiles\TrabalhoAEDAParte1.dir\build.make CMakeFiles/TrabalhoAEDAParte1.dir/resultado.cpp.s
 .PHONY : resultado.cpp.s
 
+util.obj: util.cpp.obj
+
+.PHONY : util.obj
+
+# target to build an object file
+util.cpp.obj:
+	$(MAKE) -f CMakeFiles\TrabalhoAEDAParte1.dir\build.make CMakeFiles/TrabalhoAEDAParte1.dir/util.cpp.obj
+.PHONY : util.cpp.obj
+
+util.i: util.cpp.i
+
+.PHONY : util.i
+
+# target to preprocess a source file
+util.cpp.i:
+	$(MAKE) -f CMakeFiles\TrabalhoAEDAParte1.dir\build.make CMakeFiles/TrabalhoAEDAParte1.dir/util.cpp.i
+.PHONY : util.cpp.i
+
+util.s: util.cpp.s
+
+.PHONY : util.s
+
+# target to generate assembly for a file
+util.cpp.s:
+	$(MAKE) -f CMakeFiles\TrabalhoAEDAParte1.dir\build.make CMakeFiles/TrabalhoAEDAParte1.dir/util.cpp.s
+.PHONY : util.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -401,6 +428,9 @@ help:
 	@echo ... resultado.obj
 	@echo ... resultado.i
 	@echo ... resultado.s
+	@echo ... util.obj
+	@echo ... util.i
+	@echo ... util.s
 .PHONY : help
 
 

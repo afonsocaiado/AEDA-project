@@ -8,6 +8,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/TrabalhoAEDAParte1.dir/modalidade.cpp.obj"
   "CMakeFiles/TrabalhoAEDAParte1.dir/prova.cpp.obj"
   "CMakeFiles/TrabalhoAEDAParte1.dir/resultado.cpp.obj"
+  "CMakeFiles/TrabalhoAEDAParte1.dir/util.cpp.obj"
   "TrabalhoAEDAParte1.exe"
   "TrabalhoAEDAParte1.exe.manifest"
   "TrabalhoAEDAParte1.pdb"

@@ -1,6 +1,6 @@
-200m individuais Masculino;individual;Eliminatorias,Meias Finais,Final;288888475;111111111;
-400m individuais Masculino;individual;Eliminatorias,Final;288888475;
-200m individuais Feminino;individual;Eliminatorias,Meias Finais,Final;228558475;
-400m individuais Feminino;individual;Eliminatorias,Final;228558475;
-800m estilos livres Feminino;individual;Eliminatorias,Final;228558475;
-10km aguas abertas Feminino;individual;Final;373746666;
+200m Individuais Masculino;individual;Eliminatorias,Meias Finais,Final;288888475;111111111;
+400m Individuais Masculino;individual;Eliminatorias,Final;288888475;
+200m Individuais Feminino;individual;Eliminatorias,Meias Finais,Final;228558475;
+400m Individuais Feminino;individual;Eliminatorias,Final;228558475;
+800m Estilos Livres Feminino;individual;Eliminatorias,Final;228558475;
+10km Aguas Abertas Feminino;individual;Final;373746666;

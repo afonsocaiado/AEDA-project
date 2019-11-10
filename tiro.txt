@@ -1,2 +1,3 @@
-10m pistola de ar Masculino;individual;Eliminatorias,Final;255553424;
-50m pistola Masculino;individual;Eliminatorias,Final;255553424;
+10m Pistola de Ar Masculino;individual;Eliminatorias,Final;255553424;
+50m Pistola Masculino;individual;Eliminatorias,Final;255553424;
+

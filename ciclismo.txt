@@ -1,13 +1,13 @@
-bmx;individual;final;090909787,101010101;
-btt;individual;final;671233722,728362928;
-estrada;individual;final;102938475,546372819,565372819;
-contrarrelogio;individual;final;565372819;
-contrarrelogio;individual;final;565372819;
-velocidade;individual;final;102938475;
-velocidade por equipas;coletivo;final;102938475,365656512;
-perseguicao por equipas;individual;final;102938475,365656512;
-keirin;individual;final;672718236;
-omnium;individual;final;909862513;
+BMX;individual;Final;090909787,101010101;
+BTT;individual;Final;671233722,728362928;
+Estrada;individual;Final;102938475,546372819,565372819;
+Contrarrelogio;individual;Final;565372819;
+Contrarrelogio;individual;Final;565372819;
+Velocidade;individual;Final;102938475;
+Velocidade por Equipas;coletivo;Final;102938475,365656512;
+Perseguicao por Equipas;individual;Final;102938475,365656512;
+Keirin;individual;Final;672718236;
+Omnium;individual;Final;909862513;
 
 
 

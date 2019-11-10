@@ -42,13 +42,14 @@ public:
 class Atleta:public Funcionario{
 private:
     const string modalidade;
-    const double peso, altura;
+    const double peso;
+    const int altura;
     int ranking;
     vector<Competicao> competicoes;
     vector<vector<string>> historico;
     vector<Resultado> resultados;
 public:
-    Atleta(string nome, char sexo, Data dataNascimento, int passaporte, string funcao, Data dataChegada, Data dataPartida, double custoDiario, string modalidade, double peso, double altura, int ranking);
+    Atleta(string nome, char sexo, Data dataNascimento, int passaporte, string funcao, Data dataChegada, Data dataPartida, double custoDiario, string modalidade, double peso, int altura, int ranking);
     ~Atleta();
     void addCompeticao(Competicao competicao);
     void addResultado(Resultado resultado);

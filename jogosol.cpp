@@ -4,11 +4,11 @@ using namespace std;
 
 bool Jogosol::addFuncionario()
 {
-    string nome, funcao;
+    string nome, funcao, modalidade;
     char sexo;
     Data dataNascimento, dataChegada, dataPartida;
-    int passaporte;
-    double custoDiario;
+    int passaporte, altura, ranking;
+    double custoDiario, peso;
 
     cout << "Nome: ";
     getline(cin, nome);
@@ -30,6 +30,29 @@ bool Jogosol::addFuncionario()
     cout << "Custo diario: ";
     cin >> custoDiario;
 
-    //falta ver se e atleta e se for meter os parametros que faltam
+    if(to_lower(funcao) == "atleta")
+    {
+        cout << "Modalidade: ";
+        getline(cin, modalidade);
+        cin.ignore();
+        cout << "Peso (kg): ";
+        cin >> peso;
+        cout << "Altura (cm):";
+        cin >> altura;
+        cout << "Ranking: ";
+        cin >> ranking;
 
+        Atleta a(nome, sexo, dataNascimento, passaporte, funcao, dataChegada, dataPartida, custoDiario, modalidade, peso, altura, ranking);
+        funcionarios.push_back(a);
+    }
+
+    else
+    {
+        Funcionario f(nome, sexo, dataNascimento, passaporte, funcao, dataChegada, dataPartida, custoDiario);
+        funcionarios.push_back(f);
+    }
+
+    return true;
+
+    //falta verificar erros (que fariam a funcao retornar false)
 }

@@ -3,6 +3,7 @@
 #define TRABALHOAEDAPARTE1_JOGOSOL_H
 
 #include "funcionario.h"
+#include "util.h"
 
 #include <vector>
 #include <string>

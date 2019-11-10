@@ -1,0 +1,4 @@
+Singulares Masculinos;individual;1a Ronda,2a Ronda,Oitavos de final,Quartos de Final,Semi Final,Bronze,Final;120001200,131318899;
+Singulares Femininos;individual;1a Ronda,2a Ronda,Oitavos de final,Quartos de Final,Semi Final,Bronze,Final;991188223,721999123;
+Equipas Masculinos;individual;Oitavos de Final,Quartos de Final,Semi Final,Bronze,Final;120001200,131318899,56568811,091267672;
+Equipas Femininas;individual;Oitavos de Final,Quartos de Final,Semi Final,Bronze,Final;991188223,721999123,123412341,678967897;

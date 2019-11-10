@@ -1,0 +1,14 @@
+Menos de 60kg Masculino;individual;Quartos de Final,Meia Final,Bronze,Final;090912345;
+Menos de 48kg Feminino;individual;Quartos de Final,Meia Final,Bronze,Final;121234345;
+Menos de 66kg Masculino;individual;Quartos de Final,Meia Final,Bronze,Final;090000345;
+Menos de 52kg Feminino;individual;Quartos de Final,Meia Final,Bronze,Final;121000345;
+Menos de 73kg Masculino;individual;Quartos de Final,Meia Final,Bronze,Final;123912345;
+Menos de 57kg Feminino;individual;Quartos de Final,Meia Final,Bronze,Final;333234345;
+Menos de 81kg Masculino;individual;Quartos de Final,Meia Final,Bronze,Final;898983222;
+Menos de 63kg Feminino;individual;Quartos de Final,Meia Final,Bronze,Final;091123313;
+Menos de 90kg Masculino;individual;Quartos de Final,Meia Final,Bronze,Final;671223112;
+Menos de 70kg Feminino;individual;Quartos de Final,Meia Final,Bronze,Final;999999111;
+Menos de 100kg Masculino;individual;Quartos de Final,Meia Final,Bronze,Final;574477444;
+Menos de 78kg Feminino;individual;Quartos de Final,Meia Final,Bronze,Final;090666333;
+Mais de 100kg Masculino;individual;Quartos de Final,Meia Final,Bronze,Final;123787787;
+Mais de 78kg Feminino;individual;Quartos de Final,Meia Final,Bronze,Final;991177443;

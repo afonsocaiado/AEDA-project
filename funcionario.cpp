@@ -90,7 +90,7 @@ istream &operator>>(istream &i, Funcionario &f)
     return i;
 }
 
-ostream &operator<<(ostream & o, const Atleta &a);
+ostream &operator<<(ostream & o, const Atleta &a)
 {
     o << a.nome << ";" << a.sexo << ";" << a.dataNascimento << ";" << a.passaporte << ";" << a.funcao << ";" << a.dataPartida << ";" << a.dataChegada << ";" << a.custoDiario << ";" << a.modalidade << ";" << a.peso << ";" << a.altura << ";" << a.ranking << ";" << endl;
     return o;

@@ -1,8 +1,2 @@
 Menos de 58kg Masculino;individual;Quartos de Final,Meia Final,Bronze,Final;261726232;
 Menos de 49kg Feminino;individual;Quartos de Final,Meia Final,Bronze,Final;999999345;
-Menos de 68kg Masculino;individual;Quartos de Final,Meia Final,Bronze,Final;056565612;
-Menos de 57kg Feminino;individual;Quartos de Final,Meia Final,Bronze,Final;121999999;
-Menos de 80kg Masculino;individual;Quartos de Final,Meia Final,Bronze,Final;100001345;
-Menos de 67kg Feminino;individual;Quartos de Final,Meia Final,Bronze,Final;888234345;
-Mais de 80kg Masculino;individual;Quartos de Final,Meia Final,Bronze,Final;898909090;
-Mais de 76kg Feminino;individual;Quartos de Final,Meia Final,Bronze,Final;777225141;

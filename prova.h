@@ -2,10 +2,9 @@
 #ifndef TRABALHOAEDAPARTE1_PROVA_H
 #define TRABALHOAEDAPARTE1_PROVA_H
 
-#include "data.h"
-#include "funcionario.h"
 
 #include <vector>
+#include "funcionario.h"
 
 class Prova {
 private:

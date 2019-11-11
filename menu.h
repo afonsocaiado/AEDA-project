@@ -4,6 +4,9 @@
 
 #include <iostream>
 
+#include "funcionario.h"
+#include "jogosol.h"
+
 using namespace std;
 
 class Menu {
@@ -13,20 +16,21 @@ public:
     void atletas();
     void funcionario();
     void visualizarAtletas();
-    void editar();
-    void resultados();
-    void listaAtletas();
+    void editarAtleta();
+    void editarFuncionario();
+    void listaAtletasEscolhe();
     void listaFuncionarios();
-    void modificarAtleta();
+    void modificarAtleta(Atleta atleta);
     void modificarInfoPessoalFuncionario();
     void modificarInfoPessoalAtleta();
-    void listamodalidades();
+    void listaModalidades();
     void modalidade();
     void listaCompeticoes();
     void competicao();
     void programacaoDiaria();
     void diasAnteriores();
     void tabelaDeMedalhados();
+    void continuar();
 };
 
 

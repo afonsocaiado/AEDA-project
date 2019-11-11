@@ -13,12 +13,11 @@
 using namespace std;
 
 class Jogosol {
-private:
-    vector<vector<string>> medalhas;
-    vector<Funcionario> funcionarios;
-    vector<Modalidade> modalidades;
-
 public:
+    vector<vector<string>> medalhas;
+    vector<Modalidade> modalidades;
+    static vector<Funcionario> funcionarios;
+    static vector<Atleta> vatletas;
     void readFuncionarios();
     bool addFuncionario();
     bool deleteFuncionario();

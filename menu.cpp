@@ -1,4 +1,5 @@
 #include "menu.h"
+#include "jogosol.h"
 
 #include <iostream>
 #include <iomanip>
@@ -13,6 +14,27 @@ void Menu::mainMenu() {
     cout << "|   4 - Tabela de Medalhados            |" << endl;
     cout << "|   5 - Exit Program                    |" << endl;
     cout << "|_______________________________________|" << endl;
+
+    int choice;
+    cout << endl << "  Enter your choice: ";
+    cin >> choice;
+
+    switch (choice) {
+        case 1:
+            funcionariosEAtletas();
+            break;
+        case 2:
+            listaModalidades();
+            break;
+        case 3:
+            programacaoDiaria();
+            break;
+        case 4:
+            tabelaDeMedalhados();
+            break;
+        case 5:
+            return;
+    }
 }
 
 //--------------------------------------------------------------------------
@@ -24,6 +46,39 @@ void Menu::funcionariosEAtletas() {
     cout << "|   3 - Lista com Todos                 |" << endl;
     cout << "|   4 - Voltar                          |" << endl;
     cout << "|_______________________________________|" << endl;
+
+    int choice;
+    cout << endl << "  Enter your choice: ";
+    cin >> choice;
+
+    switch (choice) {
+        case 1:
+            atletas();
+            break;
+        case 2:
+            funcionario();
+            break;
+        case 3:
+            //Lista de todos
+            continuar();
+            int choice;
+            cout << endl << "  Enter your choice: ";
+            cin >> choice;
+
+            switch (choice) {
+                case 1:
+                    funcionariosEAtletas();
+                    break;
+                case 2:
+                    mainMenu();
+                    break;
+                case 3:
+                    return;
+            }
+            break;
+        case 4:
+            return;
+    }
 }
 
 //--------------------------------------------
@@ -34,6 +89,22 @@ void Menu::atletas() {
     cout << "|   2 - Editar Informacoes              |" << endl;
     cout << "|   3 - Voltar                          |" << endl;
     cout << "|_______________________________________|" << endl;
+
+    int choice;
+    cout << endl << "  Enter your choice: ";
+    cin >> choice;
+    
+    switch (choice) {
+        case 1:
+            visualizarAtletas();
+            break;
+        case 2:
+            editarAtleta();
+            break;
+        case 3:
+            funcionariosEAtletas();
+            break;
+    }
 }
 
 void Menu::visualizarAtletas() {
@@ -43,11 +114,150 @@ void Menu::visualizarAtletas() {
     cout << "|   3 - Historico                       |" << endl;
     cout << "|   4 - Voltar                          |" << endl;
     cout << "|_______________________________________|" << endl;
+
+    int choice;
+    cout << endl << "  Enter your choice: ";
+    cin >> choice;
+
+    switch (choice) {
+        case 1:
+            //Visualizar Info Pessoal
+            continuar();
+            int choice;
+            cout << endl << "  Enter your choice: ";
+            cin >> choice;
+
+            switch (choice) {
+                case 1:
+                    visualizarAtletas();
+                    break;
+                case 2:
+                    mainMenu();
+                    break;
+                case 3:
+                    return;
+            }
+            break;
+        case 2:
+            //Resultados do Atleta
+            continuar();
+            int choice1;
+            cout << endl << "  Enter your choice: ";
+            cin >> choice1;
+
+            switch (choice1) {
+                case 1:
+                    visualizarAtletas();
+                    break;
+                case 2:
+                    mainMenu();
+                    break;
+                case 3:
+                    return;
+            }
+            break;
+        case 3:
+            //Historico
+            continuar();
+            int choice2;
+            cout << endl << "  Enter your choice: ";
+            cin >> choice2;
+
+            switch (choice2) {
+                case 1:
+                    visualizarAtletas();
+                    break;
+                case 2:
+                    mainMenu();
+                    break;
+                case 3:
+                    return;
+            }
+            break;
+        case 4:
+            atletas();
+            break;
+    }
+
+
 }
 
-void Menu::resultados() {
+void Menu::editarAtleta() {
     cout << endl << "________________ EDITAR ________________" << endl << "|" << setw(40) << "|" << endl;
-    //Lista competicoes que participa
+    cout << "|   1 - Acrescentar                     |" << endl;
+    cout << "|   2 - Modificar                       |" << endl;
+    cout << "|   3 - Eliminar                        |" << endl;
+    cout << "|   4 - Voltar                          |" << endl;
+    cout << "|_______________________________________|" << endl;
+
+    int choice;
+    cout << endl << "  Enter your choice: ";
+    cin >> choice;
+
+    switch (choice) {
+        case 1:
+            //Acrescentar Atleta
+            continuar();
+            int choice1;
+            cout << endl << "  Enter your choice: ";
+            cin >> choice1;
+
+            switch (choice1) {
+                case 1:
+                    editarAtleta();
+                    break;
+                case 2:
+                    mainMenu();
+                    break;
+                case 3:
+                    return;
+            }
+            break;
+        case 2:
+        {
+            listaAtletasEscolhe();
+
+            int choice2;
+            cout << endl << "  Enter your choice: ";
+            cin >> choice2;
+
+            Atleta atleta1 = Jogosol::vatletas.at(choice2-1);
+            modificarAtleta(atleta1);
+            break;
+        }
+        case 3:
+        {
+            listaAtletasEscolhe();
+
+            int choice3;
+            cout << endl << "  Enter your choice: ";
+            cin >> choice3;
+
+            Atleta atleta2 = Jogosol::vatletas.at(choice3-1);
+
+            //Eliminar atleta2
+
+            continuar();
+            int choice4;
+            cout << endl << "  Enter your choice: ";
+            cin >> choice4;
+
+            switch (choice4) {
+                case 1:
+                    editarAtleta();
+                    break;
+                case 2:
+                    mainMenu();
+                    break;
+                case 3:
+                    return;
+            }
+            break;
+        }
+        case 4:
+            atletas();
+            break;
+    }
 }
 
 void Menu::modificarInfoPessoalAtleta() {
@@ -63,12 +273,12 @@ void Menu::modificarInfoPessoalAtleta() {
     cout << "|_______________________________________|" << endl;
 }
 
-void Menu::listaAtletas() {
+void Menu::listaAtletasEscolhe() {
     cout << endl << "_______________ ATLETAS ________________" << endl << "|" << setw(40) << "|" << endl;
     //Lista com Atletas para escolher um
 }
 
-void Menu::modificarAtleta() {
+void Menu::modificarAtleta(Atleta atleta) {
     cout << endl << "_______________ MODIFICAR ______________" << endl << "|" << setw(40) << "|" << endl;
     cout << "|   1 - Informacao pessoal              |" << endl;
     cout << "|   2 - Resultados                      |" << endl;
@@ -104,7 +314,8 @@ void Menu::listaFuncionarios() {
 
 //--------------------------------------------
 
-void Menu::editar() {
+
+void Menu::editarFuncionario() {
     cout << endl << "________________ EDITAR ________________" << endl << "|" << setw(40) << "|" << endl;
     cout << "|   1 - Acrescentar                     |" << endl;
     cout << "|   2 - Modificar                       |" << endl;
@@ -115,7 +326,7 @@ void Menu::editar() {
 
 //--------------------------------------------------------------------------
 
-void Menu::listamodalidades() {
+void Menu::listaModalidades() {
     cout << endl << "_____________ MODALIDADES ______________" << endl << "|" << setw(40) << "|" << endl;
     cout << "|   1  - Atletismo                      |" << endl;
     cout << "|   2  - Badminton                      |" << endl;
@@ -184,5 +395,16 @@ void Menu::tabelaDeMedalhados() {
     cout << "|_______________________________________|" << endl;
 }
 
+//--------------------------------------------------------------------------
+
+void Menu::continuar() {
+    cout << endl << "______________________________________________"   << endl << "|" << setw(40) << "|" << endl;
+    cout << "|   1 - Voltar Atras                    |" << endl;
+    cout << "|   2 - Main Menu                       |" << endl;
+    cout << "|   3 - Sair do Programa                |" << endl;
+    cout << "|_______________________________________|" << endl;
+}
+
+//--------------------------------------------------------------------------
 
 

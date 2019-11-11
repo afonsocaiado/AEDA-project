@@ -1,5 +1,6 @@
 #include "menu.h"
 #include "jogosol.h"
+#include "modalidade.h"
 
 #include <iostream>
 #include <iomanip>
@@ -24,8 +25,17 @@ void Menu::mainMenu() {
             funcionariosEAtletas();
             break;
         case 2:
+        {
             listaModalidades();
+
+            int choice;
+            cout << endl << "  Enter your choice: ";
+            cin >> choice;
+
+            Modalidade modalidade = Jogosol::modalidades.at(choice-1);
+            modalidadeMenu(modalidade);
             break;
+        }
         case 3:
             programacaoDiaria();
             break;
@@ -221,8 +231,8 @@ void Menu::editarAtleta() {
             cout << endl << "  Enter your choice: ";
             cin >> choice2;
 
-            Atleta atleta1 = Jogosol::vatletas.at(choice2-1);
-            modificarAtleta(atleta1);
+            Atleta atleta = Jogosol::vatletas.at(choice2-1);
+            modificarAtleta(atleta);
             break;
         }
         case 3:
@@ -260,7 +270,47 @@ void Menu::editarAtleta() {
     }
 }
 
-void Menu::modificarInfoPessoalAtleta() {
+void Menu::modificarAtleta(Atleta &atleta) {
+    cout << endl << "_______________ MODIFICAR ______________" << endl << "|" << setw(40) << "|" << endl;
+    cout << "|   1 - Informacao pessoal              |" << endl;
+    cout << "|   2 - Historico                       |" << endl;
+    cout << "|   3 - Voltar                          |" << endl;
+    cout << "|_______________________________________|" << endl;
+
+    int choice;
+    cout << endl << "  Enter your choice: ";
+    cin >> choice;
+
+    switch (choice) {
+        case 1:
+            modificarInfoPessoalAtleta(atleta);
+            break;
+        case 2:
+            //Modificar Historico Atleta
+
+            continuar();
+            int choice4;
+            cout << endl << "  Enter your choice: ";
+            cin >> choice4;
+
+            switch (choice4) {
+                case 1:
+                    modificarAtleta(atleta);
+                    break;
+                case 2:
+                    mainMenu();
+                    break;
+                case 3:
+                    return;
+            }
+            break;
+        case 3:
+            editarAtleta();
+            break;
+    }
+}
+
+void Menu::modificarInfoPessoalAtleta(Atleta &atleta) {
     cout << endl << "_______________ MODIFICAR ______________" << endl << "|" << setw(40) << "|" << endl;
     cout << "|   1 - Nome                            |" << endl;
     cout << "|   2 - Data de Nascimento              |" << endl;
@@ -271,6 +321,142 @@ void Menu::modificarInfoPessoalAtleta() {
     cout << "|   7 - Ranking Mundial                 |" << endl;
     cout << "|   8 - Voltar                          |" << endl;
     cout << "|_______________________________________|" << endl;
+
+    int choice;
+    cout << endl << "  Enter your choice: ";
+    cin >> choice;
+
+    switch (choice) {
+        case 1:
+            //Funcao Modificar nome
+            continuar();
+            int choice1;
+            cout << endl << "  Enter your choice: ";
+            cin >> choice1;
+
+            switch (choice1) {
+                case 1:
+                    modificarInfoPessoalAtleta(atleta);
+                    break;
+                case 2:
+                    mainMenu();
+                    break;
+                case 3:
+                    return;
+            }
+            break;
+        case 2:
+            //Funcao Modificar Data Nascimento
+            continuar();
+            int choice2;
+            cout << endl << "  Enter your choice: ";
+            cin >> choice2;
+
+            switch (choice2) {
+                case 1:
+                    modificarInfoPessoalAtleta(atleta);
+                    break;
+                case 2:
+                    mainMenu();
+                    break;
+                case 3:
+                    return;
+            }
+            break;
+        case 3:
+            //Funcao Modificar Num Passaporte
+            continuar();
+            int choice3;
+            cout << endl << "  Enter your choice: ";
+            cin >> choice3;
+
+            switch (choice3) {
+                case 1:
+                    modificarInfoPessoalAtleta(atleta);
+                    break;
+                case 2:
+                    mainMenu();
+                    break;
+                case 3:
+                    return;
+            }
+            break;
+        case 4:
+            //Funcao Modificar Data Estadia
+            continuar();
+            int choice4;
+            cout << endl << "  Enter your choice: ";
+            cin >> choice4;
+
+            switch (choice4) {
+                case 1:
+                    modificarInfoPessoalAtleta(atleta);
+                    break;
+                case 2:
+                    mainMenu();
+                    break;
+                case 3:
+                    return;
+            }
+            break;
+        case 5:
+            //Funcao Modificar Peso
+            continuar();
+            int choice5;
+            cout << endl << "  Enter your choice: ";
+            cin >> choice5;
+
+            switch (choice5) {
+                case 1:
+                    modificarInfoPessoalAtleta(atleta);
+                    break;
+                case 2:
+                    mainMenu();
+                    break;
+                case 3:
+                    return;
+            }
+            break;
+        case 6:
+            //Funcao Modificar Altura
+            continuar();
+            int choice6;
+            cout << endl << "  Enter your choice: ";
+            cin >> choice6;
+
+            switch (choice6) {
+                case 1:
+                    modificarInfoPessoalAtleta(atleta);
+                    break;
+                case 2:
+                    mainMenu();
+                    break;
+                case 3:
+                    return;
+            }
+            break;
+        case 7:
+            //Funcao Modificar Ranking
+            continuar();
+            int choice7;
+            cout << endl << "  Enter your choice: ";
+            cin >> choice7;
+
+            switch (choice7) {
+                case 1:
+                    modificarInfoPessoalAtleta(atleta);
+                    break;
+                case 2:
+                    mainMenu();
+                    break;
+                case 3:
+                    return;
+            }
+            break;
+        case 8:
+            editarAtleta();
+            break;
+    }
 }
 
 void Menu::listaAtletasEscolhe() {
@@ -278,14 +464,6 @@ void Menu::listaAtletasEscolhe() {
     //Lista com Atletas para escolher um
 }
 
-void Menu::modificarAtleta(Atleta atleta) {
-    cout << endl << "_______________ MODIFICAR ______________" << endl << "|" << setw(40) << "|" << endl;
-    cout << "|   1 - Informacao pessoal              |" << endl;
-    cout << "|   2 - Resultados                      |" << endl;
-    cout << "|   3 - Historico                       |" << endl;
-    cout << "|   4 - Voltar                          |" << endl;
-    cout << "|_______________________________________|" << endl;
-}
 
 //--------------------------------------------
 
@@ -295,25 +473,39 @@ void Menu::funcionario() {
     cout << "|   2 - Editar Informacoes              |" << endl;
     cout << "|   3 - Voltar                          |" << endl;
     cout << "|_______________________________________|" << endl;
+
+    int choice;
+    cout << endl << "  Enter your choice: ";
+    cin >> choice;
+
+    switch (choice) {
+        case 1:
+            //Visualizar Info Pessoal
+
+            continuar();
+            int choice4;
+            cout << endl << "  Enter your choice: ";
+            cin >> choice4;
+
+            switch (choice4) {
+                case 1:
+                    funcionario();
+                    break;
+                case 2:
+                    mainMenu();
+                    break;
+                case 3:
+                    return;
+            }
+            break;
+        case 2:
+            editarFuncionario();
+            break;
+        case 3:
+            funcionariosEAtletas();
+            break;
+    }
 }
-
-void Menu::modificarInfoPessoalFuncionario() {
-    cout << endl << "_______________ MODIFICAR ______________" << endl << "|" << setw(40) << "|" << endl;
-    cout << "|   1 - Nome                            |" << endl;
-    cout << "|   2 - Data de Nascimento              |" << endl;
-    cout << "|   3 - Numero de Passaporte            |" << endl;
-    cout << "|   4 - Data Estadia                    |" << endl;
-    cout << "|   5 - Voltar                          |" << endl;
-    cout << "|_______________________________________|" << endl;
-}
-
-void Menu::listaFuncionarios() {
-    cout << endl << "_____________ FUNCIONARIOS _____________" << endl << "|" << setw(40) << "|" << endl;
-    //Lista com Funcionarios para escolher um
-}
-
-//--------------------------------------------
-
 
 void Menu::editarFuncionario() {
     cout << endl << "________________ EDITAR ________________" << endl << "|" << setw(40) << "|" << endl;
@@ -322,6 +514,172 @@ void Menu::editarFuncionario() {
     cout << "|   3 - Eliminar                        |" << endl;
     cout << "|   4 - Voltar                          |" << endl;
     cout << "|_______________________________________|" << endl;
+
+    int choice;
+    cout << endl << "  Enter your choice: ";
+    cin >> choice;
+
+    switch (choice) {
+        case 1:
+            //Add Funcionario
+
+            continuar();
+            int choice1;
+            cout << endl << "  Enter your choice: ";
+            cin >> choice1;
+
+            switch (choice1) {
+                case 1:
+                    editarFuncionario();
+                    break;
+                case 2:
+                    mainMenu();
+                    break;
+                case 3:
+                    return;
+            }
+            break;
+        case 2:
+        {
+            listaFuncionariosEscolhe();
+
+            int choice2;
+            cout << endl << "  Enter your choice: ";
+            cin >> choice2;
+
+            Funcionario funcionario = Jogosol::funcionarios.at(choice2-1);
+            modificarInfoPessoalFuncionario(funcionario);
+            break;
+        }
+        case 3:
+        {
+            listaFuncionariosEscolhe();
+
+            int choice3;
+            cout << endl << "  Enter your choice: ";
+            cin >> choice3;
+
+            Funcionario funcionario1 = Jogosol::funcionarios.at(choice3-1);
+
+            //Eliminar funcionario1
+            continuar();
+            int choice4;
+            cout << endl << "  Enter your choice: ";
+            cin >> choice4;
+
+            switch (choice4) {
+                case 1:
+                    editarFuncionario();
+                    break;
+                case 2:
+                    mainMenu();
+                    break;
+                case 3:
+                    return;
+            }
+            break;
+        }
+        case 4:
+            funcionario();
+            break;
+    }
+}
+
+void Menu::modificarInfoPessoalFuncionario(Funcionario &funcionario) {
+    cout << endl << "_______________ MODIFICAR ______________" << endl << "|" << setw(40) << "|" << endl;
+    cout << "|   1 - Nome                            |" << endl;
+    cout << "|   2 - Data de Nascimento              |" << endl;
+    cout << "|   3 - Numero de Passaporte            |" << endl;
+    cout << "|   4 - Data Estadia                    |" << endl;
+    cout << "|   5 - Voltar                          |" << endl;
+    cout << "|_______________________________________|" << endl;
+
+    int choice;
+    cout << endl << "  Enter your choice: ";
+    cin >> choice;
+
+    switch (choice) {
+        case 1:
+            //Funcao Modificar nome
+            continuar();
+            int choice1;
+            cout << endl << "  Enter your choice: ";
+            cin >> choice1;
+
+            switch (choice1) {
+                case 1:
+                    modificarInfoPessoalFuncionario(funcionario);
+                    break;
+                case 2:
+                    mainMenu();
+                    break;
+                case 3:
+                    return;
+            }
+            break;
+        case 2:
+            //Funcao Modificar Data Nascimento
+            continuar();
+            int choice2;
+            cout << endl << "  Enter your choice: ";
+            cin >> choice2;
+
+            switch (choice2) {
+                case 1:
+                    modificarInfoPessoalFuncionario(funcionario);
+                    break;
+                case 2:
+                    mainMenu();
+                    break;
+                case 3:
+                    return;
+            }
+            break;
+        case 3:
+            //Funcao Modificar Num Passaporte
+            continuar();
+            int choice3;
+            cout << endl << "  Enter your choice: ";
+            cin >> choice3;
+
+            switch (choice3) {
+                case 1:
+                    modificarInfoPessoalFuncionario(funcionario);
+                    break;
+                case 2:
+                    mainMenu();
+                    break;
+                case 3:
+                    return;
+            }
+            break;
+        case 4:
+            //Funcao Modificar Data Estadia
+            continuar();
+            int choice4;
+            cout << endl << "  Enter your choice: ";
+            cin >> choice4;
+
+            switch (choice4) {
+                case 1:
+                    modificarInfoPessoalFuncionario(funcionario);
+                    break;
+                case 2:
+                    mainMenu();
+                    break;
+                case 3:
+                    return;
+            }
+            break;
+        case 5:
+            editarFuncionario();
+            break;
+    }
+}
+
+void Menu::listaFuncionariosEscolhe() {
+    cout << endl << "_____________ FUNCIONARIOS _____________" << endl << "|" << setw(40) << "|" << endl;
+    //Lista com Funcionarios para escolher um
 }
 
 //--------------------------------------------------------------------------
@@ -344,33 +702,246 @@ void Menu::listaModalidades() {
     cout << "|   14 - Tiro                           |" << endl;
     cout << "|   15 - Triatlo                        |" << endl;
     cout << "|   16 - Vela                           |" << endl;
-    cout << "|   17 - Voltar                         |" << endl;
     cout << "|_______________________________________|" << endl;
 }
 
-void Menu::modalidade() {
+void Menu::modalidadeMenu(Modalidade &modalidade) {
     cout << endl << "_____________ MODALIDADE _______________" << endl << "|" << setw(40) << "|" << endl;  //Implementar ainda
     cout << "|   1  - Visualizar                     |" << endl;
     cout << "|   2  - Modificar                      |" << endl;
     cout << "|   3  - Voltar                         |" << endl;
     cout << "|_______________________________________|" << endl;
+
+    int choice;
+    cout << endl << "  Enter your choice: ";
+    cin >> choice;
+
+    switch (choice) {
+        case 1:
+        {
+            listaCompeticoes();
+
+            int choice;
+            cout << endl << "  Enter your choice: ";
+            cin >> choice;
+
+            Competicao competicao = modalidade.competicoes.at(choice-1);
+            competicaoMenuVis(competicao, modalidade);
+            break;
+        }
+        case 2:
+        {
+            listaCompeticoes();
+
+            int choice;
+            cout << endl << "  Enter your choice: ";
+            cin >> choice;
+
+            Competicao competicao = modalidade.competicoes.at(choice-1);
+            competicaoMenuMod(competicao, modalidade);
+            break;
+        }
+        case 3:
+            mainMenu();
+            break;
+    }
 }
 
 void Menu::listaCompeticoes() {
     //Depende de cada Modalidade, nao sei
 }
 
-void Menu::competicao() {
+void Menu::competicaoMenuVis(Competicao &competicao, Modalidade &modalidade) {
     cout << endl << "_____________ COMPETICAO _______________" << endl << "|" << setw(40) << "|" << endl;  //Implementar ainda
     cout << "|   1  - Provas                         |" << endl;
     cout << "|   2  - Historial                      |" << endl;
     cout << "|   3  - Atletas Inscritos              |" << endl;
     cout << "|   4  - Medalhados                     |" << endl;
-    cout << "|   5  - Informacao Competicao          |" << endl;
-    cout << "|   6  - Voltar                         |" << endl;
+    cout << "|   5  - Voltar                         |" << endl;
     cout << "|_______________________________________|" << endl;
+
+    int choice;
+    cout << endl << "  Enter your choice: ";
+    cin >> choice;
+
+    switch (choice) {
+        case 1:
+            //Visualizar Provas
+
+            continuar();
+            int choice1;
+            cout << endl << "  Enter your choice: ";
+            cin >> choice1;
+
+            switch (choice1) {
+                case 1:
+                    competicaoMenuVis(competicao, modalidade);
+                    break;
+                case 2:
+                    mainMenu();
+                    break;
+                case 3:
+                    return;
+            }
+            break;
+        case 2:
+            //Visualizar Historial
+
+            continuar();
+            int choice2;
+            cout << endl << "  Enter your choice: ";
+            cin >> choice2;
+
+            switch (choice2) {
+                case 1:
+                    competicaoMenuVis(competicao, modalidade);
+                    break;
+                case 2:
+                    mainMenu();
+                    break;
+                case 3:
+                    return;
+            }
+            break;
+        case 3:
+            //Visualizar Atletas Inscritos
+
+            continuar();
+            int choice3;
+            cout << endl << "  Enter your choice: ";
+            cin >> choice3;
+
+            switch (choice3) {
+                case 1:
+                    competicaoMenuVis(competicao, modalidade);
+                    break;
+                case 2:
+                    mainMenu();
+                    break;
+                case 3:
+                    return;
+            }
+            break;
+        case 4:
+            //Visualizar Modalidades
+
+            continuar();
+            int choice4;
+            cout << endl << "  Enter your choice: ";
+            cin >> choice4;
+
+            switch (choice4) {
+                case 1:
+                    competicaoMenuVis(competicao, modalidade);
+                    break;
+                case 2:
+                    mainMenu();
+                    break;
+                case 3:
+                    return;
+            }
+            break;
+        case 5:
+            modalidadeMenu(modalidade);
+            break;
+    }
 }
 
+void Menu::competicaoMenuMod(Competicao &competicao, Modalidade &modalidade) {
+    cout << endl << "_____________ COMPETICAO _______________" << endl << "|" << setw(40) << "|" << endl;  //Implementar ainda
+    cout << "|   1  - Provas                         |" << endl;
+    cout << "|   2  - Historial                      |" << endl;
+    cout << "|   3  - Atletas Inscritos              |" << endl;
+    cout << "|   4  - Medalhados                     |" << endl;
+    cout << "|   5  - Voltar                         |" << endl;
+    cout << "|_______________________________________|" << endl;
+
+    int choice;
+    cout << endl << "  Enter your choice: ";
+    cin >> choice;
+
+    switch (choice) {
+        case 1:
+            //Modificar Provas
+
+            continuar();
+            int choice1;
+            cout << endl << "  Enter your choice: ";
+            cin >> choice1;
+
+            switch (choice1) {
+                case 1:
+                    competicaoMenuMod(competicao, modalidade);
+                    break;
+                case 2:
+                    mainMenu();
+                    break;
+                case 3:
+                    return;
+            }
+            break;
+        case 2:
+            //Modificar Historial
+
+            continuar();
+            int choice2;
+            cout << endl << "  Enter your choice: ";
+            cin >> choice2;
+
+            switch (choice2) {
+                case 1:
+                    competicaoMenuMod(competicao, modalidade);
+                    break;
+                case 2:
+                    mainMenu();
+                    break;
+                case 3:
+                    return;
+            }
+            break;
+        case 3:
+            //Modificar Atletas Inscritos
+
+            continuar();
+            int choice3;
+            cout << endl << "  Enter your choice: ";
+            cin >> choice3;
+
+            switch (choice3) {
+                case 1:
+                    competicaoMenuMod(competicao, modalidade);
+                    break;
+                case 2:
+                    mainMenu();
+                    break;
+                case 3:
+                    return;
+            }
+            break;
+        case 4:
+            //Modificar Medalhados
+
+            continuar();
+            int choice4;
+            cout << endl << "  Enter your choice: ";
+            cin >> choice4;
+
+            switch (choice4) {
+                case 1:
+                    competicaoMenuMod(competicao, modalidade);
+                    break;
+                case 2:
+                    mainMenu();
+                    break;
+                case 3:
+                    return;
+            }
+            break;
+        case 5:
+            modalidadeMenu(modalidade);
+            break;
+    }
+}
 //--------------------------------------------------------------------------
 
 void Menu::programacaoDiaria() {
@@ -379,6 +950,37 @@ void Menu::programacaoDiaria() {
     cout << "|   2 - Dias Anteriores                 |" << endl;
     cout << "|   3 - Voltar                          |" << endl;
     cout << "|_______________________________________|" << endl;
+
+    int choice;
+    cout << endl << "  Enter your choice: ";
+    cin >> choice;
+
+    switch (choice) {
+        case 1:
+            //Programacao Diaria
+            continuar();
+            int choice1;
+            cout << endl << "  Enter your choice: ";
+            cin >> choice1;
+
+            switch (choice1) {
+                case 1:
+                    programacaoDiaria();
+                    break;
+                case 2:
+                    mainMenu();
+                    break;
+                case 3:
+                    return;
+            }
+            break;
+        case 2:
+            diasAnteriores();
+            break;
+        case 3:
+            mainMenu();
+            break;
+    }
 }
 
 void Menu::diasAnteriores() {
@@ -393,6 +995,52 @@ void Menu::tabelaDeMedalhados() {
     cout << "|   2 - Por Total de Medalhas           |" << endl;
     cout << "|   3 - Voltar                          |" << endl;
     cout << "|_______________________________________|" << endl;
+
+    int choice;
+    cout << endl << "  Enter your choice: ";
+    cin >> choice;
+
+    switch (choice) {
+        case 1:
+            //Por Ouro
+            continuar();
+            int choice1;
+            cout << endl << "  Enter your choice: ";
+            cin >> choice1;
+
+            switch (choice1) {
+                case 1:
+                    tabelaDeMedalhados();
+                    break;
+                case 2:
+                    mainMenu();
+                    break;
+                case 3:
+                    return;
+            }
+            break;
+        case 2:
+            //Por total
+            continuar();
+            int choice2;
+            cout << endl << "  Enter your choice: ";
+            cin >> choice2;
+
+            switch (choice2) {
+                case 1:
+                    tabelaDeMedalhados();
+                    break;
+                case 2:
+                    mainMenu();
+                    break;
+                case 3:
+                    return;
+            }
+            break;
+        case 3:
+            mainMenu();
+            break;
+    }
 }
 
 //--------------------------------------------------------------------------

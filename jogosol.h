@@ -15,7 +15,7 @@ using namespace std;
 class Jogosol {
 public:
     vector<vector<string>> medalhas;
-    vector<Modalidade> modalidades;
+    static vector<Modalidade> modalidades;
     static vector<Funcionario> funcionarios;
     static vector<Atleta> vatletas;
     void readFuncionarios();

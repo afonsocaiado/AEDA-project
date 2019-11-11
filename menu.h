@@ -18,19 +18,20 @@ public:
     void visualizarAtletas();
     void editarAtleta();
     void editarFuncionario();
-    void listaAtletasEscolhe();
-    void listaFuncionarios();
-    void modificarAtleta(Atleta atleta);
-    void modificarInfoPessoalFuncionario();
-    void modificarInfoPessoalAtleta();
-    void listaModalidades();
-    void modalidade();
-    void listaCompeticoes();
-    void competicao();
+    static void listaAtletasEscolhe();
+    static void listaFuncionariosEscolhe();
+    void modificarAtleta(Atleta &atleta);
+    void modificarInfoPessoalFuncionario(Funcionario &funcionario);
+    void modificarInfoPessoalAtleta(Atleta &atleta);
+    static void listaModalidades();
+    void modalidadeMenu(Modalidade &modalidade);
+    static void listaCompeticoes();
+    void competicaoMenuVis(Competicao &competicao,Modalidade &modalidade);
+    void competicaoMenuMod(Competicao &competicao,Modalidade &modalidade);
     void programacaoDiaria();
     void diasAnteriores();
     void tabelaDeMedalhados();
-    void continuar();
+    static void continuar();
 };
 
 

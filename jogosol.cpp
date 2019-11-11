@@ -61,7 +61,7 @@ bool Jogosol::addFuncionario()
         cin >> ranking;
 
         Atleta a(nome, sexo, dataNascimento, passaporte, funcao, dataChegada, dataPartida, custoDiario, modalidade, peso, altura, ranking);
-        funcionarios.push_back(a);
+        vatletas.push_back(a);
 
         file << a;
 

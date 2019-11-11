@@ -14,7 +14,7 @@ using namespace std;
 class Funcionario {
 
 protected:
-    char *const nome;
+    string const nome;
     const char sexo;
     const Data dataNascimento;
     const int passaporte;

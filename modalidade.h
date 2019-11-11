@@ -10,6 +10,7 @@ using namespace std;
 
 class Modalidade {
 
+public:
     vector <Competicao> competicoes;
 
 };

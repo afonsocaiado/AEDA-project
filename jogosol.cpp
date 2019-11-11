@@ -2,6 +2,20 @@
 
 using namespace std;
 
+void readFuncionarios()
+{
+    ifstream file;
+
+    file.open("funcionarios.txt", ios::in);
+
+    while(!cin.eof())
+    {
+        Funcionario f;
+
+        //falta ler do ficheiro
+    }
+}
+
 bool Jogosol::addFuncionario()
 {
     ofstream file;
@@ -50,6 +64,12 @@ bool Jogosol::addFuncionario()
         funcionarios.push_back(a);
 
         file << a;
+
+        int n;
+        cout << "Numero competicoes em que participa: ";
+        cin >> n;
+
+        //falta fazê-lo corresponder a competicao
     }
 
     else

@@ -4,6 +4,11 @@
 
 using namespace std;
 
+Funcionario::Funcionario():nome(""), sexo(), dataNascimento(), passaporte(0), funcao(""), custoDiario(0)
+{
+    //importancia do construtor vazio?
+}
+
 Funcionario::Funcionario(string nome, char sexo, Data dataNascimento, int passaporte, string funcao, Data dataChegada, Data dataPartida, double custoDiario):nome(nome), sexo(sexo), dataNascimento(dataNascimento), passaporte(passaporte), funcao(funcao), custoDiario(custoDiario)
 {
     this->dataChegada = dataChegada;
@@ -77,6 +82,12 @@ ostream &operator<<(ostream & o, const Funcionario &f)
 {
     o << f.nome << ";" << f.sexo << ";" << f.dataNascimento << ";" << f.passaporte << ";" << f.funcao << ";" << f.dataPartida << ";" << f.dataChegada << ";" << f.custoDiario << ";";
     return o;
+}
+
+istream &operator>>(istream &i, Funcionario &f)
+{
+    //importante
+    return i;
 }
 
 ostream &operator<<(ostream & o, const Atleta &a);

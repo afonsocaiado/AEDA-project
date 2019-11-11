@@ -29,10 +29,11 @@ void Competicao::setProvas(vector<Prova> provas)
     this->provas = provas;
 }
 
-void Competicao::setAtletasInscritos(vector<*Atleta> atletas)
+void Competicao::setAtletasInscritos(vector<Atleta> atletas)
 {
     atletasInscritos = atletas;
 }
+
 void Competicao::setMedalhados(vector<string> medalhados)
 {
     this->medalhados = medalhados;

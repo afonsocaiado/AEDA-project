@@ -7,16 +7,21 @@
 #include <string>
 
 #include "funcionario.h"
+#include "util.h"
+#include "modalidade.h"
 
 using namespace std;
 
 class Jogosol {
 private:
     vector<vector<string>> medalhas;
-    static vector<Funcionario> funcionarios;
+    vector<Funcionario> funcionarios;
+    vector<Modalidade> modalidades;
 
 public:
+    void readFuncionarios();
     bool addFuncionario();
+
 };
 
 #endif //TRABALHOAEDAPARTE1_JOGOSOL_H

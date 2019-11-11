@@ -14,7 +14,7 @@ using namespace std;
 class Funcionario {
 
 protected:
-    const string nome;
+    char *const nome;
     const char sexo;
     const Data dataNascimento;
     const int passaporte;
@@ -24,6 +24,7 @@ protected:
     const double custoDiario;
 
 public:
+    Funcionario();
     Funcionario(string nome, char sexo, Data dataNascimento, int passaporte, string funcao, Data dataChegada, Data dataPartida, double custoDiario);
     ~Funcionario();
     Funcionario& operator=(const Funcionario&);

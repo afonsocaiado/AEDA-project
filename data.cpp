@@ -65,5 +65,6 @@ istream &operator>>(istream &i, Data &d){
 
     d.dia=stoi(tempd); d.mes = stoi(tempm); d.ano=stoi(tempa);
 
+    return i;
 }
 

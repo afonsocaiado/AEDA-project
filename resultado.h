@@ -2,6 +2,7 @@
 #ifndef TRABALHOAEDAPARTE1_RESULTADO_H
 #define TRABALHOAEDAPARTE1_RESULTADO_H
 
+
 #include "prova.h"
 
 using namespace std;

@@ -2,14 +2,12 @@
 #ifndef TRABALHOAEDAPARTE1_FUNCIONARIO_H
 #define TRABALHOAEDAPARTE1_FUNCIONARIO_H
 
-#include "data.h"
-#include "competicao.h"
-#include "resultado.h"
-#include "jogosol.h"
-
 #include <iostream>
 #include <string>
 #include <vector>
+#include "data.h"
+#include "competicao.h"
+#include "resultado.h"
 
 using namespace std;
 
@@ -27,6 +25,8 @@ protected:
 
 public:
     Funcionario(string nome, char sexo, Data dataNascimento, int passaporte, string funcao, Data dataChegada, Data dataPartida, double custoDiario);
+    ~Funcionario();
+    Funcionario& operator=(const Funcionario&);
     bool criarFuncionario(Funcionario funcionario);
     bool eliminarFuncionario(Funcionario funcionario);
     Data getDataChegada();

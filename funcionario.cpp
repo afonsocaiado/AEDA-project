@@ -10,6 +10,16 @@ Funcionario::Funcionario(string nome, char sexo, Data dataNascimento, int passap
     this->dataPartida = dataPartida;
 }
 
+Funcionario::~Funcionario()
+{
+
+}
+
+Funcionario& Funcionario::operator=(const Funcionario&)
+{
+
+}
+
 Data Funcionario::getDataChegada()
 {
     return dataChegada;
@@ -66,9 +76,11 @@ void Atleta::addResultado(Resultado resultado)
 ostream &operator<<(ostream & o, const Funcionario &f)
 {
     o << f.nome << ";" << f.sexo << ";" << f.dataNascimento << ";" << f.passaporte << ";" << f.funcao << ";" << f.dataPartida << ";" << f.dataChegada << ";" << f.custoDiario << ";";
+    return o;
 }
 
 ostream &operator<<(ostream & o, const Atleta &a);
 {
     o << a.nome << ";" << a.sexo << ";" << a.dataNascimento << ";" << a.passaporte << ";" << a.funcao << ";" << a.dataPartida << ";" << a.dataChegada << ";" << a.custoDiario << ";" << a.modalidade << ";" << a.peso << ";" << a.altura << ";" << a.ranking << ";" << endl;
+    return o;
 }

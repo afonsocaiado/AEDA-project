@@ -2,12 +2,11 @@
 #ifndef TRABALHOAEDAPARTE1_JOGOSOL_H
 #define TRABALHOAEDAPARTE1_JOGOSOL_H
 
-#include "funcionario.h"
-#include "util.h"
-
 #include <fstream>
 #include <vector>
 #include <string>
+
+#include "funcionario.h"
 
 using namespace std;
 

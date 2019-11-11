@@ -4,6 +4,10 @@ using namespace std;
 
 bool Jogosol::addFuncionario()
 {
+    ofstream file;
+
+    file.open("funcionarios.txt", ios::app);
+
     string nome, funcao, modalidade;
     char sexo;
     Data dataNascimento, dataChegada, dataPartida;
@@ -44,15 +48,21 @@ bool Jogosol::addFuncionario()
 
         Atleta a(nome, sexo, dataNascimento, passaporte, funcao, dataChegada, dataPartida, custoDiario, modalidade, peso, altura, ranking);
         funcionarios.push_back(a);
+
+        file << a;
     }
 
     else
     {
         Funcionario f(nome, sexo, dataNascimento, passaporte, funcao, dataChegada, dataPartida, custoDiario);
         funcionarios.push_back(f);
+
+        file << f;
     }
+
+    file.close();
 
     return true;
 
-    //falta verificar erros (que fariam a funcao retornar false) e adicionar ao ficheiro funcionarios.txt
+    //falta verificar erros (que fariam a funcao retornar false)
 }

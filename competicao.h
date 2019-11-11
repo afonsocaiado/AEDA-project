@@ -2,12 +2,14 @@
 #ifndef TRABALHOAEDAPARTE1_COMPETICAO_H
 #define TRABALHOAEDAPARTE1_COMPETICAO_H
 
-#include "prova.h"
-#include "funcionario.h"
 
 #include <vector>
 
+#include "funcionario.h"
+
 using namespace std;
+
+class Atleta;
 
 class Competicao {
 

@@ -1,11 +1,11 @@
-BMX;individual;Final;090909787,101010101;
-BTT;individual;Final;671233722,728362928;
+BMX;individual;Final;090909787;
+BTT;individual;Final;090909787;
 Estrada;individual;Final;102938475,546372819,565372819;
 Contrarrelogio;individual;Final;565372819;
 Contrarrelogio;individual;Final;565372819;
 Velocidade;individual;Final;102938475;
 Velocidade por Equipas;coletivo;Final;102938475,365656512;
-Perseguicao por Equipas;individual;Final;102938475,365656512;
+Perseguicao por Equipas;coletivo;Final;102938475,365656512;
 Keirin;individual;Final;672718236;
 Omnium;individual;Final;909862513;
 

@@ -86,3 +86,8 @@ bool Jogosol::addFuncionario()
 
     //falta verificar erros (que fariam a funcao retornar false)
 }
+
+bool Jogosol::deleteFuncionario()
+{
+
+}

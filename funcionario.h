@@ -28,14 +28,12 @@ public:
     Funcionario(string nome, char sexo, Data dataNascimento, int passaporte, string funcao, Data dataChegada, Data dataPartida, double custoDiario);
     ~Funcionario();
     Funcionario& operator=(const Funcionario&);
-    bool criarFuncionario(Funcionario funcionario);
-    bool eliminarFuncionario(Funcionario funcionario);
     Data getDataChegada();
     Data getDataPartida();
     void setDataChegada(Data dataChegada);
     void setDataPartida(Data dataPartida);
 
-    bool operator== (const Funcionario funcionario) const;
+    bool operator== (Funcionario funcionario) const;
     friend ostream &operator<<(ostream & o, const Funcionario &f);
     friend istream &operator>>(istream &i, Funcionario &f);
 };

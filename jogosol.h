@@ -21,7 +21,7 @@ private:
 public:
     void readFuncionarios();
     bool addFuncionario();
-
+    bool deleteFuncionario();
 };
 
 #endif //TRABALHOAEDAPARTE1_JOGOSOL_H

@@ -45,16 +45,6 @@ void Funcionario::setDataPartida(Data dataPartida)
     this->dataPartida = dataPartida;
 }
 
-bool Funcionario::criarFuncionario(Funcionario funcionario)
-{
-    //A Implementar
-}
-
-bool Funcionario::eliminarFuncionario(Funcionario funcionario)
-{
-    //A Implementar
-}
-
 bool Funcionario::operator== (const Funcionario funcionario) const
 {
     return this->passaporte == funcionario.passaporte;
@@ -86,7 +76,7 @@ ostream &operator<<(ostream & o, const Funcionario &f)
 
 istream &operator>>(istream &i, Funcionario &f)
 {
-    //importante
+
     return i;
 }
 

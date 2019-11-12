@@ -12,6 +12,7 @@ using namespace std;
 
 class Resultado {
 private:
+    Competicao competicao;
     Prova prova;
     int classificacao;
     bool passou;

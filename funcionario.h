@@ -58,8 +58,7 @@ public:
     void addCompeticao(Competicao competicao);
     void addResultado(Resultado resultado);
     void viewInfo();
-    void viewResultados(); //A classe Resultado é de uma prova, como vamos mostrar os Resultados de todas as competicoes em q o Atleta participa?  n tou a conseguir
-
+    void viewResultados();
     friend ostream &operator<<(ostream & o, const Atleta &a);
     virtual istream& input(istream& i);
 

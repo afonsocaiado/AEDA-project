@@ -2,11 +2,16 @@
 
 Resultado::Resultado(){}
 
-Resultado::Resultado(Prova prova, int classificacao, bool passou)
+Resultado::Resultado(Competicao competicao, Prova prova, int classificacao, bool passou)
 {
+    this->competicao = competicao;
     this->prova = prova;
     this->classificacao = classificacao;
     this->passou = passou;
+}
+
+Competicao Resultado::getCompeticao() {
+    return competicao;
 }
 
 Prova Resultado::getProva()

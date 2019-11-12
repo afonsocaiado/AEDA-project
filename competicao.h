@@ -5,7 +5,8 @@
 
 #include <string>
 #include <vector>
-#include "resultado.h"
+
+#include "prova.h"
 
 using namespace std;
 
@@ -18,7 +19,8 @@ private:
     vector<string> medalhados;
 
 public:
-    const string nome;
+    string nome;
+    Competicao();
     Competicao(string nome, bool individual);
     vector <Prova> getProvas();
     bool getIndividual();

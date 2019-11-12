@@ -2,7 +2,7 @@
 #ifndef TRABALHOAEDAPARTE1_MODALIDADE_H
 #define TRABALHOAEDAPARTE1_MODALIDADE_H
 
-#include "competicao.h"
+#include "resultado.h"
 
 #include <vector>
 

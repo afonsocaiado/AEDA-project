@@ -6,19 +6,21 @@
 #include <string>
 #include <vector>
 
-#include "prova.h"
+#include "competicao.h"
 
 using namespace std;
 
 class Resultado {
 private:
+    Competicao competicao;
     Prova prova;
     int classificacao;
     bool passou;
 
 public:
     Resultado();
-    Resultado(Prova prova, int classificacao, bool passou);
+    Resultado(Competicao competicao, Prova prova, int classificacao, bool passou);
+    Competicao getCompeticao();
     Prova getProva();
     int getClassificacao();
     bool getPassou();

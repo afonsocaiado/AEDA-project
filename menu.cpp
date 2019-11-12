@@ -4,6 +4,7 @@
 
 #include <iostream>
 #include <iomanip>
+#include <cstring>
 
 using namespace std;
 
@@ -132,6 +133,7 @@ void Menu::visualizarAtletas() {
     switch (choice) {
         case 1:
             //Visualizar Info Pessoal
+
             continuar();
             int choice;
             cout << endl << "  Enter your choice: ";
@@ -461,7 +463,10 @@ void Menu::modificarInfoPessoalAtleta(Atleta &atleta) {
 
 void Menu::listaAtletasEscolhe() {
     cout << endl << "_______________ ATLETAS ________________" << endl << "|" << setw(40) << "|" << endl;
-    //Lista com Atletas para escolher um
+    for (int i  = 0; i < Jogosol::vatletas.size(); i++)  {
+        cout << "|   " << i+1 << " - " << Jogosol::vatletas.at(i).nome << setw(34-Jogosol::vatletas.at(i).nome.size()) << "|" << endl;
+    }
+    cout << "|_______________________________________|" << endl;
 }
 
 

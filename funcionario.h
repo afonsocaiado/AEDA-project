@@ -14,7 +14,6 @@ using namespace std;
 class Funcionario {
 
 protected:
-    string const nome;
     const char sexo;
     const Data dataNascimento;
     const int passaporte;
@@ -24,6 +23,7 @@ protected:
     const double custoDiario;
 
 public:
+    string const nome;
     Funcionario();
     Funcionario(string nome, char sexo, Data dataNascimento, int passaporte, string funcao, Data dataChegada, Data dataPartida, double custoDiario);
     ~Funcionario();
@@ -32,7 +32,6 @@ public:
     Data getDataPartida();
     void setDataChegada(Data dataChegada);
     void setDataPartida(Data dataPartida);
-
     bool operator== (Funcionario funcionario) const;
     friend ostream &operator<<(ostream & o, const Funcionario &f);
     friend istream &operator>>(istream &i, Funcionario &f);

@@ -56,6 +56,7 @@ ostream & operator<<(ostream & o, const Data & d) {
 
 istream &operator>>(istream &i, Data &d){
     string s,tempd,tempm,tempa;
+    int intd,intm,inta;
     stringstream ss;
 
     i >> s;
@@ -63,7 +64,29 @@ istream &operator>>(istream &i, Data &d){
     ss << s;
     ss >> tempd >> tempm >> tempa;
 
-    d.dia=stoi(tempd); d.mes = stoi(tempm); d.ano=stoi(tempa);
+    try {
+        intd = stoi(tempd);
+        intm = stoi(tempm);
+        inta = stoi(tempa);
+        if(intd>31 || intd<0)
+        { throw 1;}
+
+        else if (intm<0 || intm>12)
+        {throw 2;}
+
+        else if (inta<1900 || inta>2100)
+        {throw 3;}
+
+        else
+            d.dia=intd; d.mes =intm; d.ano=inta;
+    }
+    catch(std::invalid_argument&){cout << "Data nao é um numero"<<endl;}
+    catch(int i){
+        if(i==1){cout << "Dia invalido" << endl;}
+        else if (i==2){cout << "Mes invalido" << endl;}
+        else if(i==3){cout << "Ano invalido" << endl;}
+    }
+
 
     return i;
 }

@@ -11,32 +11,21 @@ Funcionario::Funcionario():nome(""), sexo(), dataNascimento(), passaporte(0), fu
 
 Funcionario::Funcionario(string nome, char sexo, Data dataNascimento, int passaporte, string funcao, Data dataChegada, Data dataPartida, double custoDiario):nome(nome), sexo(sexo), dataNascimento(dataNascimento), passaporte(passaporte), funcao(funcao), custoDiario(custoDiario)
 {
+
     this->dataChegada = dataChegada;
     this->dataPartida = dataPartida;
 }
 
-Funcionario::~Funcionario()
-{
-
-}
-
-char Funcionario::getSexo()
-{
-    return this->sexo;
-}
-
-void Funcionario::setSexo(char sexo) const
-{
-    this->sexo = sexo;
-}
+Funcionario::~Funcionario()= default;
 
 Funcionario &Funcionario::operator=(const Funcionario &f)
 {
     if(this != &f)
     {
+        this->nome = f.nome;
         this->sexo = f.sexo;
         this->dataNascimento = f.dataNascimento;
-        this->passaporte;
+        this->passaporte = f.passaporte;
         this->funcao = f.funcao;
         this->dataChegada = f.dataChegada;
         this->dataPartida = f.dataPartida;
@@ -44,8 +33,6 @@ Funcionario &Funcionario::operator=(const Funcionario &f)
     }
     return *this;
 }
-
-
 
 Data Funcionario::getDataChegada()
 {
@@ -79,13 +66,9 @@ void Funcionario::viewInfo() {
     cout << endl << "Estadia: " << dataChegada << " - " << dataPartida << endl;
 }
 
-Atleta::Atleta(string nome, char sexo, Data dataNascimento, int passaporte, string funcao, Data dataChegada, Data dataPartida, double custoDiario, string modalidade, double peso, int altura, int ranking):modalidade(modalidade), peso(peso), altura(altura), ranking(ranking), Funcionario(nome, sexo, dataNascimento, passaporte, funcao, dataChegada, dataPartida, custoDiario)
-{}
+Atleta::Atleta(string nome, char sexo, Data dataNascimento, int passaporte, string funcao, Data dataChegada, Data dataPartida, double custoDiario, string modalidade, double peso, int altura, int ranking):modalidade(modalidade), peso(peso), altura(altura), ranking(ranking), Funcionario(nome, sexo, dataNascimento, passaporte, funcao, dataChegada, dataPartida, custoDiario) {}
 
-Atleta::~Atleta()
-{
-    //Jogosol::atletas.erase()
-}
+Atleta::~Atleta() = default;
 
 void Atleta::addCompeticao(Competicao competicao)
 {
@@ -119,7 +102,22 @@ ostream &operator<<(ostream & o, const Funcionario &f)
 
 istream &operator>>(istream &i, Funcionario &f)
 {
-
+    string custoDiario;
+    getline(i, f.nome, ';');
+    i >> f.sexo;
+    i.ignore();
+    i >> f.dataNascimento;
+    i.ignore();
+    i >> f.passaporte;
+    i.ignore();
+    getline(i, f.funcao, ';');
+    i >> f.dataChegada;
+    i.ignore();
+    i >> f.dataPartida;
+    i.ignore();
+    getline(i, custoDiario, ';');
+    f.custoDiario = stod(custoDiario);
+    i.ignore();
     return i;
 }
 
@@ -127,4 +125,31 @@ ostream &operator<<(ostream & o, const Atleta &a)
 {
     o << a.nome << ";" << a.sexo << ";" << a.dataNascimento << ";" << a.passaporte << ";" << a.funcao << ";" << a.dataPartida << ";" << a.dataChegada << ";" << a.custoDiario << ";" << a.modalidade << ";" << a.peso << ";" << a.altura << ";" << a.ranking << ";" << endl;
     return o;
+}
+
+istream &operator>>(istream &i, Atleta &a)
+{
+    string temp;
+    getline(i, a.nome, ';');
+    i >> a.sexo;
+    i.ignore();
+    i >> a.dataNascimento;
+    i.ignore();
+    i >> a.passaporte;
+    i.ignore();
+    getline(i, a.funcao, ';');
+    i >> a.dataChegada;
+    i.ignore();
+    i >> a.dataPartida;
+    i.ignore();
+    getline(i, temp, ';');
+    a.custoDiario = stod(temp);
+    getline(i, a.modalidade, ';');
+    getline(i, temp, ';');
+    a.peso = stod(temp);
+    i >> a.altura;
+    i.ignore();
+    i >> a.ranking;
+    i.ignore(2, '\n');
+    return i;
 }

@@ -13,22 +13,22 @@ using namespace std;
 class Funcionario {
 
 protected:
-    const char sexo;
-    const Data dataNascimento;
-    const int passaporte;
-    const string funcao;
+    string nome;
+    char sexo;
+    Data dataNascimento;
+    int passaporte;
+    string funcao;
     Data dataChegada;
     Data dataPartida;
-    const double custoDiario;
+    double custoDiario;
 
 public:
-    string const nome;
     Funcionario();
     Funcionario(string nome, char sexo, Data dataNascimento, int passaporte, string funcao, Data dataChegada, Data dataPartida, double custoDiario);
     ~Funcionario();
     Funcionario& operator=(const Funcionario&);
     char getSexo();
-    void setSexo(char sexo) const;
+    void setSexo(char sexo);
     Data getDataChegada();
     Data getDataPartida();
     void setDataChegada(Data dataChegada);
@@ -42,9 +42,9 @@ public:
 
 class Atleta:public Funcionario{
 private:
-    const string modalidade;
-    const double peso;
-    const int altura;
+    string modalidade;
+    double peso;
+    int altura;
     int ranking;
     vector<Competicao> competicoes;
     vector<vector<string>> historico;

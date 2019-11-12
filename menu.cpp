@@ -103,7 +103,8 @@ void Menu::funcionariosEAtletas() {
             }
             break;
         case 4:
-            return;
+            mainMenu();
+            break;
     }
 }
 
@@ -968,6 +969,7 @@ void Menu::competicaoMenuMod(Competicao &competicao, Modalidade &modalidade) {
             break;
     }
 }
+
 //--------------------------------------------------------------------------
 
 void Menu::programacaoDiaria() {

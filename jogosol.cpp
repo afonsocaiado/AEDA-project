@@ -2,7 +2,15 @@
 
 using namespace std;
 
-Jogosol::Jogosol() {}
+Jogosol::Jogosol() {
+
+}
+
+vector<Modalidade> Jogosol::modalidades {};
+
+vector<Funcionario> Jogosol::funcionarios {};
+
+vector<Atleta> Jogosol::vatletas {};
 
 void Jogosol::readFuncionarios()
 {

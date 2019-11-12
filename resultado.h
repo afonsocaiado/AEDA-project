@@ -6,7 +6,7 @@
 #include <string>
 #include <vector>
 
-#include "prova.h"
+#include "competicao.h"
 
 using namespace std;
 

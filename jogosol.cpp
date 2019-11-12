@@ -24,10 +24,10 @@ void Jogosol::readFuncionarios()
     {
         Funcionario f;
 
-        file >> f;
+        f.input(file);
 
-        if(to_lower(f.getFuncao()) == "atleta")
-            vatletas.push_back(f);
+        //if(to_lower(f.getFuncao()) == "atleta")
+            //vatletas.push_back(f);
 
         funcionarios.push_back(f);
     }

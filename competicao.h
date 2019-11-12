@@ -5,7 +5,8 @@
 
 #include <string>
 #include <vector>
-#include "resultado.h"
+
+#include "prova.h"
 
 using namespace std;
 

@@ -25,7 +25,7 @@ protected:
 public:
     Funcionario();
     Funcionario(string nome, char sexo, Data dataNascimento, int passaporte, string funcao, Data dataChegada, Data dataPartida, double custoDiario);
-    ~Funcionario();
+    virtual ~Funcionario();
     Funcionario& operator=(const Funcionario&);
     string getNome();
     string getFuncao();
@@ -40,6 +40,7 @@ public:
     bool operator== (Funcionario funcionario) const;
     friend ostream &operator<<(ostream & o, const Funcionario &f);
     friend istream &operator>>(istream &i, Funcionario &f);
+    virtual istream& input(istream& i);
 };
 
 class Atleta:public Funcionario{
@@ -60,7 +61,8 @@ public:
     void viewResultados(); //A classe Resultado é de uma prova, como vamos mostrar os Resultados de todas as competicoes em q o Atleta participa?  n tou a conseguir
 
     friend ostream &operator<<(ostream & o, const Atleta &a);
-    friend istream &operator>>(istream &i, Atleta &a);
+    virtual istream& input(istream& i);
+
 
 };
 

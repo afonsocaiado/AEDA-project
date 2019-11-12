@@ -32,6 +32,8 @@ public:
     Data getDataPartida();
     void setDataChegada(Data dataChegada);
     void setDataPartida(Data dataPartida);
+    virtual void viewInfo();
+
     bool operator== (Funcionario funcionario) const;
     friend ostream &operator<<(ostream & o, const Funcionario &f);
     friend istream &operator>>(istream &i, Funcionario &f);
@@ -51,6 +53,7 @@ public:
     ~Atleta();
     void addCompeticao(Competicao competicao);
     void addResultado(Resultado resultado);
+    void viewInfo();
 
     friend ostream &operator<<(ostream & o, const Atleta &a);
     friend istream &operator>>(istream &i, Atleta &a);

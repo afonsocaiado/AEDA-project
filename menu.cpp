@@ -4,7 +4,6 @@
 
 #include <iostream>
 #include <iomanip>
-#include <cstring>
 
 using namespace std;
 
@@ -63,12 +62,28 @@ void Menu::funcionariosEAtletas() {
     cin >> choice;
 
     switch (choice) {
-        case 1:
-            atletas();
+        case 1: {
+            listaAtletasEscolhe();
+
+            int choice1;
+            cout << endl << "  Enter your choice: ";
+            cin >> choice1;
+
+            Atleta atleta = Jogosol::vatletas.at(choice1 - 1);
+            atletas(atleta);
             break;
-        case 2:
-            funcionario();
+        }
+        case 2: {
+            listaFuncionariosEscolhe();
+
+            int choice2;
+            cout << endl << "  Enter your choice: ";
+            cin >> choice2;
+
+            Funcionario funcionario = Jogosol::funcionarios.at(choice2 - 1);
+            funcionarios(funcionario);
             break;
+        }
         case 3:
             //Lista de todos
             continuar();
@@ -94,7 +109,7 @@ void Menu::funcionariosEAtletas() {
 
 //--------------------------------------------
 
-void Menu::atletas() {
+void Menu::atletas(Atleta &atleta) {
     cout << endl << "________________ ATLETAS _______________" << endl << "|" << setw(40) << "|" << endl;
     cout << "|   1 - Visualizar Informacao           |" << endl;
     cout << "|   2 - Editar Informacoes              |" << endl;
@@ -107,10 +122,10 @@ void Menu::atletas() {
     
     switch (choice) {
         case 1:
-            visualizarAtletas();
+            visualizarAtletas(atleta);
             break;
         case 2:
-            editarAtleta();
+            editarAtleta(atleta);
             break;
         case 3:
             funcionariosEAtletas();
@@ -118,7 +133,7 @@ void Menu::atletas() {
     }
 }
 
-void Menu::visualizarAtletas() {
+void Menu::visualizarAtletas(Atleta &atleta) {
     cout << endl << "______________ VISUALIZAR ______________" << endl << "|" << setw(40) << "|" << endl;
     cout << "|   1 - Informacao pessoal              |" << endl;
     cout << "|   2 - Resultados                      |" << endl;
@@ -132,8 +147,7 @@ void Menu::visualizarAtletas() {
 
     switch (choice) {
         case 1:
-            //Visualizar Info Pessoal
-
+            atleta.viewInfo();
             continuar();
             int choice;
             cout << endl << "  Enter your choice: ";
@@ -141,7 +155,7 @@ void Menu::visualizarAtletas() {
 
             switch (choice) {
                 case 1:
-                    visualizarAtletas();
+                    visualizarAtletas(atleta);
                     break;
                 case 2:
                     mainMenu();
@@ -159,7 +173,7 @@ void Menu::visualizarAtletas() {
 
             switch (choice1) {
                 case 1:
-                    visualizarAtletas();
+                    visualizarAtletas(atleta);
                     break;
                 case 2:
                     mainMenu();
@@ -177,7 +191,7 @@ void Menu::visualizarAtletas() {
 
             switch (choice2) {
                 case 1:
-                    visualizarAtletas();
+                    visualizarAtletas(atleta);
                     break;
                 case 2:
                     mainMenu();
@@ -187,14 +201,14 @@ void Menu::visualizarAtletas() {
             }
             break;
         case 4:
-            atletas();
+            atletas(atleta);
             break;
     }
 
 
 }
 
-void Menu::editarAtleta() {
+void Menu::editarAtleta(Atleta &atleta) {
     cout << endl << "________________ EDITAR ________________" << endl << "|" << setw(40) << "|" << endl;
     cout << "|   1 - Acrescentar                     |" << endl;
     cout << "|   2 - Modificar                       |" << endl;
@@ -216,7 +230,7 @@ void Menu::editarAtleta() {
 
             switch (choice1) {
                 case 1:
-                    editarAtleta();
+                    editarAtleta(atleta);
                     break;
                 case 2:
                     mainMenu();
@@ -256,7 +270,7 @@ void Menu::editarAtleta() {
 
             switch (choice4) {
                 case 1:
-                    editarAtleta();
+                    editarAtleta(atleta);
                     break;
                 case 2:
                     mainMenu();
@@ -267,7 +281,7 @@ void Menu::editarAtleta() {
             break;
         }
         case 4:
-            atletas();
+            atletas(atleta);
             break;
     }
 }
@@ -307,7 +321,7 @@ void Menu::modificarAtleta(Atleta &atleta) {
             }
             break;
         case 3:
-            editarAtleta();
+            editarAtleta(atleta);
             break;
     }
 }
@@ -456,7 +470,7 @@ void Menu::modificarInfoPessoalAtleta(Atleta &atleta) {
             }
             break;
         case 8:
-            editarAtleta();
+            editarAtleta(atleta);
             break;
     }
 }
@@ -472,7 +486,7 @@ void Menu::listaAtletasEscolhe() {
 
 //--------------------------------------------
 
-void Menu::funcionario() {
+void Menu::funcionarios(Funcionario &funcionario) {
     cout << endl << "_____________ FUNCIONARIO ___________" << endl << "|" << setw(40) << "|" << endl;
     cout << "|   1 - Visualizar Informacao           |" << endl;
     cout << "|   2 - Editar Informacoes              |" << endl;
@@ -485,8 +499,7 @@ void Menu::funcionario() {
 
     switch (choice) {
         case 1:
-            //Visualizar Info Pessoal
-
+            funcionario.viewInfo();
             continuar();
             int choice4;
             cout << endl << "  Enter your choice: ";
@@ -494,7 +507,7 @@ void Menu::funcionario() {
 
             switch (choice4) {
                 case 1:
-                    funcionario();
+                    funcionarios(funcionario);
                     break;
                 case 2:
                     mainMenu();
@@ -504,7 +517,7 @@ void Menu::funcionario() {
             }
             break;
         case 2:
-            editarFuncionario();
+            editarFuncionario(funcionario);
             break;
         case 3:
             funcionariosEAtletas();
@@ -512,7 +525,7 @@ void Menu::funcionario() {
     }
 }
 
-void Menu::editarFuncionario() {
+void Menu::editarFuncionario(Funcionario &funcionario) {
     cout << endl << "________________ EDITAR ________________" << endl << "|" << setw(40) << "|" << endl;
     cout << "|   1 - Acrescentar                     |" << endl;
     cout << "|   2 - Modificar                       |" << endl;
@@ -535,7 +548,7 @@ void Menu::editarFuncionario() {
 
             switch (choice1) {
                 case 1:
-                    editarFuncionario();
+                    editarFuncionario(funcionario);
                     break;
                 case 2:
                     mainMenu();
@@ -574,7 +587,7 @@ void Menu::editarFuncionario() {
 
             switch (choice4) {
                 case 1:
-                    editarFuncionario();
+                    editarFuncionario(funcionario);
                     break;
                 case 2:
                     mainMenu();
@@ -585,7 +598,7 @@ void Menu::editarFuncionario() {
             break;
         }
         case 4:
-            funcionario();
+            funcionarios(funcionario);
             break;
     }
 }
@@ -677,7 +690,7 @@ void Menu::modificarInfoPessoalFuncionario(Funcionario &funcionario) {
             }
             break;
         case 5:
-            editarFuncionario();
+            editarFuncionario(funcionario);
             break;
     }
 }

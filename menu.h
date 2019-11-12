@@ -13,11 +13,11 @@ class Menu {
 public:
     void mainMenu();
     void funcionariosEAtletas();
-    void atletas();
-    void funcionario();
-    void visualizarAtletas();
-    void editarAtleta();
-    void editarFuncionario();
+    void atletas(Atleta &atleta);
+    void funcionarios(Funcionario &funcionario);
+    void visualizarAtletas(Atleta &atleta);
+    void editarAtleta(Atleta &atleta);
+    void editarFuncionario(Funcionario &funcionario);
     static void listaAtletasEscolhe();
     static void listaFuncionariosEscolhe();
     void modificarAtleta(Atleta &atleta);
@@ -25,7 +25,7 @@ public:
     void modificarInfoPessoalAtleta(Atleta &atleta);
     static void listaModalidades();
     void modalidadeMenu(Modalidade &modalidade);
-    void listaCompeticoes(Modalidade &modalidade);
+    static void listaCompeticoes(Modalidade &modalidade);
     void competicaoMenuVis(Competicao &competicao,Modalidade &modalidade);
     void competicaoMenuMod(Competicao &competicao,Modalidade &modalidade);
     void programacaoDiaria();

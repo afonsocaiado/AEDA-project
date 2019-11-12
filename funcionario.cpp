@@ -50,6 +50,13 @@ bool Funcionario::operator== (const Funcionario funcionario) const
     return this->passaporte == funcionario.passaporte;
 }
 
+void Funcionario::viewInfo() {
+    cout << endl << "Nome: " << nome << endl;
+    cout << endl << "Data de Nascimento: " << dataNascimento << endl;
+    cout << endl << "Numero de Passaporte: " << passaporte << endl;
+    cout << endl << "Estadia: " << dataChegada << " - " << dataPartida << endl;
+}
+
 Atleta::Atleta(string nome, char sexo, Data dataNascimento, int passaporte, string funcao, Data dataChegada, Data dataPartida, double custoDiario, string modalidade, double peso, int altura, int ranking):modalidade(modalidade), peso(peso), altura(altura), ranking(ranking), Funcionario(nome, sexo, dataNascimento, passaporte, funcao, dataChegada, dataPartida, custoDiario)
 {}
 
@@ -66,6 +73,16 @@ void Atleta::addCompeticao(Competicao competicao)
 void Atleta::addResultado(Resultado resultado)
 {
     resultados.push_back(resultado);
+}
+
+void Atleta::viewInfo() {
+    cout << endl << "Nome: " << nome << endl;
+    cout << endl << "Data de Nascimento: " << dataNascimento << endl;
+    cout << endl << "Numero de Passaporte: " << passaporte << endl;
+    cout << endl << "Estadia: " << dataChegada << " - " << dataPartida << endl;
+    cout << endl << "Peso: " << peso << endl;
+    cout << endl << "Altura: " << altura << endl;
+    cout << endl << "Ranking: " << ranking << endl;
 }
 
 ostream &operator<<(ostream & o, const Funcionario &f)

@@ -32,7 +32,7 @@ void Menu::mainMenu() {
             cout << endl << "  Enter your choice: ";
             cin >> choice;
 
-            Modalidade modalidade = Jogosol::modalidades.at(choice-1);
+            Modalidade modalidade = Jogosol::getModalidades().at(choice-1);
             modalidadeMenu(modalidade);
             break;
         }
@@ -69,7 +69,7 @@ void Menu::funcionariosEAtletas() {
             cout << endl << "  Enter your choice: ";
             cin >> choice1;
 
-            Atleta atleta = Jogosol::vatletas.at(choice1 - 1);
+            Atleta atleta = Jogosol::getVAtletas().at(choice1 - 1);
             atletas(atleta);
             break;
         }
@@ -80,7 +80,7 @@ void Menu::funcionariosEAtletas() {
             cout << endl << "  Enter your choice: ";
             cin >> choice2;
 
-            Funcionario funcionario = Jogosol::funcionarios.at(choice2 - 1);
+            Funcionario funcionario = Jogosol::getFuncionarios().at(choice2 - 1);
             funcionarios(funcionario);
             break;
         }
@@ -248,7 +248,7 @@ void Menu::editarAtleta(Atleta &atleta) {
             cout << endl << "  Enter your choice: ";
             cin >> choice2;
 
-            Atleta atleta = Jogosol::vatletas.at(choice2-1);
+            Atleta atleta = Jogosol::getVAtletas().at(choice2-1);
             modificarAtleta(atleta);
             break;
         }
@@ -260,7 +260,7 @@ void Menu::editarAtleta(Atleta &atleta) {
             cout << endl << "  Enter your choice: ";
             cin >> choice3;
 
-            Atleta atleta2 = Jogosol::vatletas.at(choice3-1);
+            Atleta atleta2 = Jogosol::getVAtletas().at(choice3-1);
 
             //Eliminar atleta2
 
@@ -478,8 +478,8 @@ void Menu::modificarInfoPessoalAtleta(Atleta &atleta) {
 
 void Menu::listaAtletasEscolhe() {
     cout << endl << "_______________ ATLETAS ________________" << endl << "|" << setw(40) << "|" << endl;
-    for (int i  = 0; i < Jogosol::vatletas.size(); i++)  {
-        cout << "|   " << i+1 << " - " << Jogosol::vatletas.at(i).nome << setw(34-Jogosol::vatletas.at(i).nome.size()) << "|" << endl;
+    for (int i  = 0; i < Jogosol::getVAtletas().size(); i++)  {
+        cout << "|   " << i+1 << " - " << Jogosol::getVAtletas().at(i).getNome() << setw(34-Jogosol::getVAtletas().at(i).getNome().size()) << "|" << endl;
     }
     cout << "|_______________________________________|" << endl;
 }
@@ -566,7 +566,7 @@ void Menu::editarFuncionario(Funcionario &funcionario) {
             cout << endl << "  Enter your choice: ";
             cin >> choice2;
 
-            Funcionario funcionario = Jogosol::funcionarios.at(choice2-1);
+            Funcionario funcionario = Jogosol::getFuncionarios().at(choice2-1);
             modificarInfoPessoalFuncionario(funcionario);
             break;
         }
@@ -578,7 +578,7 @@ void Menu::editarFuncionario(Funcionario &funcionario) {
             cout << endl << "  Enter your choice: ";
             cin >> choice3;
 
-            Funcionario funcionario1 = Jogosol::funcionarios.at(choice3-1);
+            Funcionario funcionario1 = Jogosol::getFuncionarios().at(choice3-1);
 
             //Eliminar funcionario1
             continuar();
@@ -698,8 +698,8 @@ void Menu::modificarInfoPessoalFuncionario(Funcionario &funcionario) {
 
 void Menu::listaFuncionariosEscolhe() {
     cout << endl << "_____________ FUNCIONARIOS _____________" << endl << "|" << setw(40) << "|" << endl;
-    for (int i  = 0; i < Jogosol::funcionarios.size(); i++)  {
-        cout << "|   " << i+1 << " - " << Jogosol::funcionarios.at(i).nome << setw(34-Jogosol::funcionarios.at(i).nome.size()) << "|" << endl;
+    for (int i  = 0; i < Jogosol::getFuncionarios().size(); i++)  {
+        cout << "|   " << i+1 << " - " << Jogosol::getFuncionarios().at(i).getNome() << setw(34-Jogosol::getFuncionarios().at(i).getNome().size()) << "|" << endl;
     }
     cout << "|_______________________________________|" << endl;
 }

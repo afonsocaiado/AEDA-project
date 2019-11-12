@@ -6,9 +6,11 @@ CMakeFiles/TrabalhoAEDAParte1.dir/competicao.cpp.obj: ../competicao.h
 CMakeFiles/TrabalhoAEDAParte1.dir/competicao.cpp.obj: ../data.h
 CMakeFiles/TrabalhoAEDAParte1.dir/competicao.cpp.obj: ../prova.h
 CMakeFiles/TrabalhoAEDAParte1.dir/competicao.cpp.obj: ../resultado.h
+CMakeFiles/TrabalhoAEDAParte1.dir/competicao.cpp.obj: ../util.h
 
 CMakeFiles/TrabalhoAEDAParte1.dir/data.cpp.obj: ../data.cpp
 CMakeFiles/TrabalhoAEDAParte1.dir/data.cpp.obj: ../data.h
+CMakeFiles/TrabalhoAEDAParte1.dir/data.cpp.obj: ../util.h
 
 CMakeFiles/TrabalhoAEDAParte1.dir/funcionario.cpp.obj: ../competicao.h
 CMakeFiles/TrabalhoAEDAParte1.dir/funcionario.cpp.obj: ../data.h
@@ -17,6 +19,7 @@ CMakeFiles/TrabalhoAEDAParte1.dir/funcionario.cpp.obj: ../funcionario.h
 CMakeFiles/TrabalhoAEDAParte1.dir/funcionario.cpp.obj: ../modalidade.h
 CMakeFiles/TrabalhoAEDAParte1.dir/funcionario.cpp.obj: ../prova.h
 CMakeFiles/TrabalhoAEDAParte1.dir/funcionario.cpp.obj: ../resultado.h
+CMakeFiles/TrabalhoAEDAParte1.dir/funcionario.cpp.obj: ../util.h
 
 CMakeFiles/TrabalhoAEDAParte1.dir/jogosol.cpp.obj: ../competicao.h
 CMakeFiles/TrabalhoAEDAParte1.dir/jogosol.cpp.obj: ../data.h
@@ -26,8 +29,17 @@ CMakeFiles/TrabalhoAEDAParte1.dir/jogosol.cpp.obj: ../jogosol.h
 CMakeFiles/TrabalhoAEDAParte1.dir/jogosol.cpp.obj: ../modalidade.h
 CMakeFiles/TrabalhoAEDAParte1.dir/jogosol.cpp.obj: ../prova.h
 CMakeFiles/TrabalhoAEDAParte1.dir/jogosol.cpp.obj: ../resultado.h
+CMakeFiles/TrabalhoAEDAParte1.dir/jogosol.cpp.obj: ../util.h
 
+CMakeFiles/TrabalhoAEDAParte1.dir/main.cpp.obj: ../competicao.h
+CMakeFiles/TrabalhoAEDAParte1.dir/main.cpp.obj: ../data.h
+CMakeFiles/TrabalhoAEDAParte1.dir/main.cpp.obj: ../funcionario.h
+CMakeFiles/TrabalhoAEDAParte1.dir/main.cpp.obj: ../jogosol.h
 CMakeFiles/TrabalhoAEDAParte1.dir/main.cpp.obj: ../main.cpp
+CMakeFiles/TrabalhoAEDAParte1.dir/main.cpp.obj: ../modalidade.h
+CMakeFiles/TrabalhoAEDAParte1.dir/main.cpp.obj: ../prova.h
+CMakeFiles/TrabalhoAEDAParte1.dir/main.cpp.obj: ../resultado.h
+CMakeFiles/TrabalhoAEDAParte1.dir/main.cpp.obj: ../util.h
 
 CMakeFiles/TrabalhoAEDAParte1.dir/menu.cpp.obj: ../competicao.h
 CMakeFiles/TrabalhoAEDAParte1.dir/menu.cpp.obj: ../data.h
@@ -38,6 +50,7 @@ CMakeFiles/TrabalhoAEDAParte1.dir/menu.cpp.obj: ../menu.h
 CMakeFiles/TrabalhoAEDAParte1.dir/menu.cpp.obj: ../modalidade.h
 CMakeFiles/TrabalhoAEDAParte1.dir/menu.cpp.obj: ../prova.h
 CMakeFiles/TrabalhoAEDAParte1.dir/menu.cpp.obj: ../resultado.h
+CMakeFiles/TrabalhoAEDAParte1.dir/menu.cpp.obj: ../util.h
 
 CMakeFiles/TrabalhoAEDAParte1.dir/modalidade.cpp.obj: ../competicao.h
 CMakeFiles/TrabalhoAEDAParte1.dir/modalidade.cpp.obj: ../data.h
@@ -45,6 +58,7 @@ CMakeFiles/TrabalhoAEDAParte1.dir/modalidade.cpp.obj: ../modalidade.cpp
 CMakeFiles/TrabalhoAEDAParte1.dir/modalidade.cpp.obj: ../modalidade.h
 CMakeFiles/TrabalhoAEDAParte1.dir/modalidade.cpp.obj: ../prova.h
 CMakeFiles/TrabalhoAEDAParte1.dir/modalidade.cpp.obj: ../resultado.h
+CMakeFiles/TrabalhoAEDAParte1.dir/modalidade.cpp.obj: ../util.h
 
 CMakeFiles/TrabalhoAEDAParte1.dir/prova.cpp.obj: ../competicao.h
 CMakeFiles/TrabalhoAEDAParte1.dir/prova.cpp.obj: ../data.h
@@ -53,11 +67,13 @@ CMakeFiles/TrabalhoAEDAParte1.dir/prova.cpp.obj: ../modalidade.h
 CMakeFiles/TrabalhoAEDAParte1.dir/prova.cpp.obj: ../prova.cpp
 CMakeFiles/TrabalhoAEDAParte1.dir/prova.cpp.obj: ../prova.h
 CMakeFiles/TrabalhoAEDAParte1.dir/prova.cpp.obj: ../resultado.h
+CMakeFiles/TrabalhoAEDAParte1.dir/prova.cpp.obj: ../util.h
 
 CMakeFiles/TrabalhoAEDAParte1.dir/resultado.cpp.obj: ../data.h
 CMakeFiles/TrabalhoAEDAParte1.dir/resultado.cpp.obj: ../prova.h
 CMakeFiles/TrabalhoAEDAParte1.dir/resultado.cpp.obj: ../resultado.cpp
 CMakeFiles/TrabalhoAEDAParte1.dir/resultado.cpp.obj: ../resultado.h
+CMakeFiles/TrabalhoAEDAParte1.dir/resultado.cpp.obj: ../util.h
 
 CMakeFiles/TrabalhoAEDAParte1.dir/util.cpp.obj: ../util.cpp
 CMakeFiles/TrabalhoAEDAParte1.dir/util.cpp.obj: ../util.h

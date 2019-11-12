@@ -2,6 +2,8 @@
 
 using namespace std;
 
+Jogosol::Jogosol() {}
+
 void Jogosol::readFuncionarios()
 {
     ifstream file;
@@ -89,7 +91,18 @@ bool Jogosol::addFuncionario()
     //falta verificar erros (que fariam a funcao retornar false)
 }
 
-bool Jogosol::deleteFuncionario()
+vector<Atleta> Jogosol::getVAtletas()
 {
-
+    return vatletas;
 }
+
+vector<Funcionario> Jogosol::getFuncionarios()
+{
+    return funcionarios;
+}
+
+vector<Modalidade> Jogosol::getModalidades()
+{
+    return modalidades;
+}
+

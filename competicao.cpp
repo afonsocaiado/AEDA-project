@@ -15,10 +15,7 @@ bool Competicao::getIndividual()
 {
     return individual;
 }
-vector<Atleta> Competicao::getAtletasInscritos()
-{
-    return atletasInscritos;
-}
+
 vector<string> Competicao::getMedalhados()
 {
     return medalhados;
@@ -27,11 +24,6 @@ vector<string> Competicao::getMedalhados()
 void Competicao::setProvas(vector<Prova> provas)
 {
     this->provas = provas;
-}
-
-void Competicao::setAtletasInscritos(vector<Atleta> atletas)
-{
-    atletasInscritos = atletas;
 }
 
 void Competicao::setMedalhados(vector<string> medalhados)

@@ -3,6 +3,7 @@
 #define TRABALHOAEDAPARTE1_COMPETICAO_H
 
 
+#include <string>
 #include <vector>
 #include "resultado.h"
 
@@ -13,8 +14,7 @@ class Competicao {
 
 private:
     vector<Prova> provas;
-    const bool individual;
-    vector<Atleta> atletasInscritos;
+    bool individual;
     vector<string> medalhados;
 
 public:
@@ -22,11 +22,8 @@ public:
     Competicao(string nome, bool individual);
     vector <Prova> getProvas();
     bool getIndividual();
-    vector<Atleta> getAtletasInscritos();
     vector<string> getMedalhados();
     void setProvas(vector<Prova> provas);
-    void setIndividual(bool individual);
-    void setAtletasInscritos(vector<Atleta> atletas);
     void setMedalhados(vector<string> medalhados);
 
     bool addProva();

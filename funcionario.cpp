@@ -34,6 +34,11 @@ Funcionario &Funcionario::operator=(const Funcionario &f)
     return *this;
 }
 
+string Funcionario::getNome()
+{
+    return nome;
+}
+
 Data Funcionario::getDataChegada()
 {
     return dataChegada;

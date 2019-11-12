@@ -6,15 +6,9 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/Fisica1/Desktop/AEDA/Trabalho/TrabalhoAEDAParte1/competicao.cpp
-competicao.h
 C:/Users/Fisica1/Desktop/AEDA/Trabalho/TrabalhoAEDAParte1/competicao.h
-vector
--
 string
 -
-
-C:/Users/Fisica1/Desktop/AEDA/Trabalho/TrabalhoAEDAParte1/competicao.h
 vector
 -
 resultado.h
@@ -23,12 +17,8 @@ C:/Users/Fisica1/Desktop/AEDA/Trabalho/TrabalhoAEDAParte1/resultado.h
 C:/Users/Fisica1/Desktop/AEDA/Trabalho/TrabalhoAEDAParte1/data.h
 iostream
 -
-
-C:/Users/Fisica1/Desktop/AEDA/Trabalho/TrabalhoAEDAParte1/funcionario.cpp
-funcionario.h
-C:/Users/Fisica1/Desktop/AEDA/Trabalho/TrabalhoAEDAParte1/funcionario.h
-iostream
--
+util.h
+C:/Users/Fisica1/Desktop/AEDA/Trabalho/TrabalhoAEDAParte1/util.h
 
 C:/Users/Fisica1/Desktop/AEDA/Trabalho/TrabalhoAEDAParte1/funcionario.h
 iostream
@@ -39,10 +29,6 @@ vector
 -
 modalidade.h
 C:/Users/Fisica1/Desktop/AEDA/Trabalho/TrabalhoAEDAParte1/modalidade.h
-
-C:/Users/Fisica1/Desktop/AEDA/Trabalho/TrabalhoAEDAParte1/jogosol.cpp
-jogosol.h
-C:/Users/Fisica1/Desktop/AEDA/Trabalho/TrabalhoAEDAParte1/jogosol.h
 
 C:/Users/Fisica1/Desktop/AEDA/Trabalho/TrabalhoAEDAParte1/jogosol.h
 fstream
@@ -54,27 +40,11 @@ string
 funcionario.h
 C:/Users/Fisica1/Desktop/AEDA/Trabalho/TrabalhoAEDAParte1/funcionario.h
 
-C:/Users/Fisica1/Desktop/AEDA/Trabalho/TrabalhoAEDAParte1/menu.cpp
-menu.h
-C:/Users/Fisica1/Desktop/AEDA/Trabalho/TrabalhoAEDAParte1/menu.h
-jogosol.h
-C:/Users/Fisica1/Desktop/AEDA/Trabalho/TrabalhoAEDAParte1/jogosol.h
-modalidade.h
-C:/Users/Fisica1/Desktop/AEDA/Trabalho/TrabalhoAEDAParte1/modalidade.h
-iostream
--
-iomanip
--
-
-C:/Users/Fisica1/Desktop/AEDA/Trabalho/TrabalhoAEDAParte1/menu.h
+C:/Users/Fisica1/Desktop/AEDA/Trabalho/TrabalhoAEDAParte1/main.cpp
 iostream
 -
 jogosol.h
 C:/Users/Fisica1/Desktop/AEDA/Trabalho/TrabalhoAEDAParte1/jogosol.h
-
-C:/Users/Fisica1/Desktop/AEDA/Trabalho/TrabalhoAEDAParte1/modalidade.cpp
-modalidade.h
-C:/Users/Fisica1/Desktop/AEDA/Trabalho/TrabalhoAEDAParte1/modalidade.h
 
 C:/Users/Fisica1/Desktop/AEDA/Trabalho/TrabalhoAEDAParte1/modalidade.h
 competicao.h
@@ -82,27 +52,23 @@ C:/Users/Fisica1/Desktop/AEDA/Trabalho/TrabalhoAEDAParte1/competicao.h
 vector
 -
 
-C:/Users/Fisica1/Desktop/AEDA/Trabalho/TrabalhoAEDAParte1/prova.cpp
-prova.h
 C:/Users/Fisica1/Desktop/AEDA/Trabalho/TrabalhoAEDAParte1/prova.h
-funcionario.h
-C:/Users/Fisica1/Desktop/AEDA/Trabalho/TrabalhoAEDAParte1/funcionario.h
-vector
--
 string
 -
-
-C:/Users/Fisica1/Desktop/AEDA/Trabalho/TrabalhoAEDAParte1/prova.h
 vector
 -
 data.h
 C:/Users/Fisica1/Desktop/AEDA/Trabalho/TrabalhoAEDAParte1/data.h
 
-C:/Users/Fisica1/Desktop/AEDA/Trabalho/TrabalhoAEDAParte1/resultado.cpp
-resultado.h
 C:/Users/Fisica1/Desktop/AEDA/Trabalho/TrabalhoAEDAParte1/resultado.h
-
-C:/Users/Fisica1/Desktop/AEDA/Trabalho/TrabalhoAEDAParte1/resultado.h
+string
+-
+vector
+-
 prova.h
 C:/Users/Fisica1/Desktop/AEDA/Trabalho/TrabalhoAEDAParte1/prova.h
+
+C:/Users/Fisica1/Desktop/AEDA/Trabalho/TrabalhoAEDAParte1/util.h
+string
+-
 

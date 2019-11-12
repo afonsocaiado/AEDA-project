@@ -72,6 +72,6 @@ ostream & operator<<(ostream &o, const Resultado &resultado)
 
         o << resultado.getMedalha(resultado.classificacao) << endl;
     }
+    return o;
 }
-
 

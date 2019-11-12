@@ -3,6 +3,9 @@
 #define TRABALHOAEDAPARTE1_RESULTADO_H
 
 
+#include <string>
+#include <vector>
+
 #include "prova.h"
 
 using namespace std;

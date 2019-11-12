@@ -27,8 +27,7 @@ public:
     Funcionario(string nome, char sexo, Data dataNascimento, int passaporte, string funcao, Data dataChegada, Data dataPartida, double custoDiario);
     ~Funcionario();
     Funcionario& operator=(const Funcionario&);
-    char getSexo();
-    void setSexo(char sexo);
+    string getNome();
     Data getDataChegada();
     Data getDataPartida();
     void setDataChegada(Data dataChegada);

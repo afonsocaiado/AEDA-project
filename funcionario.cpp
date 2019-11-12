@@ -86,6 +86,8 @@ void Funcionario::viewInfo() {
     cout << endl << "Estadia: " << dataChegada << " - " << dataPartida << endl;
 }
 
+Atleta::Atleta() {}
+
 Atleta::Atleta(string nome, char sexo, Data dataNascimento, int passaporte, string funcao, Data dataChegada, Data dataPartida, double custoDiario, string modalidade, double peso, int altura, int ranking):modalidade(modalidade), peso(peso), altura(altura), ranking(ranking), Funcionario(nome, sexo, dataNascimento, passaporte, funcao, dataChegada, dataPartida, custoDiario) {}
 
 Atleta::~Atleta() = default;
@@ -111,6 +113,11 @@ void Atleta::viewInfo() {
 }
 
 void Atleta::viewResultados() {
+    for (int i = 0; i < resultados.size(); i++){
+        cout << endl << "Competicao: " << "get comp" << endl;
+        cout << endl << "Prova: " << dataNascimento << endl;
+        cout << endl << "Classificao: " << passaporte << endl;
+    }
 
 }
 

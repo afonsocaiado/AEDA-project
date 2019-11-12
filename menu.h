@@ -25,7 +25,7 @@ public:
     void modificarInfoPessoalAtleta(Atleta &atleta);
     static void listaModalidades();
     void modalidadeMenu(Modalidade &modalidade);
-    static void listaCompeticoes();
+    void listaCompeticoes(Modalidade &modalidade);
     void competicaoMenuVis(Competicao &competicao,Modalidade &modalidade);
     void competicaoMenuMod(Competicao &competicao,Modalidade &modalidade);
     void programacaoDiaria();

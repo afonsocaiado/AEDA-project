@@ -14,13 +14,13 @@ class Atleta;
 class Competicao {
 
 private:
-    const string nome;
     vector<Prova> provas;
     const bool individual;
     vector<Atleta> atletasInscritos;
     vector<string> medalhados;
 
 public:
+    const string nome;
     Competicao(string nome, bool individual);
     vector <Prova> getProvas();
     bool getIndividual();

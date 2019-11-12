@@ -684,7 +684,10 @@ void Menu::modificarInfoPessoalFuncionario(Funcionario &funcionario) {
 
 void Menu::listaFuncionariosEscolhe() {
     cout << endl << "_____________ FUNCIONARIOS _____________" << endl << "|" << setw(40) << "|" << endl;
-    //Lista com Funcionarios para escolher um
+    for (int i  = 0; i < Jogosol::funcionarios.size(); i++)  {
+        cout << "|   " << i+1 << " - " << Jogosol::funcionarios.at(i).nome << setw(34-Jogosol::funcionarios.at(i).nome.size()) << "|" << endl;
+    }
+    cout << "|_______________________________________|" << endl;
 }
 
 //--------------------------------------------------------------------------
@@ -724,7 +727,7 @@ void Menu::modalidadeMenu(Modalidade &modalidade) {
     switch (choice) {
         case 1:
         {
-            listaCompeticoes();
+            listaCompeticoes(modalidade);
 
             int choice;
             cout << endl << "  Enter your choice: ";
@@ -736,7 +739,7 @@ void Menu::modalidadeMenu(Modalidade &modalidade) {
         }
         case 2:
         {
-            listaCompeticoes();
+            listaCompeticoes(modalidade);
 
             int choice;
             cout << endl << "  Enter your choice: ";
@@ -752,8 +755,12 @@ void Menu::modalidadeMenu(Modalidade &modalidade) {
     }
 }
 
-void Menu::listaCompeticoes() {
-    //Depende de cada Modalidade, nao sei
+void Menu::listaCompeticoes(Modalidade &modalidade) {
+    cout << endl << "______________ COMPETICOES _____________" << endl << "|" << setw(40) << "|" << endl;
+    for (int i  = 0; i < modalidade.competicoes.size(); i++)  {
+        cout << "|   " << i+1 << " - " << modalidade.competicoes.at(i).nome << setw(34-modalidade.competicoes.at(i).nome.size()) << "|" << endl;
+    }
+    cout << "|_______________________________________|" << endl;
 }
 
 void Menu::competicaoMenuVis(Competicao &competicao, Modalidade &modalidade) {

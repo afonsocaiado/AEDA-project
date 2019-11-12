@@ -7,11 +7,13 @@
 #include <vector>
 
 #include "prova.h"
+#include "competicao.h"
 
 using namespace std;
 
 class Resultado {
 private:
+    Competicao competicao;
     Prova prova;
     int classificacao;
     bool passou;

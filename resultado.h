@@ -20,6 +20,7 @@ private:
 public:
     Resultado();
     Resultado(Competicao competicao, Prova prova, int classificacao, bool passou);
+    Competicao getCompeticao();
     Prova getProva();
     int getClassificacao();
     bool getPassou();

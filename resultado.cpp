@@ -10,6 +10,10 @@ Resultado::Resultado(Competicao competicao, Prova prova, int classificacao, bool
     this->passou = passou;
 }
 
+Competicao Resultado::getCompeticao() {
+    return competicao;
+}
+
 Prova Resultado::getProva()
 {
     return prova;

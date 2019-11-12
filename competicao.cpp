@@ -41,5 +41,5 @@ void Competicao::setMedalhados(vector<string> medalhados)
 
 bool Competicao::addProva()
 {
-    return ture;
+    return true;
 }

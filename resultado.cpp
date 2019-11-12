@@ -24,7 +24,7 @@ bool Resultado::getPassou()
     return passou;
 }
 
-string Resultado::getMedalha(int classificacao)
+string Resultado::getMedalha(int classificacao) const
 {
     switch (classificacao)
     {
@@ -61,7 +61,7 @@ void Resultado::setPassou(bool passou)
     this->passou = passou;
 }
 
-ostream & operator<<(ostream &o, Resultado resultado)
+ostream & operator<<(ostream &o, const Resultado &resultado)
 {
     o << "Prova: " << resultado.prova.getNome() << endl;
     o << "Classificacao: " << resultado.classificacao << endl;

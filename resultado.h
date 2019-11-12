@@ -19,7 +19,7 @@ public:
     Prova getProva();
     int getClassificacao();
     bool getPassou();
-    string getMedalha(int classificacao);
+    string getMedalha(int classificacao) const;
     void setProva(Prova prova);
     void setClassificacao(int classificacao);
     void setPassou(bool passou);

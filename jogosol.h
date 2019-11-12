@@ -7,8 +7,6 @@
 #include <string>
 
 #include "funcionario.h"
-#include "util.h"
-#include "modalidade.h"
 
 using namespace std;
 

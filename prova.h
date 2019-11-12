@@ -4,7 +4,9 @@
 
 
 #include <vector>
-#include "funcionario.h"
+#include "data.h"
+
+class Atleta;
 
 class Prova {
 private:

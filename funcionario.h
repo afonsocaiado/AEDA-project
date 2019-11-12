@@ -5,9 +5,8 @@
 #include <iostream>
 #include <string>
 #include <vector>
-#include "data.h"
-#include "competicao.h"
-#include "resultado.h"
+
+#include "modalidade.h"
 
 using namespace std;
 
@@ -28,6 +27,8 @@ public:
     Funcionario(string nome, char sexo, Data dataNascimento, int passaporte, string funcao, Data dataChegada, Data dataPartida, double custoDiario);
     ~Funcionario();
     Funcionario& operator=(const Funcionario&);
+    char getSexo();
+    void setSexo(char sexo) const;
     Data getDataChegada();
     Data getDataPartida();
     void setDataChegada(Data dataChegada);

@@ -4,7 +4,6 @@
 
 #include <iostream>
 
-#include "funcionario.h"
 #include "jogosol.h"
 
 using namespace std;

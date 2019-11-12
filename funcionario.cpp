@@ -20,10 +20,32 @@ Funcionario::~Funcionario()
 
 }
 
-Funcionario& Funcionario::operator=(const Funcionario&)
+char Funcionario::getSexo()
 {
-
+    return this->sexo;
 }
+
+void Funcionario::setSexo(char sexo) const
+{
+    this->sexo = sexo;
+}
+
+Funcionario &Funcionario::operator=(const Funcionario &f)
+{
+    if(this != &f)
+    {
+        this->sexo = f.sexo;
+        this->dataNascimento = f.dataNascimento;
+        this->passaporte;
+        this->funcao = f.funcao;
+        this->dataChegada = f.dataChegada;
+        this->dataPartida = f.dataPartida;
+        this->custoDiario = f.custoDiario;
+    }
+    return *this;
+}
+
+
 
 Data Funcionario::getDataChegada()
 {

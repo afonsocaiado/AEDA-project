@@ -4,12 +4,10 @@
 
 
 #include <vector>
-
-#include "funcionario.h"
+#include "resultado.h"
 
 using namespace std;
 
-class Atleta;
 
 class Competicao {
 

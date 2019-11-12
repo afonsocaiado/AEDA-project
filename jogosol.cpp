@@ -2,7 +2,9 @@
 
 using namespace std;
 
-Jogosol::Jogosol() {
+Jogosol::Jogosol()
+{
+    Jogosol::readFuncionarios();
 
 }
 
@@ -23,6 +25,9 @@ void Jogosol::readFuncionarios()
         Funcionario f;
 
         file >> f;
+
+        if(to_lower(f.getFuncao()) == "atleta")
+            vatletas.push_back(f);
 
         funcionarios.push_back(f);
     }

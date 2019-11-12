@@ -28,8 +28,11 @@ public:
     ~Funcionario();
     Funcionario& operator=(const Funcionario&);
     string getNome();
+    string getFuncao();
     Data getDataChegada();
     Data getDataPartida();
+    void setNome(string nome);
+    void setFuncao(string funcao);
     void setDataChegada(Data dataChegada);
     void setDataPartida(Data dataPartida);
     virtual void viewInfo();

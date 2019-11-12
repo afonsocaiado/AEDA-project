@@ -39,6 +39,11 @@ string Funcionario::getNome()
     return nome;
 }
 
+string Funcionario::getFuncao()
+{
+    return funcao;
+}
+
 Data Funcionario::getDataChegada()
 {
     return dataChegada;
@@ -52,6 +57,16 @@ Data Funcionario::getDataPartida()
 void Funcionario::setDataChegada(Data dataChegada)
 {
     this->dataChegada = dataChegada;
+}
+
+void Funcionario::setNome(string nome)
+{
+    this->nome = nome;
+}
+
+void Funcionario::setFuncao(string funcao)
+{
+    this->funcao = funcao;
 }
 
 void Funcionario::setDataPartida(Data dataPartida)

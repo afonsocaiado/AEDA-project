@@ -10,6 +10,7 @@
 
 using namespace std;
 
+
 class Competicao {
 
 private:
@@ -18,7 +19,8 @@ private:
     vector<string> medalhados;
 
 public:
-    const string nome;
+    string nome;
+    Competicao();
     Competicao(string nome, bool individual);
     vector <Prova> getProvas();
     bool getIndividual();

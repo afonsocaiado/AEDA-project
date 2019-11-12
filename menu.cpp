@@ -140,7 +140,8 @@ void Menu::visualizarAtletas(Atleta &atleta) {
     cout << endl << "______________ VISUALIZAR ______________" << endl << "|" << setw(40) << "|" << endl;
     cout << "|   1 - Informacao pessoal              |" << endl;
     cout << "|   2 - Resultados                      |" << endl;
-    cout << "|   3 - Voltar                          |" << endl;
+    cout << "|   3 - Historico                       |" << endl;
+    cout << "|   4 - Voltar                          |" << endl;
     cout << "|_______________________________________|" << endl;
 
     int choice;
@@ -185,6 +186,24 @@ void Menu::visualizarAtletas(Atleta &atleta) {
             }
             break;
         case 3:
+            //Historico
+            continuar();
+            int choice2;
+            cout << endl << "  Enter your choice: ";
+            cin >> choice2;
+
+            switch (choice2) {
+                case 1:
+                    visualizarAtletas(atleta);
+                    break;
+                case 2:
+                    mainMenu();
+                    break;
+                case 3:
+                    return;
+            }
+            break;
+        case 4:
             atletas(atleta);
             break;
     }
@@ -225,8 +244,17 @@ void Menu::editarAtleta(Atleta &atleta) {
             }
             break;
         case 2:
-            modificarInfoPessoalAtleta(atleta);
+        {
+            listaAtletasEscolhe();
+
+            int choice2;
+            cout << endl << "  Enter your choice: ";
+            cin >> choice2;
+
+            Atleta atleta = Jogosol::getVAtletas().at(choice2-1);
+            modificarAtleta(atleta);
             break;
+        }
         case 3:
         {
             listaAtletasEscolhe();
@@ -258,6 +286,46 @@ void Menu::editarAtleta(Atleta &atleta) {
         }
         case 4:
             atletas(atleta);
+            break;
+    }
+}
+
+void Menu::modificarAtleta(Atleta &atleta) {
+    cout << endl << "_______________ MODIFICAR ______________" << endl << "|" << setw(40) << "|" << endl;
+    cout << "|   1 - Informacao pessoal              |" << endl;
+    cout << "|   2 - Historico                       |" << endl;
+    cout << "|   3 - Voltar                          |" << endl;
+    cout << "|_______________________________________|" << endl;
+
+    int choice;
+    cout << endl << "  Enter your choice: ";
+    cin >> choice;
+
+    switch (choice) {
+        case 1:
+            modificarInfoPessoalAtleta(atleta);
+            break;
+        case 2:
+            //Modificar Historico Atleta
+
+            continuar();
+            int choice4;
+            cout << endl << "  Enter your choice: ";
+            cin >> choice4;
+
+            switch (choice4) {
+                case 1:
+                    modificarAtleta(atleta);
+                    break;
+                case 2:
+                    mainMenu();
+                    break;
+                case 3:
+                    return;
+            }
+            break;
+        case 3:
+            editarAtleta(atleta);
             break;
     }
 }
@@ -418,6 +486,7 @@ void Menu::listaAtletasEscolhe() {
     }
     cout << "|_______________________________________|" << endl;
 }
+
 
 //--------------------------------------------
 

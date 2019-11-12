@@ -5,6 +5,8 @@
 
 using namespace std;
 
+Competicao::Competicao() {}
+
 Competicao::Competicao(string nome, bool individual):nome(nome), individual(individual){}
 
 vector<Prova> Competicao::getProvas()

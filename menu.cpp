@@ -11,10 +11,12 @@ void Menu::mainMenu() {
     cout << endl << "_________________ MENU _________________" << endl << "|" << setw(40) << "|" << endl;
     cout << "|   1 - Funcionarios e Atletas          |" << endl;
     cout << "|   2 - Modalidades                     |" << endl;
-    cout << "|   3 - Programaçao Diaria              |" << endl;
+    cout << "|   3 - Programacao Diaria              |" << endl;
     cout << "|   4 - Tabela de Medalhados            |" << endl;
     cout << "|   5 - Exit Program                    |" << endl;
     cout << "|_______________________________________|" << endl;
+
+
 
     int choice;
     cout << endl << "  Enter your choice: ";

@@ -19,8 +19,8 @@ public:
     static vector<Funcionario> funcionarios;
     static vector<Atleta> vatletas;
     void readFuncionarios();
-    bool addFuncionario();
-    bool deleteFuncionario();
+    static bool addFuncionario();
+    static bool deleteFuncionario();
 };
 
 #endif //TRABALHOAEDAPARTE1_JOGOSOL_H

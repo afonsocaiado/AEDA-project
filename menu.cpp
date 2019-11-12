@@ -222,7 +222,8 @@ void Menu::editarAtleta(Atleta &atleta) {
 
     switch (choice) {
         case 1:
-            //Acrescentar Atleta
+            Jogosol::addFuncionario();
+
             continuar();
             int choice1;
             cout << endl << "  Enter your choice: ";

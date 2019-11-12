@@ -2,7 +2,7 @@
 
 using namespace std;
 
-void readFuncionarios()
+void Jogosol::readFuncionarios()
 {
     ifstream file;
 
@@ -12,7 +12,9 @@ void readFuncionarios()
     {
         Funcionario f;
 
-        //falta ler do ficheiro
+        file >> f;
+
+        funcionarios.push_back(f);
     }
 }
 

@@ -370,9 +370,7 @@ void Menu::editarAtleta() {
                 editarAtleta();
             }
 
-            Atleta atleta2 = Jogosol::getVAtletas().at(choice3-1);
-
-            //Eliminar atleta2
+            Jogosol::getVAtletas().erase(Jogosol::getVAtletas().begin()+(choice3-1));
 
             continuar();
             int choice4;
@@ -819,10 +817,9 @@ void Menu::editarFuncionario() {
                 cin.ignore(INT_MAX, '\n');
                 editarFuncionario();
             }
-            
-            Funcionario funcionario1 = Jogosol::getFuncionarios().at(choice3-1);
 
-            //Eliminar funcionario1
+            Jogosol::getFuncionarios().erase(Jogosol::getFuncionarios().begin()+(choice3-1));
+
             continuar();
             int choice4;
             cout << endl << "  Enter your choice: ";

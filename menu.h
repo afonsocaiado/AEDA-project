@@ -19,7 +19,6 @@ public:
     void editarFuncionario();
     static void listaAtletasEscolhe();
     static void listaFuncionariosEscolhe();
-    void modificarAtleta(Atleta &atleta);
     void modificarInfoPessoalFuncionario(Funcionario &funcionario);
     void modificarInfoPessoalAtleta(Atleta &atleta);
     static void listaModalidades();

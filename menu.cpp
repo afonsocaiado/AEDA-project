@@ -370,9 +370,6 @@ void Menu::editarAtleta() {
                 editarAtleta();
             }
 
-            Atleta atleta2 = Jogosol::getVAtletas().at(choice3-1);
-
-            //Eliminar atleta2
 
             continuar();
             int choice4;
@@ -435,7 +432,11 @@ void Menu::modificarInfoPessoalAtleta(Atleta &atleta) {
 
     switch (choice) {
         case 1:
-            //Funcao Modificar nome
+            string nome;
+            cout << "Introduza novo nome: ";
+            getline(cin, nome);
+            atleta.setNome(nome);
+
             continuar();
             int choice1;
             cout << endl << "  Enter your choice: ";

@@ -54,7 +54,7 @@ void Jogosol::readFuncionarios()
 {
     ifstream file;
 
-    file.open("funcionarios.txt", ios::in);
+    file.open("/Users/tomas/Google Drive/FEUP/2º Ano/Pasta Pessoal/1º Semestre/AEDA/Trabalho 1/TrabalhoAEDAParte1/funcionarios.txt", ios::in);
 
     while(!cin.eof())
     {
@@ -68,7 +68,7 @@ void Jogosol::readAtletas()
 {
     ifstream file;
 
-    file.open("atletas.txt", ios::in);
+    file.open("/Users/tomas/Google Drive/FEUP/2º Ano/Pasta Pessoal/1º Semestre/AEDA/Trabalho 1/TrabalhoAEDAParte1/atletas.txt", ios::in);
 
     while(!cin.eof())
     {

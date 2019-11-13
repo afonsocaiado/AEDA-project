@@ -958,14 +958,19 @@ void Menu::modificarInfoPessoalFuncionario(Funcionario &funcionario) {
     }
 
     switch (choice) {
-        case 1:
-            //Funcao Modificar nome
+        case 1: {
+            string novo;
+            cout << "Introduza nome para funcionario: ";
+            cin.ignore();
+            getline(cin, novo);
+            funcionario.setNome(novo);
+            cout << "Nome atualizado para " << funcionario.getNome() << endl;
+
             continuar();
             int choice1;
             cout << endl << "  Enter your choice: ";
             cin >> choice1;
-            if (!cin.good())
-            {
+            if (!cin.good()) {
                 cout << "Por favor introduza um valor valido";
                 cin.clear();
                 cin.ignore(INT_MAX, '\n');
@@ -986,14 +991,21 @@ void Menu::modificarInfoPessoalFuncionario(Funcionario &funcionario) {
                     modificarInfoPessoalFuncionario(funcionario);
             }
             break;
-        case 2:
+        }
+        case 2: {
+            Data d;
+            cout << "Introduza data de nascimento do funcionario (dd/mm/aaaa): ";
+            cin>>d;
+            funcionario.setDataNascimento(d);
+            cout << "Data atualizada para " << funcionario.getDataNascimento()<<endl;
+
+
             //Funcao Modificar Data Nascimento
             continuar();
             int choice2;
             cout << endl << "  Enter your choice: ";
             cin >> choice2;
-            if (!cin.good())
-            {
+            if (!cin.good()) {
                 cout << "Por favor introduza um valor valido";
                 cin.clear();
                 cin.ignore(INT_MAX, '\n');
@@ -1014,7 +1026,14 @@ void Menu::modificarInfoPessoalFuncionario(Funcionario &funcionario) {
                     modificarInfoPessoalFuncionario(funcionario);
             }
             break;
+        }
         case 3:
+            cout << "Introduza numero de passaporte do funcionario: ";
+            int num;
+            cin>>num;
+            funcionario.setPassaporte(num);
+            cout << "Passaporte do funcionario atualizado para " << funcionario.getPassaporte();
+
             //Funcao Modificar Num Passaporte
             continuar();
             int choice3;
@@ -1043,6 +1062,8 @@ void Menu::modificarInfoPessoalFuncionario(Funcionario &funcionario) {
             break;
         case 4:
             //Funcao Modificar Data Estadia
+
+            
             continuar();
             int choice4;
             cout << endl << "  Enter your choice: ";

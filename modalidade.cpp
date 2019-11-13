@@ -10,7 +10,12 @@ Modalidade::Modalidade(string nome)
 
    ifstream file;
 
-   string filename = nome + ".txt";
+   string filename = "C:\\Users\\Fisica1\\Desktop\\AEDA\\Trabalho\\TrabalhoAEDAParte1\\" + nome + ".txt";
 
    file.open(filename);
+
+   while(!file.eof())
+   {
+
+   }
 }

@@ -27,8 +27,8 @@ public:
     vector<string> getMedalhados();
     void setProvas(vector<Prova> provas);
     void setMedalhados(vector<string> medalhados);
-
     bool addProva();
 
+    friend istream &operator>>(istream & i, Competicao &c);
 };
 #endif //TRABALHOAEDAPARTE1_COMPETICAO_H

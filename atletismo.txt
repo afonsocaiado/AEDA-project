@@ -14,4 +14,3 @@ Maratona Feminino;individual;Final;112385769,117723346,255553647;
 Triplo Salto Feminino;individual,Eliminatorias,Final;236577689,234567947;
 Salto com Vara Feminino;individual,Eliminatorias,Final;236577689,234567947;
 Lancamento do Disco Feminino;individual,Eliminatorias,Final;293845777;
-

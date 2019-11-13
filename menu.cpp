@@ -432,7 +432,7 @@ void Menu::modificarInfoPessoalAtleta(Atleta &atleta) {
     }
 
     switch (choice) {
-        case 1:
+        case 1: {
             string nome;
             cout << "Introduza novo nome: ";
             getline(cin, nome);
@@ -442,8 +442,7 @@ void Menu::modificarInfoPessoalAtleta(Atleta &atleta) {
             int choice1;
             cout << endl << "  Enter your choice: ";
             cin >> choice1;
-            if (!cin.good())
-            {
+            if (!cin.good()) {
                 cout << "Por favor introduza um valor valido";
                 cin.clear();
                 cin.ignore(INT_MAX, '\n');
@@ -463,6 +462,7 @@ void Menu::modificarInfoPessoalAtleta(Atleta &atleta) {
                     cout << "Por favor introduza um valor valido" << endl;
                     modificarInfoPessoalAtleta(atleta);
             }
+        }
             break;
         case 2:
             //Funcao Modificar Data Nascimento

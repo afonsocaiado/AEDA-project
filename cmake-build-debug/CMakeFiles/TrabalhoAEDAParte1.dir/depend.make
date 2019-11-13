@@ -15,7 +15,6 @@ CMakeFiles/TrabalhoAEDAParte1.dir/funcionario.cpp.o: ../competicao.h
 CMakeFiles/TrabalhoAEDAParte1.dir/funcionario.cpp.o: ../data.h
 CMakeFiles/TrabalhoAEDAParte1.dir/funcionario.cpp.o: ../funcionario.cpp
 CMakeFiles/TrabalhoAEDAParte1.dir/funcionario.cpp.o: ../funcionario.h
-CMakeFiles/TrabalhoAEDAParte1.dir/funcionario.cpp.o: ../jogosol.h
 CMakeFiles/TrabalhoAEDAParte1.dir/funcionario.cpp.o: ../modalidade.h
 CMakeFiles/TrabalhoAEDAParte1.dir/funcionario.cpp.o: ../prova.h
 CMakeFiles/TrabalhoAEDAParte1.dir/funcionario.cpp.o: ../resultado.h

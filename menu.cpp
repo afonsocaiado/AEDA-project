@@ -433,7 +433,11 @@ void Menu::modificarInfoPessoalAtleta(Atleta &atleta) {
 
     switch (choice) {
         case 1:
-            //Funcao Modificar nome
+            string nome;
+            cout << "Introduza novo nome: ";
+            getline(cin, nome);
+            atleta.setNome(nome);
+
             continuar();
             int choice1;
             cout << endl << "  Enter your choice: ";

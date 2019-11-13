@@ -6,6 +6,42 @@ Jogosol::Jogosol()
 {
     Jogosol::readFuncionarios();
 
+    Jogosol::readAtletas();
+
+    Modalidade atletismo("atletismo");
+    modalidades.push_back(atletismo);
+    Modalidade badminton("badminton");
+    modalidades.push_back(badminton);
+    Modalidade canoagem("canoagem");
+    modalidades.push_back(canoagem);
+    Modalidade ciclismo("ciclismo");
+    modalidades.push_back(ciclismo);
+    Modalidade futebol("futebol");
+    modalidades.push_back(futebol);
+    Modalidade Canoagem("canoagem");
+    modalidades.push_back(Canoagem);
+    Modalidade ginastica("ginastica");
+    modalidades.push_back(ginastica);
+    Modalidade golfe("golfe");
+    modalidades.push_back(golfe);
+    Modalidade hipismo("hipismo");
+    modalidades.push_back(hipismo);
+    Modalidade judo("judo");
+    modalidades.push_back(judo);
+    Modalidade natacao("natacao");
+    modalidades.push_back(natacao);
+    Modalidade taekwondo("taekwondo");
+    modalidades.push_back(taekwondo);
+    Modalidade tenis("tenis");
+    modalidades.push_back(tenis);
+    Modalidade tenisdemesa("tenisdemesa");
+    modalidades.push_back(tenisdemesa);
+    Modalidade tiro("tiro");
+    modalidades.push_back(tiro);
+    Modalidade triatlo("triatlo");
+    modalidades.push_back(triatlo);
+    Modalidade vela("vela");
+    modalidades.push_back(vela);
 }
 
 vector<Modalidade> Jogosol::modalidades {};
@@ -51,8 +87,7 @@ bool Jogosol::addFuncionario()
     string nome, funcao, modalidade;
     char sexo;
     Data dataNascimento, dataChegada, dataPartida;
-    int passaporte, altura, ranking;
-    double custoDiario, peso;
+    int passaporte, altura, ranking, custoDiario, peso;
 
     cout << "Nome: ";
     getline(cin, nome);
@@ -105,6 +140,8 @@ bool Jogosol::addFuncionario()
 
         file << f;
     }
+
+
 
     file.close();
 

@@ -4,12 +4,9 @@
 
 using namespace std;
 
-Funcionario::Funcionario():nome(""), sexo(), dataNascimento(), passaporte(0), funcao(""), custoDiario(0)
-{
-    //importancia do construtor vazio?
-}
+Funcionario::Funcionario()= default;
 
-Funcionario::Funcionario(string nome, char sexo, Data dataNascimento, int passaporte, string funcao, Data dataChegada, Data dataPartida, double custoDiario):nome(nome), sexo(sexo), dataNascimento(dataNascimento), passaporte(passaporte), funcao(funcao), custoDiario(custoDiario)
+Funcionario::Funcionario(string nome, char sexo, Data dataNascimento, int passaporte, string funcao, Data dataChegada, Data dataPartida, int custoDiario):nome(nome), sexo(sexo), dataNascimento(dataNascimento), passaporte(passaporte), funcao(funcao), custoDiario(custoDiario)
 {
 
     this->dataChegada = dataChegada;
@@ -52,6 +49,11 @@ Data Funcionario::getDataChegada()
 Data Funcionario::getDataPartida()
 {
     return dataPartida;
+}
+
+int Funcionario::getCustoDiario()
+{
+    return custoDiario;
 }
 
 void Funcionario::setDataChegada(Data dataChegada)
@@ -100,7 +102,7 @@ void Funcionario::viewInfo() {
 
 Atleta::Atleta() {}
 
-Atleta::Atleta(string nome, char sexo, Data dataNascimento, int passaporte, string funcao, Data dataChegada, Data dataPartida, double custoDiario, string modalidade, double peso, int altura, int ranking):modalidade(modalidade), peso(peso), altura(altura), ranking(ranking), Funcionario(nome, sexo, dataNascimento, passaporte, funcao, dataChegada, dataPartida, custoDiario) {}
+Atleta::Atleta(string nome, char sexo, Data dataNascimento, int passaporte, string funcao, Data dataChegada, Data dataPartida, int custoDiario, string modalidade, int peso, int altura, int ranking):modalidade(modalidade), peso(peso), altura(altura), ranking(ranking), Funcionario(nome, sexo, dataNascimento, passaporte, funcao, dataChegada, dataPartida, custoDiario) {}
 
 Atleta::~Atleta() = default;
 
@@ -129,7 +131,7 @@ void Atleta::viewInfo() {
 }
 
 void Atleta::viewResultados() {
-    for (int i = 0; i < resultados.size(); i++){
+    for (unsigned int i = 0; i < resultados.size(); i++){
         cout << endl << "Competicao: " << resultados.at(i).getCompeticao().nome << endl;
         cout << endl << "Prova: " << resultados.at(i).getProva().getNome() << endl;
         cout << endl << "Classificao: " << resultados.at(i).getClassificacao() << endl << endl;
@@ -145,8 +147,8 @@ ostream &operator<<(ostream & o, const Funcionario &f)
 
 istream& Funcionario::input(istream& i)
 {
-    string custoDiario;
     getline(i, nome, ';');
+    nome.pop_back();
     i >> sexo;
     i.ignore();
     i >> dataNascimento;
@@ -154,13 +156,13 @@ istream& Funcionario::input(istream& i)
     i >> passaporte;
     i.ignore();
     getline(i, funcao, ';');
+    funcao.pop_back();
     i >> dataChegada;
     i.ignore();
     i >> dataPartida;
     i.ignore();
-    getline(i, custoDiario, ';');
-    custoDiario = stod(custoDiario);
-    i.ignore();
+    i >> custoDiario;
+    i.ignore(2, '\n');
     return i;
 }
 
@@ -172,11 +174,26 @@ ostream &operator<<(ostream & o, const Atleta &a)
 
 istream& Atleta::input(istream& i)
 {
-    Funcionario::input(i);
-    string temp;
+    getline(i, nome, ';');
+    nome.pop_back();
+    i >> sexo;
+    i.ignore();
+    i >> dataNascimento;
+    i.ignore();
+    i >> passaporte;
+    i.ignore();
+    getline(i, funcao, ';');
+    funcao.pop_back();
+    i >> dataChegada;
+    i.ignore();
+    i >> dataPartida;
+    i.ignore();
+    i >> custoDiario;
+    i.ignore();
     getline(i, modalidade, ';');
-    getline(i, temp, ';');
-    peso = stod(temp);
+    modalidade.pop_back();
+    i >> peso;
+    i.ignore();
     i >> altura;
     i.ignore();
     i >> ranking;

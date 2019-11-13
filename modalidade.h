@@ -9,10 +9,12 @@
 using namespace std;
 
 class Modalidade {
-
+private:
+    string nome;
 public:
+    Modalidade();
+    Modalidade(string nome);
     vector <Competicao> competicoes;
-
 };
 
 #endif //TRABALHOAEDAPARTE1_MODALIDADE_H

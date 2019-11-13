@@ -20,11 +20,11 @@ protected:
     string funcao;
     Data dataChegada;
     Data dataPartida;
-    double custoDiario;
+    int custoDiario;
 
 public:
     Funcionario();
-    Funcionario(string nome, char sexo, Data dataNascimento, int passaporte, string funcao, Data dataChegada, Data dataPartida, double custoDiario);
+    Funcionario(string nome, char sexo, Data dataNascimento, int passaporte, string funcao, Data dataChegada, Data dataPartida, int custoDiario);
     virtual ~Funcionario();
     Funcionario& operator=(const Funcionario&);
     string getNome();
@@ -33,6 +33,7 @@ public:
     Data getDataChegada();
     Data getDataPartida();
     int getPassaporte();
+    int getCustoDiario();
     void setNome(string nome);
     void setFuncao(string funcao);
     void setDataChegada(Data dataChegada);
@@ -43,14 +44,13 @@ public:
 
     bool operator== (Funcionario funcionario) const;
     friend ostream &operator<<(ostream & o, const Funcionario &f);
-    friend istream &operator>>(istream &i, Funcionario &f);
     virtual istream& input(istream& i);
 };
 
 class Atleta:public Funcionario{
 private:
     string modalidade;
-    double peso;
+    int peso;
     int altura;
     int ranking;
     vector<Competicao> competicoes;
@@ -58,7 +58,7 @@ private:
     vector<Resultado> resultados;
 public:
     Atleta();
-    Atleta(string nome, char sexo, Data dataNascimento, int passaporte, string funcao, Data dataChegada, Data dataPartida, double custoDiario, string modalidade, double peso, int altura, int ranking);
+    Atleta(string nome, char sexo, Data dataNascimento, int passaporte, string funcao, Data dataChegada, Data dataPartida, int custoDiario, string modalidade, int peso, int altura, int ranking);
     ~Atleta();
     void addCompeticao(Competicao competicao);
     void addResultado(Resultado resultado);

@@ -6,25 +6,21 @@
 
 #IncludeRegexTransform: 
 
-/Users/tomas/Google Drive/FEUP/2º Ano/Pasta Pessoal/1º Semestre/AEDA/Trabalho 1/TrabalhoAEDAParte1/competicao.h
+C:/Users/Fisica1/Desktop/AEDA/Trabalho/TrabalhoAEDAParte1/competicao.h
 string
 -
 vector
 -
 prova.h
-/Users/tomas/Google Drive/FEUP/2º Ano/Pasta Pessoal/1º Semestre/AEDA/Trabalho 1/TrabalhoAEDAParte1/prova.h
+C:/Users/Fisica1/Desktop/AEDA/Trabalho/TrabalhoAEDAParte1/prova.h
 
-/Users/tomas/Google Drive/FEUP/2º Ano/Pasta Pessoal/1º Semestre/AEDA/Trabalho 1/TrabalhoAEDAParte1/data.h
+C:/Users/Fisica1/Desktop/AEDA/Trabalho/TrabalhoAEDAParte1/data.h
 iostream
 -
 util.h
-/Users/tomas/Google Drive/FEUP/2º Ano/Pasta Pessoal/1º Semestre/AEDA/Trabalho 1/TrabalhoAEDAParte1/util.h
+C:/Users/Fisica1/Desktop/AEDA/Trabalho/TrabalhoAEDAParte1/util.h
 
-<<<<<<< Updated upstream
-/Users/afonsocaiado/Desktop/FACULDADE/ANO 2 /SEM 1/AEDA/TRABALHO AEDA/TrabalhoAEDAParte1/funcionario.h
-=======
-/Users/tomas/Google Drive/FEUP/2º Ano/Pasta Pessoal/1º Semestre/AEDA/Trabalho 1/TrabalhoAEDAParte1/funcionario.h
->>>>>>> Stashed changes
+C:/Users/Fisica1/Desktop/AEDA/Trabalho/TrabalhoAEDAParte1/funcionario.h
 iostream
 -
 string
@@ -32,9 +28,9 @@ string
 vector
 -
 modalidade.h
-/Users/tomas/Google Drive/FEUP/2º Ano/Pasta Pessoal/1º Semestre/AEDA/Trabalho 1/TrabalhoAEDAParte1/modalidade.h
+C:/Users/Fisica1/Desktop/AEDA/Trabalho/TrabalhoAEDAParte1/modalidade.h
 
-/Users/tomas/Google Drive/FEUP/2º Ano/Pasta Pessoal/1º Semestre/AEDA/Trabalho 1/TrabalhoAEDAParte1/jogosol.h
+C:/Users/Fisica1/Desktop/AEDA/Trabalho/TrabalhoAEDAParte1/jogosol.h
 fstream
 -
 vector
@@ -42,61 +38,45 @@ vector
 string
 -
 funcionario.h
-/Users/tomas/Google Drive/FEUP/2º Ano/Pasta Pessoal/1º Semestre/AEDA/Trabalho 1/TrabalhoAEDAParte1/funcionario.h
+C:/Users/Fisica1/Desktop/AEDA/Trabalho/TrabalhoAEDAParte1/funcionario.h
 
-<<<<<<< Updated upstream
-/Users/afonsocaiado/Desktop/FACULDADE/ANO 2 /SEM 1/AEDA/TRABALHO AEDA/TrabalhoAEDAParte1/menu.cpp
-=======
-/Users/tomas/Google Drive/FEUP/2º Ano/Pasta Pessoal/1º Semestre/AEDA/Trabalho 1/TrabalhoAEDAParte1/main.cpp
+C:/Users/Fisica1/Desktop/AEDA/Trabalho/TrabalhoAEDAParte1/main.cpp
 iostream
 -
 jogosol.h
-/Users/tomas/Google Drive/FEUP/2º Ano/Pasta Pessoal/1º Semestre/AEDA/Trabalho 1/TrabalhoAEDAParte1/jogosol.h
+C:/Users/Fisica1/Desktop/AEDA/Trabalho/TrabalhoAEDAParte1/jogosol.h
 menu.h
-/Users/tomas/Google Drive/FEUP/2º Ano/Pasta Pessoal/1º Semestre/AEDA/Trabalho 1/TrabalhoAEDAParte1/menu.h
+C:/Users/Fisica1/Desktop/AEDA/Trabalho/TrabalhoAEDAParte1/menu.h
 
-/Users/tomas/Google Drive/FEUP/2º Ano/Pasta Pessoal/1º Semestre/AEDA/Trabalho 1/TrabalhoAEDAParte1/menu.cpp
->>>>>>> Stashed changes
-menu.h
-/Users/tomas/Google Drive/FEUP/2º Ano/Pasta Pessoal/1º Semestre/AEDA/Trabalho 1/TrabalhoAEDAParte1/menu.h
-jogosol.h
-/Users/tomas/Google Drive/FEUP/2º Ano/Pasta Pessoal/1º Semestre/AEDA/Trabalho 1/TrabalhoAEDAParte1/jogosol.h
-modalidade.h
-/Users/tomas/Google Drive/FEUP/2º Ano/Pasta Pessoal/1º Semestre/AEDA/Trabalho 1/TrabalhoAEDAParte1/modalidade.h
-iostream
--
-iomanip
--
-
-/Users/tomas/Google Drive/FEUP/2º Ano/Pasta Pessoal/1º Semestre/AEDA/Trabalho 1/TrabalhoAEDAParte1/menu.h
+C:/Users/Fisica1/Desktop/AEDA/Trabalho/TrabalhoAEDAParte1/menu.h
 iostream
 -
 jogosol.h
-/Users/tomas/Google Drive/FEUP/2º Ano/Pasta Pessoal/1º Semestre/AEDA/Trabalho 1/TrabalhoAEDAParte1/jogosol.h
+C:/Users/Fisica1/Desktop/AEDA/Trabalho/TrabalhoAEDAParte1/jogosol.h
 
-/Users/tomas/Google Drive/FEUP/2º Ano/Pasta Pessoal/1º Semestre/AEDA/Trabalho 1/TrabalhoAEDAParte1/modalidade.h
+C:/Users/Fisica1/Desktop/AEDA/Trabalho/TrabalhoAEDAParte1/modalidade.h
 resultado.h
-/Users/tomas/Google Drive/FEUP/2º Ano/Pasta Pessoal/1º Semestre/AEDA/Trabalho 1/TrabalhoAEDAParte1/resultado.h
+C:/Users/Fisica1/Desktop/AEDA/Trabalho/TrabalhoAEDAParte1/resultado.h
 vector
 -
 
-/Users/tomas/Google Drive/FEUP/2º Ano/Pasta Pessoal/1º Semestre/AEDA/Trabalho 1/TrabalhoAEDAParte1/prova.h
+C:/Users/Fisica1/Desktop/AEDA/Trabalho/TrabalhoAEDAParte1/prova.h
 string
 -
 vector
 -
 data.h
-/Users/tomas/Google Drive/FEUP/2º Ano/Pasta Pessoal/1º Semestre/AEDA/Trabalho 1/TrabalhoAEDAParte1/data.h
+C:/Users/Fisica1/Desktop/AEDA/Trabalho/TrabalhoAEDAParte1/data.h
 
-/Users/tomas/Google Drive/FEUP/2º Ano/Pasta Pessoal/1º Semestre/AEDA/Trabalho 1/TrabalhoAEDAParte1/resultado.h
+C:/Users/Fisica1/Desktop/AEDA/Trabalho/TrabalhoAEDAParte1/resultado.h
 string
 -
 vector
 -
 competicao.h
-/Users/tomas/Google Drive/FEUP/2º Ano/Pasta Pessoal/1º Semestre/AEDA/Trabalho 1/TrabalhoAEDAParte1/competicao.h
+C:/Users/Fisica1/Desktop/AEDA/Trabalho/TrabalhoAEDAParte1/competicao.h
 
-/Users/tomas/Google Drive/FEUP/2º Ano/Pasta Pessoal/1º Semestre/AEDA/Trabalho 1/TrabalhoAEDAParte1/util.h
+C:/Users/Fisica1/Desktop/AEDA/Trabalho/TrabalhoAEDAParte1/util.h
 string
 -
 

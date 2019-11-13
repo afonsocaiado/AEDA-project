@@ -65,6 +65,12 @@ public:
     void viewInfo();
     void viewResultados();
     void elimAtleta();
+    void setPeso(int novo);
+    void setAltura(int novo);
+    void setRanking(int novo);
+    int getRanking();
+    int getAltura();
+    int getPeso();
     friend ostream &operator<<(ostream & o, const Atleta &a);
     virtual istream& input(istream& i);
 

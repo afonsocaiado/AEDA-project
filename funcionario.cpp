@@ -66,12 +66,36 @@ void Funcionario::setNome(string nome)
     this->nome = nome;
 }
 
+void Atleta::setPeso(int novo){
+    this->peso = novo;
+}
+
+int Atleta::getPeso() {
+    return this->peso;
+}
+
+void Atleta::setAltura(int novo) {
+    this->altura = novo;
+}
+
+int Atleta::getAltura() {
+    return this->altura;
+}
+
+void Atleta::setRanking(int novo) {
+    this->ranking = novo;
+}
+
+int Atleta::getRanking(){
+    return this->ranking;
+}
+
 Data Funcionario::getDataNascimento() {
     return dataNascimento;
 }
 
 void Funcionario::setPassaporte(int pass) {
-    passaporte = pass;
+    this->passaporte = pass;
 }
 
 int Funcionario::getPassaporte() {

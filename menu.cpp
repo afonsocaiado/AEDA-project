@@ -568,7 +568,17 @@ void Menu::modificarInfoPessoalAtleta(Atleta &atleta) {
             break;
         }
         case 4: {
-            //Funcao Modificar Data Estadia
+            cout << "Introduza data de chegada (dd/mm/aaaa): ";
+            Data dc,dp;
+            cin >> dc;
+            cout << "Introduza data de estadia (dd/mm/aaaa): ";
+            cin >> dp;
+            atleta.setDataChegada(dc);
+            atleta.setDataPartida(dp);
+            cout << "Data Chegada: " << atleta.getDataChegada() << endl;
+            cout << "Data Partida: " << atleta.getDataPartida() << endl;
+
+
             continuar();
             int choice4;
             cout << endl << "  Enter your choice: ";
@@ -595,7 +605,13 @@ void Menu::modificarInfoPessoalAtleta(Atleta &atleta) {
             break;
         }
         case 5: {
-            //Funcao Modificar Peso
+            int peso;
+            cout << "Introduza peso do atleta (valor inteiro em kg): ";
+            cin >>peso;
+            atleta.setPeso(peso);
+            cout << "Peso do atleta alterado para " << peso<<endl;
+
+
             continuar();
             int choice5;
             cout << endl << "  Enter your choice: ";
@@ -622,7 +638,13 @@ void Menu::modificarInfoPessoalAtleta(Atleta &atleta) {
             break;
         }
         case 6: {
-            //Funcao Modificar Altura
+            int alt;
+            cout << "Introduza altura do atleta (valor inteiro em cm): ";
+            cin >> alt;
+            atleta.setAltura(alt);
+            cout << "Altura de atleta alterada para: " << atleta.getAltura() << endl;
+
+
             continuar();
             int choice6;
             cout << endl << "  Enter your choice: ";
@@ -650,7 +672,13 @@ void Menu::modificarInfoPessoalAtleta(Atleta &atleta) {
             break;
         }
         case 7: {
-            //Funcao Modificar Ranking
+            int rkn;
+            cout << "Introduza posicao do ranking: ";
+            cin >> rkn;
+            atleta.setRanking(rkn);
+            cout << "Ranking de atleta atualizado para " << atleta.getRanking() << endl;
+
+
             continuar();
             int choice7;
             cout << endl << "  Enter your choice: ";

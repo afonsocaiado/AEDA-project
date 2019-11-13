@@ -54,9 +54,9 @@ void Jogosol::readFuncionarios()
 {
     ifstream file;
 
-    file.open("funcionarios.txt", ios::in);
+    file.open("C:\\Users\\Fisica1\\Desktop\\AEDA\\Trabalho\\TrabalhoAEDAParte1\\2funcionarios.txt", ios::in);
 
-    while(!cin.eof())
+    while(!file.eof())
     {
         Funcionario f;
         f.input(file);
@@ -68,9 +68,9 @@ void Jogosol::readAtletas()
 {
     ifstream file;
 
-    file.open("atletas.txt", ios::in);
+    file.open("C:\\Users\\Fisica1\\Desktop\\AEDA\\Trabalho\\TrabalhoAEDAParte1\\atletas.txt", ios::in);
 
-    while(!cin.eof())
+    while(!file.eof())
     {
         Atleta a;
         a.input(file);

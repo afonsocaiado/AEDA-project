@@ -147,21 +147,16 @@ ostream &operator<<(ostream & o, const Funcionario &f)
 
 istream& Funcionario::input(istream& i)
 {
-    getline(i, nome, ';');
-    nome.pop_back();
-    i >> sexo;
+    getline(i, this->nome, ';');
+    i >> this->sexo;
     i.ignore();
-    i >> dataNascimento;
+    i >> this->dataNascimento;
+    i >> this->passaporte;
     i.ignore();
-    i >> passaporte;
-    i.ignore();
-    getline(i, funcao, ';');
-    funcao.pop_back();
-    i >> dataChegada;
-    i.ignore();
-    i >> dataPartida;
-    i.ignore();
-    i >> custoDiario;
+    getline(i, this->funcao, ';');
+    i >> this->dataChegada;
+    i >> this->dataPartida;
+    i >> this->custoDiario;
     i.ignore(2, '\n');
     return i;
 }
@@ -174,29 +169,23 @@ ostream &operator<<(ostream & o, const Atleta &a)
 
 istream& Atleta::input(istream& i)
 {
-    getline(i, nome, ';');
-    nome.pop_back();
-    i >> sexo;
+    getline(i, this->nome, ';');
+    i >> this->sexo;
     i.ignore();
-    i >> dataNascimento;
+    i >> this->dataNascimento;
+    i >> this->passaporte;
     i.ignore();
-    i >> passaporte;
+    getline(i, this->funcao, ';');
+    i >> this->dataChegada;
+    i >> this->dataPartida;
+    i >> this->custoDiario;
     i.ignore();
-    getline(i, funcao, ';');
-    funcao.pop_back();
-    i >> dataChegada;
+    getline(i, this->modalidade, ';');
+    i >> this->peso;
     i.ignore();
-    i >> dataPartida;
+    i >> this->altura;
     i.ignore();
-    i >> custoDiario;
-    i.ignore();
-    getline(i, modalidade, ';');
-    modalidade.pop_back();
-    i >> peso;
-    i.ignore();
-    i >> altura;
-    i.ignore();
-    i >> ranking;
+    i >> this->ranking;
     i.ignore(2, '\n');
     return i;
 }

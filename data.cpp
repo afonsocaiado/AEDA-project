@@ -55,14 +55,12 @@ ostream & operator<<(ostream & o, const Data & d) {
 }
 
 istream &operator>>(istream &i, Data &d){
-    string s,tempd,tempm,tempa;
+    string tempd,tempm,tempa;
     int intd,intm,inta;
-    stringstream ss;
 
-    i >> s;
-    replace(s.begin(),s.end(),'/',' ');
-    ss << s;
-    ss >> tempd >> tempm >> tempa;
+    getline(i, tempd, '/');
+    getline(i, tempm, '/');
+    getline(i, tempa, ';');
 
     try {
         intd = stoi(tempd);

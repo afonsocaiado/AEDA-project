@@ -459,9 +459,12 @@ void Menu::modificarInfoPessoalAtleta(Atleta &atleta) {
     switch (choice) {
         case 1: {
             string nome;
+            cin.ignore();
             cout << "Introduza novo nome: ";
             getline(cin, nome);
             atleta.setNome(nome);
+            cout << "Nome mudado para " << atleta.getNome() << endl;
+            cin.ignore();
 
             continuar();
             int choice1;
@@ -491,12 +494,12 @@ void Menu::modificarInfoPessoalAtleta(Atleta &atleta) {
             break;
         case 2: {
             cout << "Por favor introduza a data (dd/mm/aaaa): " << endl;
-
             Data d;
 
             do{
                 cin >> d;
             } while (cin.fail());
+            cout << "Data Nascimento: " << d.getDia() << '/' << d.getMes() << '/' << d.getAno() << endl;
 
 
             atleta.setDataNascimento(d);

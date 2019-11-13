@@ -29,6 +29,7 @@ public:
     Funcionario& operator=(const Funcionario&);
     string getNome();
     string getFuncao();
+    Data getDataNascimento();
     Data getDataChegada();
     Data getDataPartida();
     void setNome(string nome);

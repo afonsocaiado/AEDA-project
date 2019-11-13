@@ -64,6 +64,10 @@ void Funcionario::setNome(string nome)
     this->nome = nome;
 }
 
+Data Funcionario::getDataNascimento() {
+    return dataNascimento;
+}
+
 void Funcionario::setFuncao(string funcao)
 {
     this->funcao = funcao;

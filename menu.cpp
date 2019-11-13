@@ -173,8 +173,7 @@ void Menu::visualizarAtletas(Atleta &atleta) {
     cout << endl << "______________ VISUALIZAR ______________" << endl << "|" << setw(40) << "|" << endl;
     cout << "|   1 - Informacao pessoal              |" << endl;
     cout << "|   2 - Resultados                      |" << endl;
-    cout << "|   3 - Historico                       |" << endl;
-    cout << "|   4 - Voltar                          |" << endl;
+    cout << "|   3 - Voltar                          |" << endl;
     cout << "|_______________________________________|" << endl;
 
     int choice;
@@ -210,7 +209,7 @@ void Menu::visualizarAtletas(Atleta &atleta) {
             }
             break;
         case 2:
-            //Resultados do Atleta
+            atleta.viewResultados();
             continuar();
             int choice1;
             cout << endl << "  Enter your choice: ";
@@ -239,34 +238,6 @@ void Menu::visualizarAtletas(Atleta &atleta) {
             }
             break;
         case 3:
-            //Historico
-            continuar();
-            int choice2;
-            cout << endl << "  Enter your choice: ";
-            cin >> choice2;
-            if (!cin.good())
-            {
-                cout << "Por favor introduza um valor valido";
-                cin.clear();
-                cin.ignore(INT_MAX, '\n');
-                visualizarAtletas(atleta);
-            }
-
-            switch (choice2) {
-                case 1:
-                    visualizarAtletas(atleta);
-                    break;
-                case 2:
-                    mainMenu();
-                    break;
-                case 3:
-                    return;
-                default:
-                    cout << "Por favor introduza um valor valido" << endl;
-                    visualizarAtletas(atleta);
-            }
-            break;
-        case 4:
             atletas(atleta);
             break;
         default:
@@ -342,7 +313,7 @@ void Menu::editarAtleta(Atleta &atleta) {
             }
 
             Atleta atleta = Jogosol::getVAtletas().at(choice2-1);
-            modificarAtleta(atleta);
+            modificarInfoPessoalAtleta(atleta);
             break;
         }
         case 3:
@@ -397,56 +368,6 @@ void Menu::editarAtleta(Atleta &atleta) {
         default:
             cout << "Por favor introduza um valor valido" << endl;
             editarAtleta(atleta);
-    }
-}
-
-void Menu::modificarAtleta(Atleta &atleta) {
-    cout << endl << "_______________ MODIFICAR ______________" << endl << "|" << setw(40) << "|" << endl;
-    cout << "|   1 - Informacao pessoal              |" << endl;
-    cout << "|   2 - Historico                       |" << endl;
-    cout << "|   3 - Voltar                          |" << endl;
-    cout << "|_______________________________________|" << endl;
-
-    int choice;
-    cout << endl << "  Enter your choice: ";
-    cin >> choice;
-    if (!cin.good())
-    {
-        cout << "Por favor introduza um valor valido";
-        cin.clear();
-        cin.ignore(INT_MAX, '\n');
-        modificarAtleta(atleta);
-    }
-
-    switch (choice) {
-        case 1:
-            modificarInfoPessoalAtleta(atleta);
-            break;
-        case 2:
-            //Modificar Historico Atleta
-
-            continuar();
-            int choice4;
-            cout << endl << "  Enter your choice: ";
-            cin >> choice4;
-
-            switch (choice4) {
-                case 1:
-                    modificarAtleta(atleta);
-                    break;
-                case 2:
-                    mainMenu();
-                    break;
-                case 3:
-                    return;
-            }
-            break;
-        case 3:
-            editarAtleta(atleta);
-            break;
-        default:
-            cout << "Por favor introduza um valor valido" << endl;
-            modificarAtleta(atleta);
     }
 }
 

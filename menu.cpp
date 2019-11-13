@@ -273,9 +273,10 @@ void Menu::visualizarAtletas(Atleta &atleta) {
 
 void Menu::editarAtleta() {
     cout << endl << "________________ EDITAR ________________" << endl << "|" << setw(40) << "|" << endl;
-    cout << "|   1 - Acrescentar                     |" << endl;
-    cout << "|   2 - Modificar                       |" << endl;
-    cout << "|   3 - Eliminar                        |" << endl;
+    cout << "|   1 - Acrescentar Atleta              |" << endl;
+    cout << "|   2 - Modificar Atleta                |" << endl;
+    cout << "|   3 - Eliminar Atleta                 |" << endl;
+    cout << "|   4 - Acrescentar Resultado           |" << endl;
     cout << "|   4 - Voltar                          |" << endl;
     cout << "|_______________________________________|" << endl;
 
@@ -399,7 +400,31 @@ void Menu::editarAtleta() {
             }
             break;
         }
-        case 4:
+        case 4: {
+            listaAtletasEscolhe();
+
+            int choice2;
+            cout << endl << "  Enter your choice: ";
+            cin >> choice2;
+
+            if (!cin.good()) {
+                cout << "Por favor introduza um valor valido";
+                cin.clear();
+                cin.ignore(INT_MAX, '\n');
+                editarAtleta();
+            }
+
+            if (choice2 > Jogosol::getFuncionarios().size()) {
+                cout << "Por favor introduza um valor valido";
+                cin.clear();
+                cin.ignore(INT_MAX, '\n');
+                editarAtleta();
+            }
+
+            Atleta atleta = Jogosol::getVAtletas().at(choice2 - 1);
+            //atleta.addResultado ?
+        }
+        case 5:
             atletas();
             break;
         default:
@@ -469,7 +494,7 @@ void Menu::modificarInfoPessoalAtleta(Atleta &atleta) {
 
             Data d;
 
-            do {
+            do{
                 cin >> d;
             } while (cin.fail());
 
@@ -760,7 +785,7 @@ void Menu::editarFuncionario() {
     }
     switch (choice) {
         case 1:
-            //Add Funcionario
+            Jogosol::addFuncionario();
 
             continuar();
             int choice1;
@@ -1044,7 +1069,7 @@ void Menu::listaModalidades() {
 }
 
 void Menu::modalidadeMenu(Modalidade &modalidade) {
-    cout << endl << "_____________ MODALIDADE _______________" << endl << "|" << setw(40) << "|" << endl;  //Implementar ainda
+    cout << endl << "_____________ MODALIDADE _______________" << endl << "|" << setw(40) << "|" << endl;
     cout << "|   1  - Visualizar                     |" << endl;
     cout << "|   2  - Modificar                      |" << endl;
     cout << "|   3  - Voltar                         |" << endl;
@@ -1131,7 +1156,7 @@ void Menu::listaCompeticoes(Modalidade &modalidade) {
 }
 
 void Menu::competicaoMenuVis(Competicao &competicao, Modalidade &modalidade) {
-    cout << endl << "_____________ COMPETICAO _______________" << endl << "|" << setw(40) << "|" << endl;  //Implementar ainda
+    cout << endl << "_____________ COMPETICAO _______________" << endl << "|" << setw(40) << "|" << endl;
     cout << "|   1  - Provas                         |" << endl;
     cout << "|   2  - Historial                      |" << endl;
     cout << "|   3  - Atletas Inscritos              |" << endl;
@@ -1277,7 +1302,7 @@ void Menu::competicaoMenuVis(Competicao &competicao, Modalidade &modalidade) {
 }
 
 void Menu::competicaoMenuMod(Competicao &competicao, Modalidade &modalidade) {
-    cout << endl << "_____________ COMPETICAO _______________" << endl << "|" << setw(40) << "|" << endl;  //Implementar ainda
+    cout << endl << "_____________ COMPETICAO _______________" << endl << "|" << setw(40) << "|" << endl;
     cout << "|   1  - Provas                         |" << endl;
     cout << "|   2  - Historial                      |" << endl;
     cout << "|   3  - Atletas Inscritos              |" << endl;

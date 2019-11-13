@@ -41,6 +41,20 @@ void Menu::mainMenu() {
             cout << endl << "  Enter your choice: ";
             cin >> choice;
 
+            if (!cin.good())
+            {
+                cout << "Por favor introduza um valor valido";
+                cin.clear();
+                cin.ignore(INT_MAX, '\n');
+                mainMenu();
+            }
+            
+            if (choice > 16){
+                cout << "Por favor introduza um valor valido";
+                cin.clear();
+                cin.ignore(INT_MAX, '\n');
+                mainMenu();
+            }
 
             Modalidade modalidade = Jogosol::getModalidades().at(choice-1);
             modalidadeMenu(modalidade);
@@ -85,25 +99,11 @@ void Menu::funcionariosEAtletas() {
 
     switch (choice) {
         case 1: {
-            listaAtletasEscolhe();
-
-            int choice1;
-            cout << endl << "  Enter your choice: ";
-            cin >> choice1;
-
-            Atleta atleta = Jogosol::getVAtletas().at(choice1 - 1);
-            atletas(atleta);
+            atletas();
             break;
         }
         case 2: {
-            listaFuncionariosEscolhe();
-
-            int choice2;
-            cout << endl << "  Enter your choice: ";
-            cin >> choice2;
-
-            Funcionario funcionario = Jogosol::getFuncionarios().at(choice2 - 1);
-            funcionarios(funcionario);
+            funcionarios();
             break;
         }
         case 3:
@@ -135,7 +135,7 @@ void Menu::funcionariosEAtletas() {
 
 //--------------------------------------------
 
-void Menu::atletas(Atleta &atleta) {
+void Menu::atletas() {
     cout << endl << "________________ ATLETAS _______________" << endl << "|" << setw(40) << "|" << endl;
     cout << "|   1 - Visualizar Informacao           |" << endl;
     cout << "|   2 - Editar Informacoes              |" << endl;
@@ -150,15 +150,38 @@ void Menu::atletas(Atleta &atleta) {
         cout << "Por favor introduza um valor valido";
         cin.clear();
         cin.ignore(INT_MAX, '\n');
-        funcionariosEAtletas();
+        atletas();
     }
     
     switch (choice) {
-        case 1:
+        case 1: {
+            listaAtletasEscolhe();
+
+            int choice1;
+            cout << endl << "  Enter your choice: ";
+            cin >> choice1;
+
+            if (!cin.good())
+            {
+                cout << "Por favor introduza um valor valido";
+                cin.clear();
+                cin.ignore(INT_MAX, '\n');
+                atletas();
+            }
+
+            if (choice1 > Jogosol::getVAtletas().size()){
+                cout << "Por favor introduza um valor valido";
+                cin.clear();
+                cin.ignore(INT_MAX, '\n');
+                atletas();
+            }
+
+            Atleta atleta = Jogosol::getVAtletas().at(choice1 - 1);
             visualizarAtletas(atleta);
             break;
+        }
         case 2:
-            editarAtleta(atleta);
+            editarAtleta();
             break;
         case 3:
             funcionariosEAtletas();
@@ -238,7 +261,7 @@ void Menu::visualizarAtletas(Atleta &atleta) {
             }
             break;
         case 3:
-            atletas(atleta);
+            atletas();
             break;
         default:
             cout << "Por favor introduza um numero valido" << endl;
@@ -248,7 +271,7 @@ void Menu::visualizarAtletas(Atleta &atleta) {
 
 }
 
-void Menu::editarAtleta(Atleta &atleta) {
+void Menu::editarAtleta() {
     cout << endl << "________________ EDITAR ________________" << endl << "|" << setw(40) << "|" << endl;
     cout << "|   1 - Acrescentar                     |" << endl;
     cout << "|   2 - Modificar                       |" << endl;
@@ -264,7 +287,7 @@ void Menu::editarAtleta(Atleta &atleta) {
         cout << "Por favor introduza um valor valido";
         cin.clear();
         cin.ignore(INT_MAX, '\n');
-        editarAtleta(atleta);
+        editarAtleta();
     }
 
     switch (choice) {
@@ -280,12 +303,12 @@ void Menu::editarAtleta(Atleta &atleta) {
                 cout << "Por favor introduza um valor valido";
                 cin.clear();
                 cin.ignore(INT_MAX, '\n');
-                editarAtleta(atleta);
+                editarAtleta();
             }
 
             switch (choice1) {
                 case 1:
-                    editarAtleta(atleta);
+                    editarAtleta();
                     break;
                 case 2:
                     mainMenu();
@@ -294,7 +317,7 @@ void Menu::editarAtleta(Atleta &atleta) {
                     return;
                 default:
                     cout << "Por favor introduza um valor valido" << endl;
-                    editarAtleta(atleta);
+                    editarAtleta();
             }
             break;
         case 2:
@@ -304,14 +327,22 @@ void Menu::editarAtleta(Atleta &atleta) {
             int choice2;
             cout << endl << "  Enter your choice: ";
             cin >> choice2;
+            
             if (!cin.good())
             {
                 cout << "Por favor introduza um valor valido";
                 cin.clear();
                 cin.ignore(INT_MAX, '\n');
-                editarAtleta(atleta);
+                editarAtleta();
             }
 
+            if (choice2 > Jogosol::getFuncionarios().size()){
+                cout << "Por favor introduza um valor valido";
+                cin.clear();
+                cin.ignore(INT_MAX, '\n');
+                editarAtleta();
+            }
+            
             Atleta atleta = Jogosol::getVAtletas().at(choice2-1);
             modificarInfoPessoalAtleta(atleta);
             break;
@@ -323,12 +354,20 @@ void Menu::editarAtleta(Atleta &atleta) {
             int choice3;
             cout << endl << "  Enter your choice: ";
             cin >> choice3;
+            
             if (!cin.good())
             {
                 cout << "Por favor introduza um valor valido";
                 cin.clear();
                 cin.ignore(INT_MAX, '\n');
-                editarAtleta(atleta);
+                editarAtleta();
+            }
+
+            if (choice3 > Jogosol::getFuncionarios().size()){
+                cout << "Por favor introduza um valor valido";
+                cin.clear();
+                cin.ignore(INT_MAX, '\n');
+                editarAtleta();
             }
 
             Atleta atleta2 = Jogosol::getVAtletas().at(choice3-1);
@@ -344,12 +383,12 @@ void Menu::editarAtleta(Atleta &atleta) {
                 cout << "Por favor introduza um valor valido";
                 cin.clear();
                 cin.ignore(INT_MAX, '\n');
-                editarAtleta(atleta);
+                editarAtleta();
             }
 
             switch (choice4) {
                 case 1:
-                    editarAtleta(atleta);
+                    editarAtleta();
                     break;
                 case 2:
                     mainMenu();
@@ -358,16 +397,16 @@ void Menu::editarAtleta(Atleta &atleta) {
                     return;
                 default:
                     cout << "Por favor introduza um valor valido" << endl;
-                    editarAtleta(atleta);
+                    editarAtleta();
             }
             break;
         }
         case 4:
-            atletas(atleta);
+            atletas();
             break;
         default:
             cout << "Por favor introduza um valor valido" << endl;
-            editarAtleta(atleta);
+            editarAtleta();
     }
 }
 
@@ -589,7 +628,7 @@ void Menu::modificarInfoPessoalAtleta(Atleta &atleta) {
             }
             break;
         case 8:
-            editarAtleta(atleta);
+            editarAtleta();
             break;
         default:
             cout << "Por favor introduza um valor valido" << endl;
@@ -608,7 +647,7 @@ void Menu::listaAtletasEscolhe() {
 
 //--------------------------------------------
 
-void Menu::funcionarios(Funcionario &funcionario) {
+void Menu::funcionarios() {
     cout << endl << "_____________ FUNCIONARIO ___________" << endl << "|" << setw(40) << "|" << endl;
     cout << "|   1 - Visualizar Informacao           |" << endl;
     cout << "|   2 - Editar Informacoes              |" << endl;
@@ -621,22 +660,45 @@ void Menu::funcionarios(Funcionario &funcionario) {
 
     switch (choice) {
         case 1:
+        {
+            listaFuncionariosEscolhe();
+
+            int choice2;
+            cout << endl << "  Enter your choice: ";
+            cin >> choice2;
+
+            if (!cin.good()) {
+                cout << "Por favor introduza um valor valido";
+                cin.clear();
+                cin.ignore(INT_MAX, '\n');
+                funcionarios();
+            }
+
+            if (choice2 > Jogosol::getFuncionarios().size()) {
+                cout << "Por favor introduza um valor valido";
+                cin.clear();
+                cin.ignore(INT_MAX, '\n');
+                funcionarios();
+            }
+
+            Funcionario funcionario = Jogosol::getFuncionarios().at(choice2 - 1);
+
             funcionario.viewInfo();
+
             continuar();
             int choice4;
             cout << endl << "  Enter your choice: ";
             cin >> choice4;
-            if (!cin.good())
-            {
+            if (!cin.good()) {
                 cout << "Por favor introduza um valor valido";
                 cin.clear();
                 cin.ignore(INT_MAX, '\n');
-                funcionarios(funcionario);
+                funcionarios();
             }
 
             switch (choice4) {
                 case 1:
-                    funcionarios(funcionario);
+                    funcionarios();
                     break;
                 case 2:
                     mainMenu();
@@ -645,24 +707,25 @@ void Menu::funcionarios(Funcionario &funcionario) {
                     return;
                 default:
                     cout << "Por favor introduza um valor valido" << endl;
-                    funcionarios(funcionario);
+                    funcionarios();
 
             }
             break;
+    }
         case 2:
-            editarFuncionario(funcionario);
+            editarFuncionario();
             break;
         case 3:
             funcionariosEAtletas();
             break;
         default:
             cout << "Por favor introduza um valor valido" << endl;
-            funcionarios(funcionario);
+            funcionarios();
 
     }
 }
 
-void Menu::editarFuncionario(Funcionario &funcionario) {
+void Menu::editarFuncionario() {
     cout << endl << "________________ EDITAR ________________" << endl << "|" << setw(40) << "|" << endl;
     cout << "|   1 - Acrescentar                     |" << endl;
     cout << "|   2 - Modificar                       |" << endl;
@@ -678,7 +741,7 @@ void Menu::editarFuncionario(Funcionario &funcionario) {
         cout << "Por favor introduza um valor valido";
         cin.clear();
         cin.ignore(INT_MAX, '\n');
-        editarFuncionario(funcionario);
+        editarFuncionario();
     }
     switch (choice) {
         case 1:
@@ -693,11 +756,11 @@ void Menu::editarFuncionario(Funcionario &funcionario) {
                 cout << "Por favor introduza um valor valido";
                 cin.clear();
                 cin.ignore(INT_MAX, '\n');
-                editarFuncionario(funcionario);
+                editarFuncionario();
             }
             switch (choice1) {
                 case 1:
-                    editarFuncionario(funcionario);
+                    editarFuncionario();
                     break;
                 case 2:
                     mainMenu();
@@ -706,7 +769,7 @@ void Menu::editarFuncionario(Funcionario &funcionario) {
                     return;
                 default:
                     cout << "Por favor introduza um valor valido" << endl;
-                    editarFuncionario(funcionario);
+                    editarFuncionario();
             }
             break;
         case 2:
@@ -721,7 +784,14 @@ void Menu::editarFuncionario(Funcionario &funcionario) {
                 cout << "Por favor introduza um valor valido";
                 cin.clear();
                 cin.ignore(INT_MAX, '\n');
-                editarFuncionario(funcionario);
+                editarFuncionario();
+            }
+
+            if (choice2 > Jogosol::getFuncionarios().size()){
+                cout << "Por favor introduza um valor valido";
+                cin.clear();
+                cin.ignore(INT_MAX, '\n');
+                editarFuncionario();
             }
 
             Funcionario funcionario = Jogosol::getFuncionarios().at(choice2-1);
@@ -740,8 +810,16 @@ void Menu::editarFuncionario(Funcionario &funcionario) {
                 cout << "Por favor introduza um valor valido";
                 cin.clear();
                 cin.ignore(INT_MAX, '\n');
-                editarFuncionario(funcionario);
+                editarFuncionario();
             }
+
+            if (choice3 > Jogosol::getFuncionarios().size()){
+                cout << "Por favor introduza um valor valido";
+                cin.clear();
+                cin.ignore(INT_MAX, '\n');
+                editarFuncionario();
+            }
+            
             Funcionario funcionario1 = Jogosol::getFuncionarios().at(choice3-1);
 
             //Eliminar funcionario1
@@ -754,11 +832,11 @@ void Menu::editarFuncionario(Funcionario &funcionario) {
                 cout << "Por favor introduza um valor valido";
                 cin.clear();
                 cin.ignore(INT_MAX, '\n');
-                editarFuncionario(funcionario);
+                editarFuncionario();
             }
             switch (choice4) {
                 case 1:
-                    editarFuncionario(funcionario);
+                    editarFuncionario();
                     break;
                 case 2:
                     mainMenu();
@@ -767,16 +845,16 @@ void Menu::editarFuncionario(Funcionario &funcionario) {
                     return;
                 default:
                     cout << "Por favor introduza um valor valido" << endl;
-                    editarFuncionario(funcionario);
+                    editarFuncionario();
             }
             break;
         }
         case 4:
-            funcionarios(funcionario);
+            funcionarios();
             break;
         default:
             cout << "Por favor introduza um valor valido" << endl;
-            editarFuncionario(funcionario);
+            editarFuncionario();
     }
 }
 
@@ -912,7 +990,7 @@ void Menu::modificarInfoPessoalFuncionario(Funcionario &funcionario) {
             }
             break;
         case 5:
-            editarFuncionario(funcionario);
+            editarFuncionario();
             break;
         default:
             cout << "Por favor introduza um valor valido" << endl;
@@ -983,6 +1061,14 @@ void Menu::modalidadeMenu(Modalidade &modalidade) {
                 cin.ignore(INT_MAX, '\n');
                 modalidadeMenu(modalidade);
             }
+
+            if (choice > modalidade.competicoes.size()){
+                cout << "Por favor introduza um valor valido";
+                cin.clear();
+                cin.ignore(INT_MAX, '\n');
+                modalidadeMenu(modalidade);
+            }
+            
             Competicao competicao = modalidade.competicoes.at(choice-1);
             competicaoMenuVis(competicao, modalidade);
             break;
@@ -1001,6 +1087,14 @@ void Menu::modalidadeMenu(Modalidade &modalidade) {
                 cin.ignore(INT_MAX, '\n');
                 modalidadeMenu(modalidade);
             }
+
+            if (choice > modalidade.competicoes.size()){
+                cout << "Por favor introduza um valor valido";
+                cin.clear();
+                cin.ignore(INT_MAX, '\n');
+                modalidadeMenu(modalidade);
+            }
+            
             Competicao competicao = modalidade.competicoes.at(choice-1);
             competicaoMenuMod(competicao, modalidade);
             break;

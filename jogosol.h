@@ -22,6 +22,7 @@ public:
     static vector<Funcionario> getFuncionarios();
     static vector<Modalidade> getModalidades();
     void readFuncionarios();
+    void readAtletas();
     static bool addFuncionario();
     static bool deleteFuncionario();
 };

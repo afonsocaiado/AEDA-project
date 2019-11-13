@@ -23,13 +23,22 @@ void Jogosol::readFuncionarios()
     while(!cin.eof())
     {
         Funcionario f;
-
         f.input(file);
-
-        //if(to_lower(f.getFuncao()) == "atleta")
-            //vatletas.push_back(f);
-
         funcionarios.push_back(f);
+    }
+}
+
+void Jogosol::readAtletas()
+{
+    ifstream file;
+
+    file.open("atletas.txt", ios::in);
+
+    while(!cin.eof())
+    {
+        Atleta a;
+        a.input(file);
+        vatletas.push_back(a);
     }
 }
 

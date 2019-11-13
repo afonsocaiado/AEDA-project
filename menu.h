@@ -12,11 +12,11 @@ class Menu {
 public:
     void mainMenu();
     void funcionariosEAtletas();
-    void atletas(Atleta &atleta);
-    void funcionarios(Funcionario &funcionario);
+    void atletas();
+    void funcionarios();
     void visualizarAtletas(Atleta &atleta);
-    void editarAtleta(Atleta &atleta);
-    void editarFuncionario(Funcionario &funcionario);
+    void editarAtleta();
+    void editarFuncionario();
     static void listaAtletasEscolhe();
     static void listaFuncionariosEscolhe();
     void modificarAtleta(Atleta &atleta);

@@ -102,6 +102,10 @@ void Atleta::addResultado(Resultado resultado)
     resultados.push_back(resultado);
 }
 
+void Funcionario::setDataNascimento(Data nascimento){
+    dataNascimento = nascimento;
+}
+
 void Atleta::viewInfo() {
     cout << endl << "Nome: " << nome << endl;
     cout << endl << "Data de Nascimento: " << dataNascimento << endl;

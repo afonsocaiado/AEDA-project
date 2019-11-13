@@ -464,14 +464,14 @@ void Menu::modificarInfoPessoalAtleta(Atleta &atleta) {
             }
         }
             break;
-        case 2:
+        case 2: {
             cout << "Por favor introduza a data (dd/mm/aaaa): " << endl;
 
             Data d;
-            
-            do{
+
+            do {
                 cin >> d;
-            }while(cin.fail());
+            } while (cin.fail());
 
 
             atleta.setDataNascimento(d);
@@ -481,8 +481,7 @@ void Menu::modificarInfoPessoalAtleta(Atleta &atleta) {
             int choice2;
             cout << endl << "  Enter your choice: ";
             cin >> choice2;
-            if (!cin.good())
-            {
+            if (!cin.good()) {
                 cout << "Por favor introduza um valor valido";
                 cin.clear();
                 cin.ignore(INT_MAX, '\n');
@@ -503,14 +502,14 @@ void Menu::modificarInfoPessoalAtleta(Atleta &atleta) {
                     modificarInfoPessoalAtleta(atleta);
             }
             break;
-        case 3:
+        }
+        case 3: {
             //Funcao Modificar Num Passaporte
             continuar();
             int choice3;
             cout << endl << "  Enter your choice: ";
             cin >> choice3;
-            if (!cin.good())
-            {
+            if (!cin.good()) {
                 cout << "Por favor introduza um valor valido";
                 cin.clear();
                 cin.ignore(INT_MAX, '\n');
@@ -530,14 +529,14 @@ void Menu::modificarInfoPessoalAtleta(Atleta &atleta) {
                     cout << "Por favor introduza um valor valido" << endl;
             }
             break;
-        case 4:
+        }
+        case 4: {
             //Funcao Modificar Data Estadia
             continuar();
             int choice4;
             cout << endl << "  Enter your choice: ";
             cin >> choice4;
-            if (!cin.good())
-            {
+            if (!cin.good()) {
                 cout << "Por favor introduza um valor valido";
                 cin.clear();
                 cin.ignore(INT_MAX, '\n');
@@ -557,14 +556,14 @@ void Menu::modificarInfoPessoalAtleta(Atleta &atleta) {
                     modificarInfoPessoalAtleta(atleta);
             }
             break;
-        case 5:
+        }
+        case 5: {
             //Funcao Modificar Peso
             continuar();
             int choice5;
             cout << endl << "  Enter your choice: ";
             cin >> choice5;
-            if (!cin.good())
-            {
+            if (!cin.good()) {
                 cout << "Por favor introduza um valor valido";
                 cin.clear();
                 cin.ignore(INT_MAX, '\n');
@@ -581,17 +580,17 @@ void Menu::modificarInfoPessoalAtleta(Atleta &atleta) {
                 case 3:
                     return;
                 default:
-                    cout <<"Por favor introduza um valor valido" << endl;
+                    cout << "Por favor introduza um valor valido" << endl;
             }
             break;
-        case 6:
+        }
+        case 6: {
             //Funcao Modificar Altura
             continuar();
             int choice6;
             cout << endl << "  Enter your choice: ";
             cin >> choice6;
-            if (!cin.good())
-            {
+            if (!cin.good()) {
                 cout << "Por favor introduza um valor valido";
                 cin.clear();
                 cin.ignore(INT_MAX, '\n');
@@ -612,14 +611,14 @@ void Menu::modificarInfoPessoalAtleta(Atleta &atleta) {
                     modificarInfoPessoalAtleta(atleta);
             }
             break;
-        case 7:
+        }
+        case 7: {
             //Funcao Modificar Ranking
             continuar();
             int choice7;
             cout << endl << "  Enter your choice: ";
             cin >> choice7;
-            if (!cin.good())
-            {
+            if (!cin.good()) {
                 cout << "Por favor introduza um valor valido";
                 cin.clear();
                 cin.ignore(INT_MAX, '\n');
@@ -640,12 +639,15 @@ void Menu::modificarInfoPessoalAtleta(Atleta &atleta) {
                     modificarInfoPessoalAtleta(atleta);
             }
             break;
-        case 8:
+        }
+        case 8: {
             editarAtleta();
             break;
-        default:
+        }
+        default: {
             cout << "Por favor introduza um valor valido" << endl;
             modificarInfoPessoalAtleta(atleta);
+        }
     }
 }
 

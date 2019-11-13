@@ -35,6 +35,7 @@ public:
     void setFuncao(string funcao);
     void setDataChegada(Data dataChegada);
     void setDataPartida(Data dataPartida);
+    void setDataNascimento(Data nascimento);
     virtual void viewInfo();
 
     bool operator== (Funcionario funcionario) const;

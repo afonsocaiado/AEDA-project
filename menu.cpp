@@ -465,7 +465,18 @@ void Menu::modificarInfoPessoalAtleta(Atleta &atleta) {
         }
             break;
         case 2:
-            //Funcao Modificar Data Nascimento
+            cout << "Por favor introduza a data (dd/mm/aaaa): " << endl;
+
+            Data d;
+            
+            do{
+                cin >> d;
+            }while(cin.fail());
+
+
+            atleta.setDataNascimento(d);
+
+
             continuar();
             int choice2;
             cout << endl << "  Enter your choice: ";

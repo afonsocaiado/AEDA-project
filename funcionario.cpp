@@ -68,6 +68,14 @@ Data Funcionario::getDataNascimento() {
     return dataNascimento;
 }
 
+void Funcionario::setPassaporte(int pass) {
+    passaporte = pass;
+}
+
+int Funcionario::getPassaporte() {
+    return passaporte;
+}
+
 void Funcionario::setFuncao(string funcao)
 {
     this->funcao = funcao;

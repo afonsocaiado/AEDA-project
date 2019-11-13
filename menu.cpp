@@ -464,7 +464,6 @@ void Menu::modificarInfoPessoalAtleta(Atleta &atleta) {
             getline(cin, nome);
             atleta.setNome(nome);
             cout << "Nome mudado para " << atleta.getNome() << endl;
-            cin.ignore();
 
             continuar();
             int choice1;
@@ -532,7 +531,14 @@ void Menu::modificarInfoPessoalAtleta(Atleta &atleta) {
             break;
         }
         case 3: {
-            //Funcao Modificar Num Passaporte
+            int pass;
+            cout << "Introduza um numero de passaporte: ";
+            cin>>pass;
+            atleta.setPassaporte(pass);
+            cout << "Passaporte de " << atleta.getNome() << ": " << atleta.getPassaporte();
+
+
+
             continuar();
             int choice3;
             cout << endl << "  Enter your choice: ";
@@ -543,6 +549,8 @@ void Menu::modificarInfoPessoalAtleta(Atleta &atleta) {
                 cin.ignore(INT_MAX, '\n');
                 modificarInfoPessoalAtleta(atleta);
             }
+
+
 
             switch (choice3) {
                 case 1:
@@ -1601,7 +1609,7 @@ void Menu::tabelaDeMedalhados() {
 //--------------------------------------------------------------------------
 
 void Menu::continuar() {
-    cout << endl << "______________________________________________"   << endl << "|" << setw(40) << "|" << endl;
+    cout << endl << "_________________________________________"   << endl << "|" << setw(40) << "|" << endl;
     cout << "|   1 - Voltar Atras                    |" << endl;
     cout << "|   2 - Main Menu                       |" << endl;
     cout << "|   3 - Sair do Programa                |" << endl;

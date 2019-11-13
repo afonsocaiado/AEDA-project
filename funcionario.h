@@ -32,11 +32,13 @@ public:
     Data getDataNascimento();
     Data getDataChegada();
     Data getDataPartida();
+    int getPassaporte();
     void setNome(string nome);
     void setFuncao(string funcao);
     void setDataChegada(Data dataChegada);
     void setDataPartida(Data dataPartida);
     void setDataNascimento(Data nascimento);
+    void setPassaporte(int pass);
     virtual void viewInfo();
 
     bool operator== (Funcionario funcionario) const;

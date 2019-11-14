@@ -3,6 +3,7 @@
 #define TRABALHOAEDAPARTE1_MENU_H
 
 #include <iostream>
+#include <sstream>
 
 #include "jogosol.h"
 

@@ -81,7 +81,7 @@ istream &operator>>(istream &i, Data &d){
 
     catch(std::invalid_argument&)
     {
-        cout << "Data nao é um numero"<<endl;
+        cout << "Formato de data incorreto"<<endl;
     }
 
     catch(int i){
@@ -93,3 +93,20 @@ istream &operator>>(istream &i, Data &d){
     return i;
 }
 
+bool Data::operator== ( Data& d1){ // check for equality
+    if( (d1.getDia()==this->getDia()) && (d1.getMes()==this->getMes()) && (d1.getAno()==this->getAno())){ return true;};
+    return false;}
+
+bool Data::operator>(Data& d1){
+    if (d1==*this) { return false;}; // this is strict inequality
+    if ((this->getAno()>d1.getAno())
+    || (this->getAno()==d1.getAno() && this->getMes()>d1.getMes())
+    || (this->getAno()==d1.getAno() && this->getMes()==d1.getMes() && this->getDia()>d1.getDia()))
+    { return true; }
+}
+
+bool Data::operator>=(Data& d1){
+    { if (d1==*this) { return true;};
+        return (d1 > *this);
+    };
+}

@@ -459,12 +459,13 @@ void Menu::modificarInfoPessoalAtleta(Atleta &atleta) {
 
     switch (choice) {
         case 1: {
+            //Modificar nome atleta
             string nome;
             cin.ignore();
             cout << "Introduza novo nome: ";
             getline(cin, nome);
             atleta.setNome(nome);
-            cout << "Nome mudado para " << atleta.getNome() << endl;
+            cout << "Nome mudado para: " << "'"<<atleta.getNome()<<"'" << endl;
 
             continuar();
             int choice1;
@@ -493,16 +494,29 @@ void Menu::modificarInfoPessoalAtleta(Atleta &atleta) {
         }
             break;
         case 2: {
+            //Modificar data nascimento do atleta
             cout << "Por favor introduza a data (dd/mm/aaaa): " << endl;
-            Data d;
-
+            Data d,tst;
+            string s;
+            stringstream ss;
+            cin >> s;
+            s+=';';
+            ss<<s;
             do{
-                cin >> d;
+                ss >> d;
             } while (cin.fail());
-            cout << "Data Nascimento: " << d.getDia() << '/' << d.getMes() << '/' << d.getAno() << endl;
+            if(!(d==tst)){
+                //verifica que a data nao é o objeto vazio e que foi alterada
+                atleta.setDataNascimento(d);
+                cout << "Data Nascimento: " << d.getDia() << '/' << d.getMes() << '/' << d.getAno() << endl;
+
+            }
+            else{
+                cout << endl<<"Data nao alterada" << endl;
+            }
 
 
-            atleta.setDataNascimento(d);
+
 
 
             continuar();
@@ -532,11 +546,24 @@ void Menu::modificarInfoPessoalAtleta(Atleta &atleta) {
             break;
         }
         case 3: {
+            //Modificar passaporte atleta
             int pass;
+            double passd;
             cout << "Introduza um numero de passaporte: ";
-            cin>>pass;
-            atleta.setPassaporte(pass);
-            cout << "Passaporte de " << atleta.getNome() << ": " << atleta.getPassaporte();
+            cin>>passd;
+            pass = (int)pass;
+            if (!cin.good()) {
+                cout << "Por favor introduza um numero";
+                cin.clear();
+                cin.ignore(INT_MAX, '\n');
+                modificarInfoPessoalAtleta(atleta);
+
+            }
+            else {
+                atleta.setPassaporte(pass);
+                cout << "Passaporte do atleta atualizado para " << atleta.getPassaporte();
+
+            }
 
 
 
@@ -568,15 +595,33 @@ void Menu::modificarInfoPessoalAtleta(Atleta &atleta) {
             break;
         }
         case 4: {
+            //Modificar datas de estadia
+            Data dc,dp,tst;
+            string sc,sp;
+            stringstream ssc,ssp;
             cout << "Introduza data de chegada (dd/mm/aaaa): ";
-            Data dc,dp;
-            cin >> dc;
+            cin >> sc; sc+=';';
             cout << "Introduza data de estadia (dd/mm/aaaa): ";
-            cin >> dp;
-            atleta.setDataChegada(dc);
-            atleta.setDataPartida(dp);
-            cout << "Data Chegada: " << atleta.getDataChegada() << endl;
-            cout << "Data Partida: " << atleta.getDataPartida() << endl;
+            cin >> sp;sp+=';';
+            ssc<<sc;
+            ssp<<sp;
+            ssc>>dc;
+            ssp>>dp;
+
+            if(dp>=dc && !(dp==tst) && !(dc==tst)){
+                //verifica que a chegada é antes da partida e que os valores das datas nao sao 0/0/0 (comparando com o objeto vazio)
+                atleta.setDataChegada(dc);
+                atleta.setDataPartida(dp);
+                cout << "Data Chegada: " << atleta.getDataChegada() << endl;
+                cout << "Data Partida: " << atleta.getDataPartida() << endl;
+            }
+            else if(atleta.getDataPartida() == tst || atleta.getDataChegada() == tst){
+                //se a data final for igual ao objeto vazio tst, significa que a data nao foi alterada
+                cout << "Data nao alterada" << endl;
+            }
+            else{
+                cout << "Partida deve ser depois da chegada" << endl; modificarInfoPessoalAtleta(atleta);
+            }
 
 
             continuar();
@@ -605,11 +650,22 @@ void Menu::modificarInfoPessoalAtleta(Atleta &atleta) {
             break;
         }
         case 5: {
+            //modificar peso
+            double pesod;
             int peso;
             cout << "Introduza peso do atleta (valor inteiro em kg): ";
-            cin >>peso;
-            atleta.setPeso(peso);
-            cout << "Peso do atleta alterado para " << peso<<endl;
+            cin >>pesod;
+            peso = (int)pesod;
+            if (!cin.good()) {
+                cout << "Por favor introduza um numero inteiro";
+                cin.clear();
+                cin.ignore(INT_MAX, '\n');
+                modificarInfoPessoalAtleta(atleta);
+            }
+            else{
+                atleta.setPeso(peso);
+                cout << "Peso do atleta alterado para " << peso << "kg"<<endl;
+            }
 
 
             continuar();
@@ -638,11 +694,22 @@ void Menu::modificarInfoPessoalAtleta(Atleta &atleta) {
             break;
         }
         case 6: {
+            double altd;
             int alt;
             cout << "Introduza altura do atleta (valor inteiro em cm): ";
-            cin >> alt;
-            atleta.setAltura(alt);
-            cout << "Altura de atleta alterada para: " << atleta.getAltura() << endl;
+            cin >> altd;
+            alt = (int)altd;
+            if (!cin.good()) {
+                cout << "Por favor introduza um numero";
+                cin.clear();
+                cin.ignore(INT_MAX, '\n');
+                modificarInfoPessoalAtleta(atleta);
+            }
+            else{
+                atleta.setAltura(alt);
+                cout << "Altura de atleta alterada para: " << atleta.getAltura() << endl;
+            }
+
 
 
             continuar();
@@ -673,10 +740,22 @@ void Menu::modificarInfoPessoalAtleta(Atleta &atleta) {
         }
         case 7: {
             int rkn;
+            double rknd;
             cout << "Introduza posicao do ranking: ";
-            cin >> rkn;
-            atleta.setRanking(rkn);
-            cout << "Ranking de atleta atualizado para " << atleta.getRanking() << endl;
+            cin >> rknd;
+            rkn=(int)rknd;
+            if (!cin.good()) {
+                cout << "Por favor introduza um numero";
+                cin.clear();
+                cin.ignore(INT_MAX, '\n');
+                modificarInfoPessoalAtleta(atleta);
+                break;
+            }
+            else{
+                atleta.setRanking(rkn);
+                cout << "Ranking de atleta atualizado para " << atleta.getRanking() << endl;
+            }
+
 
 
             continuar();
@@ -964,7 +1043,7 @@ void Menu::modificarInfoPessoalFuncionario(Funcionario &funcionario) {
             cin.ignore();
             getline(cin, novo);
             funcionario.setNome(novo);
-            cout << "Nome atualizado para " << funcionario.getNome() << endl;
+            cout << "Nome atualizado para " << "'"<<funcionario.getNome()<<"'" << endl;
 
             continuar();
             int choice1;
@@ -993,14 +1072,25 @@ void Menu::modificarInfoPessoalFuncionario(Funcionario &funcionario) {
             break;
         }
         case 2: {
-            Data d;
-            cout << "Introduza data de nascimento do funcionario (dd/mm/aaaa): ";
-            cin>>d;
-            funcionario.setDataNascimento(d);
-            cout << "Data atualizada para " << funcionario.getDataNascimento()<<endl;
-
-
             //Funcao Modificar Data Nascimento
+            Data d,tst;
+            string s;
+            stringstream ss;
+
+            cout << "Introduza data de nascimento do funcionario (dd/mm/aaaa): ";
+            cin>>s;
+            s+=';';
+            ss << s;
+            ss>>d;
+
+            funcionario.setDataNascimento(d);
+            if(d==tst){
+                cout << endl<<"Data nao alterada" << endl;
+            }
+            else{
+                cout << "Data atualizada para " << funcionario.getDataNascimento()<<endl;
+            }
+
             continuar();
             int choice2;
             cout << endl << "  Enter your choice: ";
@@ -1028,13 +1118,25 @@ void Menu::modificarInfoPessoalFuncionario(Funcionario &funcionario) {
             break;
         }
         case 3:
+            //Funcao Modificar Num Passaporte
             cout << "Introduza numero de passaporte do funcionario: ";
             int num;
-            cin>>num;
-            funcionario.setPassaporte(num);
-            cout << "Passaporte do funcionario atualizado para " << funcionario.getPassaporte();
+            double passd;
+            cin>>passd;
+            num = (int)passd;
+            if (!cin.good()) {
+                cout << "Por favor introduza um numero";
+                cin.clear();
+                cin.ignore(INT_MAX, '\n');
+                modificarInfoPessoalFuncionario(funcionario);
 
-            //Funcao Modificar Num Passaporte
+            }
+            else {
+                funcionario.setPassaporte(num);
+                cout << "Passaporte do funcionario atualizado para " << funcionario.getPassaporte();
+
+            }
+
             continuar();
             int choice3;
             cout << endl << "  Enter your choice: ";
@@ -1063,19 +1165,28 @@ void Menu::modificarInfoPessoalFuncionario(Funcionario &funcionario) {
         case 4: {
             //Funcao Modificar Data Estadia
 
-            Data dc, dp;
-            cout << "Introduza data de chegada (dd/mm/aaaa): ";
-            cin >> dc;
-            cout << endl << "Introduza data de partida (dd/mm/aaaa): ";
-            cin >> dp;
+            Data dc, dp,tst;
+            string sc,sp;
+            stringstream ssc,ssp;
 
-            if(dp.getAno()>=dc.getAno() && dp.getMes()>=dc.getMes() && dp.getDia()>=dc.getDia()){
+            cout << "Introduza data de chegada (dd/mm/aaaa): ";
+            cin >> sc; sc+=';';
+            cout << endl << "Introduza data de partida (dd/mm/aaaa): ";
+            cin >> sp; sp+=';';
+            ssc<<sc;
+            ssp<<sp;
+            ssc>>dc;
+            ssp>>dp;
+
+            if(!(dp>=dc) && !(dp==tst) && !(dc==tst)){
                 funcionario.setDataChegada(dc);
                 funcionario.setDataPartida(dp);
                 cout <<endl<<"Data de chegada guardada como " << funcionario.getDataChegada()<<endl;
                 cout << "Data de partida guardada como " << funcionario.getDataPartida();
             }
-            else{cout << "Data de chegada deve ser antes da data de partida" << endl; modificarInfoPessoalFuncionario(funcionario);}
+
+            else if(dc>dp){cout << "Partida deve ser depois da chegada" << endl; modificarInfoPessoalFuncionario(funcionario);}
+            else if(dp==tst || dc==tst){cout << "Data nao alterada" << endl; modificarInfoPessoalFuncionario(funcionario);}
 
             continuar();
             int choice4;

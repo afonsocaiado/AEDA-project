@@ -54,7 +54,7 @@ void Jogosol::readFuncionarios()
 {
     ifstream file;
 
-    file.open("C:\\Users\\Fisica1\\Desktop\\AEDA\\Trabalho\\TrabalhoAEDAParte1\\funcionarios.txt", ios::in);
+    file.open("/Users/tomas/Google Drive/FEUP/2º Ano/Pasta Pessoal/1º Semestre/AEDA/Trabalho 1/TrabalhoAEDAParte1/funcionarios.txt", ios::in);
 
     while(!file.eof())
     {
@@ -68,7 +68,7 @@ void Jogosol::readAtletas()
 {
     ifstream file;
 
-    file.open(R"(C:\Users\Fisica1\Desktop\AEDA\Trabalho\TrabalhoAEDAParte1\atletas.txt)", ios::in);
+    file.open("/Users/tomas/Google Drive/FEUP/2º Ano/Pasta Pessoal/1º Semestre/AEDA/Trabalho 1/TrabalhoAEDAParte1/atletas.txt", ios::in);
 
     while(!file.eof())
     {
@@ -80,9 +80,9 @@ void Jogosol::readAtletas()
 
 bool Jogosol::addFuncionario()
 {
-    ofstream filef;
+    ofstream file;
 
-    filef.open(R"(C:\Users\Fisica1\Desktop\AEDA\Trabalho\TrabalhoAEDAParte1\funcionarios.txt)", ios::app);
+    file.open("/Users/tomas/Google Drive/FEUP/2º Ano/Pasta Pessoal/1º Semestre/AEDA/Trabalho 1/TrabalhoAEDAParte1/funcionarios.txt", ios::app);
 
     string nome, funcao, modalidade;
     char sexo;
@@ -144,12 +144,12 @@ bool Jogosol::addFuncionario()
         Funcionario f(nome, sexo, dataNascimento, passaporte, funcao, dataChegada, dataPartida, custoDiario);
         funcionarios.push_back(f);
 
-        filef << endl << f;
+        file << endl << f;
     }
 
 
 
-    filef.close();
+    file.close();
 
     return true;
 

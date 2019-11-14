@@ -1060,16 +1060,28 @@ void Menu::modificarInfoPessoalFuncionario(Funcionario &funcionario) {
                     modificarInfoPessoalFuncionario(funcionario);
             }
             break;
-        case 4:
+        case 4: {
             //Funcao Modificar Data Estadia
 
-            
+            Data dc, dp;
+            cout << "Introduza data de chegada (dd/mm/aaaa): ";
+            cin >> dc;
+            cout << endl << "Introduza data de partida (dd/mm/aaaa): ";
+            cin >> dp;
+
+            if(dp.getAno()>=dc.getAno() && dp.getMes()>=dc.getMes() && dp.getDia()>=dc.getDia()){
+                funcionario.setDataChegada(dc);
+                funcionario.setDataPartida(dp);
+                cout <<endl<<"Data de chegada guardada como " << funcionario.getDataChegada()<<endl;
+                cout << "Data de partida guardada como " << funcionario.getDataPartida();
+            }
+            else{cout << "Data de chegada deve ser antes da data de partida" << endl; modificarInfoPessoalFuncionario(funcionario);}
+
             continuar();
             int choice4;
             cout << endl << "  Enter your choice: ";
             cin >> choice4;
-            if (!cin.good())
-            {
+            if (!cin.good()) {
                 cout << "Por favor introduza um valor valido";
                 cin.clear();
                 cin.ignore(INT_MAX, '\n');
@@ -1089,12 +1101,15 @@ void Menu::modificarInfoPessoalFuncionario(Funcionario &funcionario) {
                     modificarInfoPessoalFuncionario(funcionario);
             }
             break;
-        case 5:
+        }
+        case 5: {
             editarFuncionario();
             break;
-        default:
+        }
+        default: {
             cout << "Por favor introduza um valor valido" << endl;
             modificarInfoPessoalFuncionario(funcionario);
+        }
     }
 }
 

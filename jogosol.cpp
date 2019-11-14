@@ -54,7 +54,7 @@ void Jogosol::readFuncionarios()
 {
     ifstream file;
 
-    file.open("/Users/afonsocaiado/Desktop/FACULDADE/ANO 2 /SEM 1/AEDA/TRABALHO AEDA/TrabalhoAEDAParte1/funcionarios.txt", ios::in);
+    file.open("C:\\Users\\Fisica1\\Desktop\\AEDA\\Trabalho\\TrabalhoAEDAParte1\\funcionarios.txt", ios::in);
 
     while(!file.eof())
     {
@@ -68,7 +68,7 @@ void Jogosol::readAtletas()
 {
     ifstream file;
 
-    file.open("/Users/afonsocaiado/Desktop/FACULDADE/ANO 2 /SEM 1/AEDA/TRABALHO AEDA/TrabalhoAEDAParte1/atletas.txt", ios::in);
+    file.open(R"(C:\Users\Fisica1\Desktop\AEDA\Trabalho\TrabalhoAEDAParte1\atletas.txt)", ios::in);
 
     while(!file.eof())
     {
@@ -80,9 +80,9 @@ void Jogosol::readAtletas()
 
 bool Jogosol::addFuncionario()
 {
-    ofstream file;
+    ofstream filef;
 
-    file.open("funcionarios.txt", ios::app);
+    filef.open(R"(C:\Users\Fisica1\Desktop\AEDA\Trabalho\TrabalhoAEDAParte1\funcionarios.txt)", ios::app);
 
     string nome, funcao, modalidade;
     char sexo;
@@ -90,8 +90,8 @@ bool Jogosol::addFuncionario()
     int passaporte, altura, ranking, custoDiario, peso;
 
     cout << "Nome: ";
-    getline(cin, nome);
     cin.ignore();
+    getline(cin, nome);
     cout << endl << "Sexo (H/M): ";
     cin >> sexo;
     cin.ignore(1000, '\n');
@@ -100,8 +100,8 @@ bool Jogosol::addFuncionario()
     cout << "Numero de passaporte: ";
     cin >> passaporte;
     cout << "Funcao: ";
-    getline(cin, funcao);
     cin.ignore();
+    getline(cin, funcao);
     cout << "Data de chegada (dd/mm/aaaa): ";
     cin >> dataChegada;
     cout << "Data de partida (dd/mm/aaaa): ";
@@ -111,9 +111,12 @@ bool Jogosol::addFuncionario()
 
     if(to_lower(funcao) == "atleta")
     {
+        ofstream filea;
+
+        filea.open(R"(C:\Users\Fisica1\Desktop\AEDA\Trabalho\TrabalhoAEDAParte1\atletas.txt)", ios::app);
+
         cout << "Modalidade: ";
         getline(cin, modalidade);
-        cin.ignore();
         cout << "Peso (kg): ";
         cin >> peso;
         cout << "Altura (cm):";
@@ -124,12 +127,15 @@ bool Jogosol::addFuncionario()
         Atleta a(nome, sexo, dataNascimento, passaporte, funcao, dataChegada, dataPartida, custoDiario, modalidade, peso, altura, ranking);
         vatletas.push_back(a);
 
-        file << a;
+        filea << endl << a;
 
+        filea.close();
+
+        /*
         int n;
         cout << "Numero competicoes em que participa: ";
         cin >> n;
-
+        */
         //falta fazê-lo corresponder a competicao
     }
 
@@ -138,12 +144,12 @@ bool Jogosol::addFuncionario()
         Funcionario f(nome, sexo, dataNascimento, passaporte, funcao, dataChegada, dataPartida, custoDiario);
         funcionarios.push_back(f);
 
-        file << f;
+        filef << endl << f;
     }
 
 
 
-    file.close();
+    filef.close();
 
     return true;
 

@@ -14,8 +14,6 @@ Modalidade::Modalidade(string nome)
 
    file.open(filename);
 
-   while(!file.eof())
-   {
+   //while(!file.eof())
 
-   }
 }

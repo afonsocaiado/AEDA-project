@@ -78,13 +78,17 @@ istream &operator>>(istream &i, Data &d){
         else
             d.dia=intd; d.mes =intm; d.ano=inta;
     }
-    catch(std::invalid_argument&){cout << "Data nao é um numero"<<endl;}
+
+    catch(std::invalid_argument&)
+    {
+        cout << "Data nao é um numero"<<endl;
+    }
+
     catch(int i){
         if(i==1){cout << "Dia invalido" << endl;}
         else if (i==2){cout << "Mes invalido" << endl;}
         else if(i==3){cout << "Ano invalido" << endl;}
     }
-
 
     return i;
 }

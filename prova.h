@@ -3,7 +3,6 @@
 #define TRABALHOAEDAPARTE1_PROVA_H
 
 #include <string>
-#include <vector>
 
 #include "data.h"
 

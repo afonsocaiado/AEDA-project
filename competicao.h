@@ -3,7 +3,6 @@
 #define TRABALHOAEDAPARTE1_COMPETICAO_H
 
 
-#include <string>
 #include <vector>
 
 #include "prova.h"

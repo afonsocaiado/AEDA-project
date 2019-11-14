@@ -81,7 +81,7 @@ istream &operator>>(istream &i, Data &d){
 
     catch(std::invalid_argument&)
     {
-        cout << "Data nao é um numero"<<endl;
+        cout << "Formato de data incorreto"<<endl;
     }
 
     catch(int i){

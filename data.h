@@ -22,6 +22,9 @@ public:
     void setAno(int ano);
     friend ostream & operator<<(ostream & o, const Data & d);
     friend istream &operator>>(istream &i, Data &d);
+    bool operator==(Data& d1);
+    bool operator>=(Data& d1);
+    bool operator>(Data& d1);
 };
 
 #endif //TRABALHOAEDAPARTE1_DATA_H

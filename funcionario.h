@@ -54,12 +54,12 @@ private:
     int altura;
     int ranking;
     vector<Competicao> competicoes;
-    vector<vector<string>> historico;
     vector<Resultado> resultados;
 public:
     Atleta();
     Atleta(string nome, char sexo, Data dataNascimento, int passaporte, string funcao, Data dataChegada, Data dataPartida, int custoDiario, string modalidade, int peso, int altura, int ranking);
     ~Atleta();
+    vector<Resultado> getResultados();
     void addCompeticao(Competicao competicao);
     void addResultado(Resultado resultado);
     void viewInfo();

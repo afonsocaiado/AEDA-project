@@ -163,6 +163,10 @@ void Atleta::viewResultados() {
 
 }
 
+vector<Resultado> Atleta::getResultados(){
+    return resultados;
+}
+
 ostream &operator<<(ostream & o, const Funcionario &f)
 {
     o << f.nome << ";" << f.sexo << ";" << f.dataNascimento << ";" << f.passaporte << ";" << f.funcao << ";" << f.dataPartida << ";" << f.dataChegada << ";" << f.custoDiario << ";";

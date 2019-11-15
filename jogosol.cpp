@@ -1,5 +1,8 @@
 #include "jogosol.h"
 
+#include <string>
+#include <sstream>
+
 using namespace std;
 
 Jogosol::Jogosol()
@@ -7,6 +10,8 @@ Jogosol::Jogosol()
     Jogosol::readFuncionarios();
 
     Jogosol::readAtletas();
+
+    Jogosol::readMedalhas();
 
     Modalidade* atletismo = new Modalidade("atletismo");
     modalidades.push_back(atletismo);
@@ -75,6 +80,26 @@ void Jogosol::readAtletas()
         Atleta a;
         a.input(file);
         vatletas.push_back(a);
+    }
+}
+
+void Jogosol::readMedalhas()
+{
+    ifstream file;
+
+    file.open(R"(C:\Users\Fisica1\Desktop\AEDA\Trabalho\TrabalhoAEDAParte1\medalhas.txt)", ios::in);
+    string pais,news;
+    int ouro,prata,bronze;
+    while(getline(file,news))
+    {
+        istringstream fileinp(news);
+        fileinp >> pais;
+        fileinp >> ouro;
+        fileinp >> prata;
+        fileinp >> bronze;
+        medalhas.insert(pair<string,int> (pais,ouro));
+        medalhas.insert(pair<string,int> (pais,prata));
+        medalhas.insert(pair<string,int> (pais,bronze));
     }
 }
 
@@ -169,5 +194,10 @@ vector<Funcionario> Jogosol::getFuncionarios()
 vector<Modalidade*> Jogosol::getModalidades()
 {
     return modalidades;
+}
+
+multimap<string,int> Jogosol::getMedalhas()
+{
+    return medalhas;
 }
 

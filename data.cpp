@@ -95,7 +95,8 @@ istream &operator>>(istream &i, Data &d){
 
 bool Data::operator== ( Data& d1){ // check for equality
     if( (d1.getDia()==this->getDia()) && (d1.getMes()==this->getMes()) && (d1.getAno()==this->getAno())){ return true;};
-    return false;}
+    return false;
+}
 
 bool Data::operator>(Data& d1){
     if (d1==*this)

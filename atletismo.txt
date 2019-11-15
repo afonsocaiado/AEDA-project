@@ -12,5 +12,5 @@ Triplo Salto Masculino;individual;Eliminatorias,19/08/2020;Final,21/08/2020;;202
 20km marcha Feminino;individual;Final,21/08/2020;;239555768,0012933345,118822337;
 Maratona Feminino;individual;Final,21/08/2020;;112385769,117723346,255553647;
 Triplo Salto Feminino;individual;Eliminatorias,19/08/2020;Final,21/08/2020;;236577689,234567947;
-Salto com Vara Feminino;individual;Eliminatorias,19/08/2020;Final,21/08/2020;;236577689,234567947;
+Salto com Vara Feminino;individual;Eliminatorias,19/08/2020;Final,21/08/2020;;236577688,234567944;
 Lancamento do Disco Feminino;individual;Eliminatorias,19/08/2020;Final,19/08/2020;;293845777;

@@ -20,6 +20,7 @@ private:
     vector<string> medalhados;
 
 public:
+    string nome;
     /// Construtor vazio da Competição.
     Competicao();
     /// Construtor da Competição.

@@ -52,7 +52,7 @@ void Jogosol::readFuncionarios()
 {
     ifstream file;
 
-    file.open(R"(C:\Users\Fisica1\Desktop\AEDA\Trabalho\TrabalhoAEDAParte1\funcionarios.txt)", ios::in);
+    file.open("/Users/afonsocaiado/Desktop/FACULDADE/ANO 2 /SEM 1/AEDA/TRABALHO AEDA/TrabalhoAEDAParte1/funcionarios.txt", ios::in);
 
     while(!file.eof())
     {
@@ -68,7 +68,7 @@ void Jogosol::readAtletas()
 {
     ifstream file;
 
-    file.open(R"(C:\Users\Fisica1\Desktop\AEDA\Trabalho\TrabalhoAEDAParte1\atletas.txt)", ios::in);
+    file.open("/Users/afonsocaiado/Desktop/FACULDADE/ANO 2 /SEM 1/AEDA/TRABALHO AEDA/TrabalhoAEDAParte1/atletas.txt", ios::in);
 
     while(!file.eof())
     {
@@ -82,7 +82,7 @@ bool Jogosol::addFuncionario()
 {
     ofstream file;
 
-    file.open(R"(C:\Users\Fisica1\Desktop\AEDA\Trabalho\TrabalhoAEDAParte1\funcionarios.txt)", ios::app);
+    file.open("/Users/afonsocaiado/Desktop/FACULDADE/ANO 2 /SEM 1/AEDA/TRABALHO AEDA/TrabalhoAEDAParte1/funcionarios.txt", ios::app);
 
     string nome, funcao, modalidade;
     char sexo;
@@ -113,7 +113,7 @@ bool Jogosol::addFuncionario()
     {
         ofstream filea;
 
-        filea.open(R"(C:\Users\Fisica1\Desktop\AEDA\Trabalho\TrabalhoAEDAParte1\atletas.txt)", ios::app);
+        filea.open(R"(/Users/afonsocaiado/Desktop/FACULDADE/ANO 2 /SEM 1/AEDA/TRABALHO AEDA/TrabalhoAEDAParte1/atletas.txt)", ios::app);
 
         cout << "Modalidade: ";
         getline(cin, modalidade);

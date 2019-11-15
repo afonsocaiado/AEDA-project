@@ -121,6 +121,7 @@ void Funcionario::viewInfo() {
     cout << endl << "Nome: " << nome << endl;
     cout << endl << "Data de Nascimento: " << dataNascimento << endl;
     cout << endl << "Numero de Passaporte: " << passaporte << endl;
+    cout << endl << "Funcao: " << funcao << endl;
     cout << endl << "Estadia: " << dataChegada << " - " << dataPartida << endl;
 }
 

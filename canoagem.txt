@@ -1,6 +1,6 @@
 Slalom C1 Masculino;individual;Preliminares,15/08/2020;Semi Final,17/08/2020;Final,18/08/2020;;123456788;
 Slalom C2 Masculino;coletivo;Preliminares,15/08/2020;Semi Final,17/08/2020;Final,18/08/2020;;123456788,987654321;
-Slalom K1 Masculino;individual;Preliminares,15/08/2020v;Semi Final,17/08/2020;Final,18/08/2020;;123456788;
+Slalom K1 Masculino;individual;Preliminares,15/08/2020;Semi Final,17/08/2020;Final,18/08/2020;;123456788;
 Slalom K1 feminino;individual;Preliminares,15/08/2020;Semi Final,17/08/2020;Final,18/08/2020;;123456777;
 K1 200 Masculino;individual;Preliminares,15/08/2020;Semi Final,17/08/2020;Final,18/08/2020;;059996879;
 K1 500 Masculino;individual;Preliminares,15/08/2020;Semi Final,17/08/2020;Final,18/08/2020;;059996879;

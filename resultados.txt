@@ -5,7 +5,7 @@
 456789012;Maratona Masculino,Final,2,passou;
 567890123;Maratona Masculino,Final,13,passou;
 383838384;Lancamento de peso Masculino,Eliminatorias,14,nao passou;
-202020201;Triplo Salto Masculino,Eliminatorias;1,passou;Triplo Salto Masculino,Final;1,passou;
+202020201;Triplo Salto Masculino,Eliminatorias;1,passou;Triplo Salto Masculino,Final,1,passou;
 364819001;100m Feminino,Quartos de Final,9,nao passou;200m Feminino,Eliminatorias,11,nao passou;
 355264861;400m Feminino,Eliminatorias,11,nao passou;
 172884758;400m barreiras Feminino,Eliminatorias,11,nao passou;

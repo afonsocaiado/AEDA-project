@@ -9,7 +9,7 @@ Competicao::Competicao() {}
 
 Competicao::Competicao(string nome, bool individual):nome(nome), individual(individual){}
 
-vector<Prova> Competicao::getProvas()
+vector<Prova*> Competicao::getProvas()
 {
     return provas;
 }
@@ -23,11 +23,6 @@ vector<string> Competicao::getMedalhados()
     return medalhados;
 }
 
-void Competicao::setProvas(vector<Prova> provas)
-{
-    this->provas = provas;
-}
-
 void Competicao::setMedalhados(vector<string> medalhados)
 {
     this->medalhados = medalhados;
@@ -35,12 +30,15 @@ void Competicao::setMedalhados(vector<string> medalhados)
 
 bool Competicao::addProva()
 {
+    //Falta aqui
     return true;
 }
 
 istream &operator>>(istream & i, Competicao &c)
 {
-    string temp;
+    string temp, nome;
+    Data dtemp;
+    int passaporte;
     getline(i, c.nome, ';');
     getline(i, temp, ';');
 
@@ -49,12 +47,18 @@ istream &operator>>(istream & i, Competicao &c)
     else
         c.individual = false;
 
-    while(i.get() != ';') //nao pode ser ; se for so final
+    while(i.get() != ';')
     {
-        getline(i, temp, ',');
-        Prova p(temp);
+        getline(i, nome, ',');
+        i >> dtemp;
+        i.ignore();
+        Prova* p = new Prova(temp);
+        p->setData(dtemp);
         c.provas.push_back(p);
-        //falta data
     }
-     //procurar no vetor de atletas para adicionar as competicoes ao atleta
+
+    i >> passaporte;
+    i.ignore(2, '\n');
+
+     //procurar por passaporte no vetor de atletas para adicionar as competicoes ao atleta
 }

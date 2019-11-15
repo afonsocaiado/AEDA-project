@@ -9,7 +9,8 @@
 #include "modalidade.h"
 
 using namespace std;
-
+/// Classe Funcionario.
+/// Permite representar todos os funcionarios.
 class Funcionario {
 
 protected:
@@ -42,7 +43,7 @@ public:
     void setPassaporte(int pass);
     virtual void viewInfo();
 
-    bool operator== (Funcionario funcionario) const;
+    bool operator== (Funcionario funcionario);
     friend ostream &operator<<(ostream & o, const Funcionario &f);
     virtual istream& input(istream& i);
 };
@@ -71,6 +72,7 @@ public:
     int getRanking();
     int getAltura();
     int getPeso();
+    bool operator== (Atleta atleta);
     friend ostream &operator<<(ostream & o, const Atleta &a);
     virtual istream& input(istream& i);
 

@@ -1345,10 +1345,9 @@ void Menu::listaCompeticoes(Modalidade *modalidade) {
 void Menu::competicaoMenuVis(Competicao &competicao, Modalidade *modalidade) {
     cout << endl << "_____________ COMPETICAO _______________" << endl << "|" << setw(40) << "|" << endl;
     cout << "|   1  - Provas                         |" << endl;
-    cout << "|   2  - Historial                      |" << endl;
-    cout << "|   3  - Atletas Inscritos              |" << endl;
-    cout << "|   4  - Medalhados                     |" << endl;
-    cout << "|   5  - Voltar                         |" << endl;
+    cout << "|   2  - Atletas Inscritos              |" << endl;
+    cout << "|   3  - Medalhados                     |" << endl;
+    cout << "|   4  - Voltar                         |" << endl;
     cout << "|_______________________________________|" << endl;
 
     int choice;
@@ -1393,35 +1392,6 @@ void Menu::competicaoMenuVis(Competicao &competicao, Modalidade *modalidade) {
             }
             break;
         case 2:
-            //Visualizar Historial
-
-            continuar();
-            int choice2;
-            cout << endl << "  Enter your choice: ";
-            cin >> choice2;
-            if (!cin.good())
-            {
-                cout << "Por favor introduza um valor valido";
-                cin.clear();
-                cin.ignore(INT_MAX, '\n');
-                competicaoMenuVis(competicao, modalidade);
-            }
-
-            switch (choice2) {
-                case 1:
-                    competicaoMenuVis(competicao, modalidade);
-                    break;
-                case 2:
-                    mainMenu();
-                    break;
-                case 3:
-                    return;
-                default:
-                    cout << "Por favor introduza um valor valido" << endl;
-                    competicaoMenuVis(competicao, modalidade);
-            }
-            break;
-        case 3:
             //Visualizar Atletas Inscritos
 
             continuar();
@@ -1450,7 +1420,7 @@ void Menu::competicaoMenuVis(Competicao &competicao, Modalidade *modalidade) {
                     competicaoMenuVis(competicao, modalidade);
             }
             break;
-        case 4:
+        case 3:
             //Visualizar Modalidades
 
             continuar();
@@ -1479,7 +1449,7 @@ void Menu::competicaoMenuVis(Competicao &competicao, Modalidade *modalidade) {
                     competicaoMenuVis(competicao, modalidade);
             }
             break;
-        case 5:
+        case 4:
             modalidadeMenu(modalidade);
             break;
         default:
@@ -1491,10 +1461,9 @@ void Menu::competicaoMenuVis(Competicao &competicao, Modalidade *modalidade) {
 void Menu::competicaoMenuMod(Competicao &competicao, Modalidade *modalidade) {
     cout << endl << "_____________ COMPETICAO _______________" << endl << "|" << setw(40) << "|" << endl;
     cout << "|   1  - Provas                         |" << endl;
-    cout << "|   2  - Historial                      |" << endl;
-    cout << "|   3  - Atletas Inscritos              |" << endl;
-    cout << "|   4  - Medalhados                     |" << endl;
-    cout << "|   5  - Voltar                         |" << endl;
+    cout << "|   2  - Atletas Inscritos              |" << endl;
+    cout << "|   3  - Medalhados                     |" << endl;
+    cout << "|   4  - Voltar                         |" << endl;
     cout << "|_______________________________________|" << endl;
 
     int choice;
@@ -1539,35 +1508,6 @@ void Menu::competicaoMenuMod(Competicao &competicao, Modalidade *modalidade) {
             }
             break;
         case 2:
-            //Modificar Historial
-
-            continuar();
-            int choice2;
-            cout << endl << "  Enter your choice: ";
-            cin >> choice2;
-            if (!cin.good())
-            {
-                cout << "Por favor introduza um valor valido";
-                cin.clear();
-                cin.ignore(INT_MAX, '\n');
-                competicaoMenuMod(competicao, modalidade);
-            }
-
-            switch (choice2) {
-                case 1:
-                    competicaoMenuMod(competicao, modalidade);
-                    break;
-                case 2:
-                    mainMenu();
-                    break;
-                case 3:
-                    return;
-                default:
-                    cout << "Por favor introduza um valor valido" << endl;
-                    competicaoMenuMod(competicao, modalidade);
-            }
-            break;
-        case 3:
             //Modificar Atletas Inscritos
 
             continuar();
@@ -1596,7 +1536,7 @@ void Menu::competicaoMenuMod(Competicao &competicao, Modalidade *modalidade) {
                     competicaoMenuMod(competicao, modalidade);
             }
             break;
-        case 4:
+        case 3:
             //Modificar Medalhados
 
             continuar();
@@ -1625,7 +1565,7 @@ void Menu::competicaoMenuMod(Competicao &competicao, Modalidade *modalidade) {
                     competicaoMenuMod(competicao, modalidade);
             }
             break;
-        case 5:
+        case 4:
             modalidadeMenu(modalidade);
             break;
         default:

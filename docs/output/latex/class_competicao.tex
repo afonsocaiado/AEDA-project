@@ -41,13 +41,13 @@ Classe \mbox{\hyperlink{class_competicao}{Competicao}}. Classe relativa às comp
 \doxysubsubsection{\texorpdfstring{Competicao()}{Competicao()}}
 {\footnotesize\ttfamily Competicao\+::\+Competicao (\begin{DoxyParamCaption}\item[{string}]{nome,  }\item[{bool}]{individual }\end{DoxyParamCaption})}
 
-Construtor da Competição
+Construtor da Competição.
 
 
 \begin{DoxyParams}{Parameters}
 {\em nome} & Nome da competição \\
 \hline
-{\em individual} & Booleano relativo a ser individual ou coletiva \\
+{\em individual} & Booleano relativo a ser individual ou coletiva (true se for individual) \\
 \hline
 \end{DoxyParams}
 
@@ -73,7 +73,7 @@ Retorna o sucesso ou insucesso do método
 Método get do booleano Individual.
 
 \begin{DoxyReturn}{Returns}
-Retorna o booleano Individual 
+Retorna o booleano Individual (true se for individual) 
 \end{DoxyReturn}
 \mbox{\Hypertarget{class_competicao_ae5a7831fa4831d700051a8d7d8352596}\label{class_competicao_ae5a7831fa4831d700051a8d7d8352596}} 
 \index{Competicao@{Competicao}!getMedalhados@{getMedalhados}}
@@ -136,7 +136,7 @@ Operador de input da competição. Permite ler uma competição de uma stream de
 
 
 \begin{DoxyParams}{Parameters}
-{\em i} & Stream de input (pode ser lida de um ficheiro ou da consola, por exemplo) \\
+{\em i} & Stream de input \\
 \hline
 {\em c} & Objeto \mbox{\hyperlink{class_competicao}{Competicao}} a ser construído com os dados da leitura \\
 \hline

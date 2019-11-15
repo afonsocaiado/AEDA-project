@@ -19,11 +19,9 @@ string Prova::getNome() const {
     return nome;
 }
 
-void Prova::setData(int dia, int mes, int ano)
+void Prova::setData(Data data)
 {
-    data.setDia(dia);
-    data.setMes(mes);
-    data.setAno(ano);
+    this->data = data;
 }
 
 

@@ -112,7 +112,7 @@ void Funcionario::setDataPartida(Data dataPartida)
     this->dataPartida = dataPartida;
 }
 
-bool Funcionario::operator== (const Funcionario funcionario) const
+bool Funcionario::operator== ( Funcionario funcionario)
 {
     return this->passaporte == funcionario.passaporte;
 }
@@ -165,6 +165,11 @@ void Atleta::viewResultados() {
 
 vector<Resultado> Atleta::getResultados(){
     return resultados;
+}
+
+bool Atleta::operator== (Atleta atleta)
+{
+    return this->passaporte == atleta.passaporte;
 }
 
 ostream &operator<<(ostream & o, const Funcionario &f)

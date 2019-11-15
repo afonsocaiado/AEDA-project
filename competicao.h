@@ -15,7 +15,7 @@ class Competicao {
 
 private:
     string nome;
-    vector<Prova> provas;
+    vector<Prova*> provas;
     bool individual;
     vector<string> medalhados;
 
@@ -27,10 +27,10 @@ public:
     /// @param nome Nome da competição
     /// @param individual Booleano relativo a ser individual ou coletiva (true se for individual)
     Competicao(string nome, bool individual);
-    /// Método get do vetor de Provas da competição.
+    /// Método get do vetor de apontadores para Provas da competição.
     ///
-    /// @return Retorna o vetor de Provas
-    vector <Prova> getProvas();
+    /// @return Retorna o vetor de apontadores para Provas
+    vector<struct Prova *> getProvas();
     /// Método get do booleano Individual.
     ///
     /// @return Retorna o booleano Individual (true se for individual)
@@ -39,10 +39,6 @@ public:
     ///
     /// @return Retorna o vetor de medalhados da competição
     vector<string> getMedalhados();
-    /// Método set do vetor de Provas.
-    ///
-    /// @param provas Vetor de provas da competição
-    void setProvas(vector<Prova> provas);
     /// Método set do vetor de medalhados (string) da competição.
     ///
     /// @param medalhados Vetor de medalhados da competição

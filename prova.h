@@ -16,7 +16,7 @@ public:
     explicit Prova(string nome);
     Data getData();
     string getNome() const;
-    void setData(int dia, int mes, int ano);
+    void setData(Data data);
 };
 
 #endif //TRABALHOAEDAPARTE1_PROVA_H

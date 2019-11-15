@@ -8,43 +8,41 @@ Jogosol::Jogosol()
 
     Jogosol::readAtletas();
 
-    Modalidade atletismo("atletismo");
+    Modalidade* atletismo = new Modalidade("atletismo");
     modalidades.push_back(atletismo);
-    Modalidade badminton("badminton");
+    Modalidade* badminton = new Modalidade("badminton");
     modalidades.push_back(badminton);
-    Modalidade canoagem("canoagem");
+    Modalidade* canoagem = new Modalidade("canoagem");
     modalidades.push_back(canoagem);
-    Modalidade ciclismo("ciclismo");
+    Modalidade* ciclismo = new Modalidade("ciclismo");
     modalidades.push_back(ciclismo);
-    Modalidade futebol("futebol");
+    Modalidade* futebol = new Modalidade("futebol");
     modalidades.push_back(futebol);
-    Modalidade Canoagem("canoagem");
-    modalidades.push_back(Canoagem);
-    Modalidade ginastica("ginastica");
+    Modalidade* ginastica = new Modalidade("ginastica");
     modalidades.push_back(ginastica);
-    Modalidade golfe("golfe");
+    Modalidade* golfe = new Modalidade("golfe");
     modalidades.push_back(golfe);
-    Modalidade hipismo("hipismo");
+    Modalidade* hipismo = new Modalidade("hipismo");
     modalidades.push_back(hipismo);
-    Modalidade judo("judo");
+    Modalidade* judo = new Modalidade("judo");
     modalidades.push_back(judo);
-    Modalidade natacao("natacao");
+    Modalidade* natacao = new Modalidade("natacao");
     modalidades.push_back(natacao);
-    Modalidade taekwondo("taekwondo");
+    Modalidade* taekwondo = new Modalidade("taekwondo");
     modalidades.push_back(taekwondo);
-    Modalidade tenis("tenis");
+    Modalidade* tenis = new Modalidade("tenis");
     modalidades.push_back(tenis);
-    Modalidade tenisdemesa("tenisdemesa");
+    Modalidade* tenisdemesa = new Modalidade("tenisdemesa");
     modalidades.push_back(tenisdemesa);
-    Modalidade tiro("tiro");
+    Modalidade* tiro = new Modalidade("tiro");
     modalidades.push_back(tiro);
-    Modalidade triatlo("triatlo");
+    Modalidade* triatlo = new Modalidade("triatlo");
     modalidades.push_back(triatlo);
-    Modalidade vela("vela");
+    Modalidade* vela = new Modalidade("vela");
     modalidades.push_back(vela);
 }
 
-vector<Modalidade> Jogosol::modalidades {};
+vector<Modalidade*> Jogosol::modalidades {};
 
 vector<Funcionario> Jogosol::funcionarios {};
 

@@ -7,8 +7,6 @@
 #IncludeRegexTransform: 
 
 C:/Users/Fisica1/Desktop/AEDA/Trabalho/TrabalhoAEDAParte1/competicao.h
-string
--
 vector
 -
 prova.h
@@ -52,8 +50,6 @@ vector
 
 C:/Users/Fisica1/Desktop/AEDA/Trabalho/TrabalhoAEDAParte1/prova.h
 string
--
-vector
 -
 data.h
 C:/Users/Fisica1/Desktop/AEDA/Trabalho/TrabalhoAEDAParte1/data.h

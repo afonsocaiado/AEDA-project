@@ -54,7 +54,7 @@ void Jogosol::readFuncionarios()
 {
     ifstream file;
 
-    file.open("/Users/tomas/Google Drive/FEUP/2º Ano/Pasta Pessoal/1º Semestre/AEDA/Trabalho 1/TrabalhoAEDAParte1/funcionarios.txt", ios::in);
+    file.open(R"(C:\Users\Fisica1\Desktop\AEDA\Trabalho\TrabalhoAEDAParte1\funcionarios.txt)", ios::in);
 
     while(!file.eof())
     {
@@ -62,13 +62,15 @@ void Jogosol::readFuncionarios()
         f.input(file);
         funcionarios.push_back(f);
     }
+
+    file.close();
 }
 
 void Jogosol::readAtletas()
 {
     ifstream file;
 
-    file.open("/Users/tomas/Google Drive/FEUP/2º Ano/Pasta Pessoal/1º Semestre/AEDA/Trabalho 1/TrabalhoAEDAParte1/atletas.txt", ios::in);
+    file.open(R"(C:\Users\Fisica1\Desktop\AEDA\Trabalho\TrabalhoAEDAParte1\atletas.txt)", ios::in);
 
     while(!file.eof())
     {
@@ -82,7 +84,7 @@ bool Jogosol::addFuncionario()
 {
     ofstream file;
 
-    file.open("/Users/tomas/Google Drive/FEUP/2º Ano/Pasta Pessoal/1º Semestre/AEDA/Trabalho 1/TrabalhoAEDAParte1/funcionarios.txt", ios::app);
+    file.open(R"(C:\Users\Fisica1\Desktop\AEDA\Trabalho\TrabalhoAEDAParte1\funcionarios.txt)", ios::app);
 
     string nome, funcao, modalidade;
     char sexo;

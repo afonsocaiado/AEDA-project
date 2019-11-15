@@ -97,9 +97,8 @@ void Jogosol::readMedalhas()
         fileinp >> ouro;
         fileinp >> prata;
         fileinp >> bronze;
-        medalhas.insert(pair<string,int> (pais,ouro));
-        medalhas.insert(pair<string,int> (pais,prata));
-        medalhas.insert(pair<string,int> (pais,bronze));
+        vector<int> vint = {ouro,prata,bronze};
+        medalhas.insert(pair<string,vector<int>> (pais,vint));
     }
 }
 

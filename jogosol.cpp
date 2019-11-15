@@ -166,7 +166,7 @@ vector<Funcionario> Jogosol::getFuncionarios()
     return funcionarios;
 }
 
-vector<Modalidade> Jogosol::getModalidades()
+vector<Modalidade*> Jogosol::getModalidades()
 {
     return modalidades;
 }

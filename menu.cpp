@@ -57,7 +57,7 @@ void Menu::mainMenu() {
                 mainMenu();
             }
 
-            Modalidade modalidade = Jogosol::getModalidades().at(choice-1);
+            Modalidade *modalidade = Jogosol::getModalidades().at(choice-1);
             modalidadeMenu(modalidade);
             break;
         }
@@ -1255,7 +1255,7 @@ void Menu::listaModalidades() {
     cout << "|_______________________________________|" << endl;
 }
 
-void Menu::modalidadeMenu(Modalidade &modalidade) {
+void Menu::modalidadeMenu(Modalidade *modalidade) {
     cout << endl << "_____________ MODALIDADE _______________" << endl << "|" << setw(40) << "|" << endl;
     cout << "|   1  - Visualizar                     |" << endl;
     cout << "|   2  - Modificar                      |" << endl;
@@ -1288,14 +1288,14 @@ void Menu::modalidadeMenu(Modalidade &modalidade) {
                 modalidadeMenu(modalidade);
             }
 
-            if (choice > modalidade.competicoes.size()){
+            if (choice > modalidade->competicoes.size()){
                 cout << "Por favor introduza um valor valido";
                 cin.clear();
                 cin.ignore(INT_MAX, '\n');
                 modalidadeMenu(modalidade);
             }
             
-            Competicao competicao = modalidade.competicoes.at(choice-1);
+            Competicao competicao = modalidade->competicoes.at(choice-1);
             competicaoMenuVis(competicao, modalidade);
             break;
         }
@@ -1314,14 +1314,14 @@ void Menu::modalidadeMenu(Modalidade &modalidade) {
                 modalidadeMenu(modalidade);
             }
 
-            if (choice > modalidade.competicoes.size()){
+            if (choice > modalidade->competicoes.size()){
                 cout << "Por favor introduza um valor valido";
                 cin.clear();
                 cin.ignore(INT_MAX, '\n');
                 modalidadeMenu(modalidade);
             }
             
-            Competicao competicao = modalidade.competicoes.at(choice-1);
+            Competicao competicao = modalidade->competicoes.at(choice-1);
             competicaoMenuMod(competicao, modalidade);
             break;
         }
@@ -1334,15 +1334,15 @@ void Menu::modalidadeMenu(Modalidade &modalidade) {
     }
 }
 
-void Menu::listaCompeticoes(Modalidade &modalidade) {
+void Menu::listaCompeticoes(Modalidade *modalidade) {
     cout << endl << "______________ COMPETICOES _____________" << endl << "|" << setw(40) << "|" << endl;
-    for (int i  = 0; i < modalidade.competicoes.size(); i++)  {
-        cout << "|   " << i+1 << " - " << modalidade.competicoes.at(i).nome << setw(34-modalidade.competicoes.at(i).nome.size()) << "|" << endl;
+    for (int i  = 0; i < modalidade->competicoes.size(); i++)  {
+        cout << "|   " << i+1 << " - " << modalidade->competicoes.at(i).getNome() << setw(34-modalidade->competicoes.at(i).getNome().size()) << "|" << endl;
     }
     cout << "|_______________________________________|" << endl;
 }
 
-void Menu::competicaoMenuVis(Competicao &competicao, Modalidade &modalidade) {
+void Menu::competicaoMenuVis(Competicao &competicao, Modalidade *modalidade) {
     cout << endl << "_____________ COMPETICAO _______________" << endl << "|" << setw(40) << "|" << endl;
     cout << "|   1  - Provas                         |" << endl;
     cout << "|   2  - Historial                      |" << endl;
@@ -1488,7 +1488,7 @@ void Menu::competicaoMenuVis(Competicao &competicao, Modalidade &modalidade) {
     }
 }
 
-void Menu::competicaoMenuMod(Competicao &competicao, Modalidade &modalidade) {
+void Menu::competicaoMenuMod(Competicao &competicao, Modalidade *modalidade) {
     cout << endl << "_____________ COMPETICAO _______________" << endl << "|" << setw(40) << "|" << endl;
     cout << "|   1  - Provas                         |" << endl;
     cout << "|   2  - Historial                      |" << endl;

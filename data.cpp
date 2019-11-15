@@ -98,11 +98,14 @@ bool Data::operator== ( Data& d1){ // check for equality
     return false;}
 
 bool Data::operator>(Data& d1){
-    if (d1==*this) { return false;}; // this is strict inequality
-    if ((this->getAno()>d1.getAno())
-    || (this->getAno()==d1.getAno() && this->getMes()>d1.getMes())
-    || (this->getAno()==d1.getAno() && this->getMes()==d1.getMes() && this->getDia()>d1.getDia()))
-    { return true; }
+    if (d1==*this)
+    {
+        return false;
+    }
+    if ((this->getAno()>d1.getAno()) || (this->getAno()==d1.getAno() && this->getMes()>d1.getMes()) || (this->getAno()==d1.getAno() && this->getMes()==d1.getMes() && this->getDia()>d1.getDia()))
+    {
+        return true;
+    }
 }
 
 bool Data::operator>=(Data& d1){

@@ -17,13 +17,3 @@ C2 1000 Masculino;coletivo;Preliminares,15/08/2020;Semi Final,17/08/2020;Final,1
 K4 200 Masculino;coletivo;Preliminares,15/08/2020;Semi Final,17/08/2020;Final,18/08/2020;;059996879,989898987,565656565,717171717;
 K4 500 Masculino;coletivo;Preliminares,15/08/2020;Semi Final,17/08/2020;Final,18/08/2020;;059996879,989898987,565656565,717171717;
 K4 1000 Masculino;coletivo;Preliminares,15/08/2020;Semi Final,17/08/2020;Final,18/08/2020;;059996879,989898987,565656565,717171717;
-
-
-
-
-
-
-
-
-
-

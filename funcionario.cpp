@@ -156,7 +156,7 @@ void Atleta::viewInfo() {
 
 void Atleta::viewResultados() {
     for (unsigned int i = 0; i < resultados.size(); i++){
-        cout << endl << "Competicao: " << resultados.at(i).getCompeticao().nome << endl;
+        cout << endl << "Competicao: " << resultados.at(i).getCompeticao().getNome() << endl;
         cout << endl << "Prova: " << resultados.at(i).getProva().getNome() << endl;
         cout << endl << "Classificao: " << resultados.at(i).getClassificacao() << endl << endl;
     }

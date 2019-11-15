@@ -8,6 +8,3 @@ Velocidade por Equipas;coletivo;Final,25/08/2020;;102938475,365656512;
 Perseguicao por Equipas;coletivo;Final,25/08/2020;;102938475,365656512;
 Keirin;individual;Final,25/08/2020;;672718236;
 Omnium;individual;Final,25/08/2020;;909862513;
-
-
-

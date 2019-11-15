@@ -27,9 +27,12 @@ public:
     /// @param nome Nome da competição
     /// @param individual Booleano relativo a ser individual ou coletiva (true se for individual)
     Competicao(string nome, bool individual);
+
+    string getNome();
     /// Método get do vetor de apontadores para Provas da competição.
     ///
     /// @return Retorna o vetor de apontadores para Provas
+
     vector<struct Prova *> getProvas();
     /// Método get do booleano Individual.
     ///

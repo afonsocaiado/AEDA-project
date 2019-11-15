@@ -20,7 +20,7 @@ Modalidade::Modalidade(string nome)
 
        file >> c;
 
-
+       competicoes.push_back(c);
    }
 
 }

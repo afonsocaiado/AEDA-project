@@ -23,10 +23,10 @@ public:
     void modificarInfoPessoalFuncionario(Funcionario &funcionario);
     void modificarInfoPessoalAtleta(Atleta &atleta);
     static void listaModalidades();
-    void modalidadeMenu(Modalidade &modalidade);
-    static void listaCompeticoes(Modalidade &modalidade);
-    void competicaoMenuVis(Competicao &competicao,Modalidade &modalidade);
-    void competicaoMenuMod(Competicao &competicao,Modalidade &modalidade);
+    void modalidadeMenu(Modalidade *modalidade);
+    static void listaCompeticoes(Modalidade *modalidade);
+    void competicaoMenuVis(Competicao &competicao,Modalidade *modalidade);
+    void competicaoMenuMod(Competicao &competicao,Modalidade *modalidade);
     void programacaoDiaria();
     void diasAnteriores();
     void tabelaDeMedalhados();

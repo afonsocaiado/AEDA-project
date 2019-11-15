@@ -1,4 +1,3 @@
-<<<<<<< Updated upstream
 #IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
 
 #IncludeRegexScan: ^.*$
@@ -6,6 +5,14 @@
 #IncludeRegexComplain: ^$
 
 #IncludeRegexTransform: 
+
+C:/Users/Fisica1/Desktop/AEDA/Trabalho/TrabalhoAEDAParte1/competicao.cpp
+competicao.h
+C:/Users/Fisica1/Desktop/AEDA/Trabalho/TrabalhoAEDAParte1/competicao.h
+vector
+-
+string
+-
 
 C:/Users/Fisica1/Desktop/AEDA/Trabalho/TrabalhoAEDAParte1/competicao.h
 vector
@@ -19,121 +26,13 @@ iostream
 util.h
 C:/Users/Fisica1/Desktop/AEDA/Trabalho/TrabalhoAEDAParte1/util.h
 
-C:/Users/Fisica1/Desktop/AEDA/Trabalho/TrabalhoAEDAParte1/funcionario.h
-iostream
--
-string
--
-vector
--
-modalidade.h
-C:/Users/Fisica1/Desktop/AEDA/Trabalho/TrabalhoAEDAParte1/modalidade.h
-
-C:/Users/Fisica1/Desktop/AEDA/Trabalho/TrabalhoAEDAParte1/jogosol.cpp
-jogosol.h
-C:/Users/Fisica1/Desktop/AEDA/Trabalho/TrabalhoAEDAParte1/jogosol.h
-
-C:/Users/Fisica1/Desktop/AEDA/Trabalho/TrabalhoAEDAParte1/jogosol.h
-fstream
--
-vector
--
-string
--
-funcionario.h
-C:/Users/Fisica1/Desktop/AEDA/Trabalho/TrabalhoAEDAParte1/funcionario.h
-
-C:/Users/Fisica1/Desktop/AEDA/Trabalho/TrabalhoAEDAParte1/modalidade.h
-resultado.h
-C:/Users/Fisica1/Desktop/AEDA/Trabalho/TrabalhoAEDAParte1/resultado.h
-vector
--
-
 C:/Users/Fisica1/Desktop/AEDA/Trabalho/TrabalhoAEDAParte1/prova.h
 string
 -
 data.h
 C:/Users/Fisica1/Desktop/AEDA/Trabalho/TrabalhoAEDAParte1/data.h
 
-C:/Users/Fisica1/Desktop/AEDA/Trabalho/TrabalhoAEDAParte1/resultado.h
-string
--
-vector
--
-competicao.h
-C:/Users/Fisica1/Desktop/AEDA/Trabalho/TrabalhoAEDAParte1/competicao.h
-
 C:/Users/Fisica1/Desktop/AEDA/Trabalho/TrabalhoAEDAParte1/util.h
 string
 -
 
-=======
-#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
-
-#IncludeRegexScan: ^.*$
-
-#IncludeRegexComplain: ^$
-
-#IncludeRegexTransform: 
-
-/Users/afonsocaiado/Desktop/FACULDADE/ANO 2 /SEM 1/AEDA/TRABALHO AEDA/TrabalhoAEDAParte1/competicao.h
-vector
--
-prova.h
-/Users/afonsocaiado/Desktop/FACULDADE/ANO 2 /SEM 1/AEDA/TRABALHO AEDA/TrabalhoAEDAParte1/prova.h
-
-/Users/afonsocaiado/Desktop/FACULDADE/ANO 2 /SEM 1/AEDA/TRABALHO AEDA/TrabalhoAEDAParte1/data.h
-iostream
--
-util.h
-/Users/afonsocaiado/Desktop/FACULDADE/ANO 2 /SEM 1/AEDA/TRABALHO AEDA/TrabalhoAEDAParte1/util.h
-
-/Users/afonsocaiado/Desktop/FACULDADE/ANO 2 /SEM 1/AEDA/TRABALHO AEDA/TrabalhoAEDAParte1/funcionario.h
-iostream
--
-string
--
-vector
--
-modalidade.h
-/Users/afonsocaiado/Desktop/FACULDADE/ANO 2 /SEM 1/AEDA/TRABALHO AEDA/TrabalhoAEDAParte1/modalidade.h
-
-/Users/afonsocaiado/Desktop/FACULDADE/ANO 2 /SEM 1/AEDA/TRABALHO AEDA/TrabalhoAEDAParte1/jogosol.cpp
-jogosol.h
-/Users/afonsocaiado/Desktop/FACULDADE/ANO 2 /SEM 1/AEDA/TRABALHO AEDA/TrabalhoAEDAParte1/jogosol.h
-
-/Users/afonsocaiado/Desktop/FACULDADE/ANO 2 /SEM 1/AEDA/TRABALHO AEDA/TrabalhoAEDAParte1/jogosol.h
-fstream
--
-vector
--
-string
--
-funcionario.h
-/Users/afonsocaiado/Desktop/FACULDADE/ANO 2 /SEM 1/AEDA/TRABALHO AEDA/TrabalhoAEDAParte1/funcionario.h
-
-/Users/afonsocaiado/Desktop/FACULDADE/ANO 2 /SEM 1/AEDA/TRABALHO AEDA/TrabalhoAEDAParte1/modalidade.h
-resultado.h
-/Users/afonsocaiado/Desktop/FACULDADE/ANO 2 /SEM 1/AEDA/TRABALHO AEDA/TrabalhoAEDAParte1/resultado.h
-vector
--
-
-/Users/afonsocaiado/Desktop/FACULDADE/ANO 2 /SEM 1/AEDA/TRABALHO AEDA/TrabalhoAEDAParte1/prova.h
-string
--
-data.h
-/Users/afonsocaiado/Desktop/FACULDADE/ANO 2 /SEM 1/AEDA/TRABALHO AEDA/TrabalhoAEDAParte1/data.h
-
-/Users/afonsocaiado/Desktop/FACULDADE/ANO 2 /SEM 1/AEDA/TRABALHO AEDA/TrabalhoAEDAParte1/resultado.h
-string
--
-vector
--
-competicao.h
-/Users/afonsocaiado/Desktop/FACULDADE/ANO 2 /SEM 1/AEDA/TRABALHO AEDA/TrabalhoAEDAParte1/competicao.h
-
-/Users/afonsocaiado/Desktop/FACULDADE/ANO 2 /SEM 1/AEDA/TRABALHO AEDA/TrabalhoAEDAParte1/util.h
-string
--
-
->>>>>>> Stashed changes

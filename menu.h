@@ -28,7 +28,8 @@ public:
     void competicaoMenuVis(Competicao &competicao,Modalidade *modalidade);
     void competicaoMenuMod(Competicao &competicao,Modalidade *modalidade);
     void programacaoDiaria();
-    void diasAnteriores();
+    void diasAnteriores(Data d);
+    void programacaoHoje(Data d);
     void tabelaDeMedalhados();
     static void continuar();
 };

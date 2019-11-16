@@ -16,7 +16,6 @@ using namespace std;
 /// Classe relativa ao objeto que representa os Jogos Olímpicos
 class Jogosol {
 private:
-    static vector<vector<string>> medalhas;
     /// Vetor de apontadores para objetos Modalidade.
     /// Permite guardar todas as modalidades dos Jogos Olímpicos
     static vector<Modalidade*> modalidades;
@@ -37,6 +36,7 @@ public:
     void readFuncionarios();
     void readAtletas();
     void readPaises();
+    static vector<Pais *> getPaises();
     static bool addFuncionario();
     static bool deleteFuncionario();
 };

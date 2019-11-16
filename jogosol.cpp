@@ -55,7 +55,11 @@ void Jogosol::readFuncionarios()
 {
     ifstream file;
 
-    file.open(R"(C:\Users\Fisica1\Desktop\AEDA\Trabalho\TrabalhoAEDAParte1\funcionarios.txt)", ios::in);
+    file.open("funcionarios.txt", ios::in);
+    if(file.fail()){
+        cout << "Ficheiro nao existe" << endl;
+        exit(0);
+    }
 
     while(!file.eof())
     {
@@ -71,7 +75,11 @@ void Jogosol::readAtletas()
 {
     ifstream file;
 
-    file.open(R"(C:\Users\Fisica1\Desktop\AEDA\Trabalho\TrabalhoAEDAParte1\atletas.txt)", ios::in);
+    file.open("atletas.txt", ios::in);
+    if(file.fail()){
+        cout << "Ficheiro nao existe" << endl;
+        exit(0);
+    }
 
     while(!file.eof())
     {
@@ -85,7 +93,11 @@ bool Jogosol::addFuncionario()
 {
     ofstream file;
 
-    file.open(R"(C:\Users\Fisica1\Desktop\AEDA\Trabalho\TrabalhoAEDAParte1\funcionarios.txt)", ios::app);
+    file.open("funcionarios.txt", ios::app);
+    if(file.fail()){
+        cout << "Ficheiro nao existe" << endl;
+        exit(0);
+    }
 
     string nome, funcao, modalidade;
     char sexo;
@@ -174,7 +186,8 @@ vector<Modalidade*> Jogosol::getModalidades()
     return modalidades;
 }
 
-vector <Pais*> Jogosol::getPaises() {
+vector <Pais*> Jogosol::getPaises()
+{
     return paises;
 }
 

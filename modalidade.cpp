@@ -10,9 +10,14 @@ Modalidade::Modalidade(string nome)
 
    ifstream file;
 
-   string filename = "C:\\Users\\Fisica1\\Desktop\\AEDA\\Trabalho\\TrabalhoAEDAParte1\\" + nome + ".txt";
+   string filename = nome + ".txt";
 
-   file.open(filename);
+   file.open(filename, ios::in);
+
+    if(file.fail()){
+        cout << "Ficheiro incorreto" << endl;
+        exit(0);
+    }
 
    while(!file.eof())
    {

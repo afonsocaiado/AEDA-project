@@ -8,6 +8,7 @@
 #include <map>
 
 #include "funcionario.h"
+#include "pais.h"
 
 using namespace std;
 
@@ -16,16 +17,17 @@ private:
     static vector<Modalidade*> modalidades;
     static vector<Funcionario> funcionarios;
     static vector<Atleta> vatletas;
+    static vector<Pais*> paises;
     map<string,vector<int>> medalhas;
 public:
     Jogosol();
-    multimap<string,int> getMedalhas();
+    static vector<Pais*> getPaises();
     static vector<Atleta> getVAtletas();
     static vector<Funcionario> getFuncionarios();
     static vector<Modalidade*> getModalidades();
     void readFuncionarios();
     void readAtletas();
-    void readMedalhas();
+    void readPaises();
     static bool addFuncionario();
     static bool deleteFuncionario();
 };

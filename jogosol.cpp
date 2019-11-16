@@ -11,8 +11,6 @@ Jogosol::Jogosol()
 
     Jogosol::readAtletas();
 
-    Jogosol::readMedalhas();
-
     Modalidade* atletismo = new Modalidade("atletismo");
     modalidades.push_back(atletismo);
     Modalidade* badminton = new Modalidade("badminton");
@@ -80,25 +78,6 @@ void Jogosol::readAtletas()
         Atleta a;
         a.input(file);
         vatletas.push_back(a);
-    }
-}
-
-void Jogosol::readMedalhas()
-{
-    ifstream file;
-
-    file.open(R"(C:\Users\Fisica1\Desktop\AEDA\Trabalho\TrabalhoAEDAParte1\medalhas.txt)", ios::in);
-    string pais,news;
-    int ouro,prata,bronze;
-    while(getline(file,news))
-    {
-        istringstream fileinp(news);
-        fileinp >> pais;
-        fileinp >> ouro;
-        fileinp >> prata;
-        fileinp >> bronze;
-        vector<int> vint = {ouro,prata,bronze};
-        medalhas.insert(pair<string,vector<int>> (pais,vint));
     }
 }
 
@@ -195,8 +174,9 @@ vector<Modalidade*> Jogosol::getModalidades()
     return modalidades;
 }
 
-multimap<string,int> Jogosol::getMedalhas()
-{
-    return medalhas;
+vector <Pais*> Jogosol::getPaises() {
+    return paises;
 }
+
+
 

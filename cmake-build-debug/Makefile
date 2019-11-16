@@ -312,6 +312,33 @@ modalidade.cpp.s:
 	$(MAKE) -f CMakeFiles/TrabalhoAEDAParte1.dir/build.make CMakeFiles/TrabalhoAEDAParte1.dir/modalidade.cpp.s
 .PHONY : modalidade.cpp.s
 
+pais.o: pais.cpp.o
+
+.PHONY : pais.o
+
+# target to build an object file
+pais.cpp.o:
+	$(MAKE) -f CMakeFiles/TrabalhoAEDAParte1.dir/build.make CMakeFiles/TrabalhoAEDAParte1.dir/pais.cpp.o
+.PHONY : pais.cpp.o
+
+pais.i: pais.cpp.i
+
+.PHONY : pais.i
+
+# target to preprocess a source file
+pais.cpp.i:
+	$(MAKE) -f CMakeFiles/TrabalhoAEDAParte1.dir/build.make CMakeFiles/TrabalhoAEDAParte1.dir/pais.cpp.i
+.PHONY : pais.cpp.i
+
+pais.s: pais.cpp.s
+
+.PHONY : pais.s
+
+# target to generate assembly for a file
+pais.cpp.s:
+	$(MAKE) -f CMakeFiles/TrabalhoAEDAParte1.dir/build.make CMakeFiles/TrabalhoAEDAParte1.dir/pais.cpp.s
+.PHONY : pais.cpp.s
+
 prova.o: prova.cpp.o
 
 .PHONY : prova.o
@@ -423,6 +450,9 @@ help:
 	@echo "... modalidade.o"
 	@echo "... modalidade.i"
 	@echo "... modalidade.s"
+	@echo "... pais.o"
+	@echo "... pais.i"
+	@echo "... pais.s"
 	@echo "... prova.o"
 	@echo "... prova.i"
 	@echo "... prova.s"

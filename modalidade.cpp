@@ -16,7 +16,7 @@ Modalidade::Modalidade(string nome)
    file.open(filename);
 
    if(file.fail()){
-       cout << "Ficheiro incorreto" << endl;
+       cout << "Ficheiro incorreto (5)" << endl;
        exit(0);
    }
    while(!file.eof())

@@ -54,7 +54,7 @@ void Jogosol::readFuncionarios()
 
     file.open("funcionarios.txt", ios::in);
     if(file.fail()){
-        cout << "Ficheiro nao existe" << endl;
+        cout << "Ficheiro nao existe (1)" << endl;
         exit(0);
     }
     while(!file.eof())
@@ -73,7 +73,7 @@ void Jogosol::readAtletas()
 
     file.open("atletas.txt", ios::in);
     if(file.fail()){
-        cout << "Ficheiro nao existe" << endl;
+        cout << "Ficheiro nao existe (2)" << endl;
         exit(0);
     }
 
@@ -91,7 +91,7 @@ bool Jogosol::addFuncionario()
 
     file.open("funcionarios.txt", ios::app);
     if(file.fail()){
-        cout << "Ficheiro nao existe" << endl;
+        cout << "Ficheiro nao existe (3)" << endl;
         exit(0);
     }
 
@@ -126,7 +126,7 @@ bool Jogosol::addFuncionario()
 
         filea.open(R"(atletas.txt)", ios::app);
         if(file.fail()){
-            cout << "Ficheiro nao existe" << endl;
+            cout << "Ficheiro nao existe (4)" << endl;
             exit(0);
         }
 

@@ -16,7 +16,7 @@ private:
     static vector<Modalidade*> modalidades;
     static vector<Funcionario> funcionarios;
     static vector<Atleta> vatletas;
-    map<string,vector<int>> medalhas;
+    multimap<string,int> medalhas;
 public:
     Jogosol();
     multimap<string,int> getMedalhas();

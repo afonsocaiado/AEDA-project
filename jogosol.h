@@ -12,16 +12,25 @@
 
 using namespace std;
 
+/// Classe Jogosol.
+/// Classe relativa ao objeto que representa os Jogos Olímpicos
 class Jogosol {
 private:
+    static vector<vector<string>> medalhas;
+    /// Vetor de apontadores para objetos Modalidade.
+    /// Permite guardar todas as modalidades dos Jogos Olímpicos
     static vector<Modalidade*> modalidades;
+    /// Vetor de objetos Funcionario.
+    /// Permite guardar os funcionários (não atletas) portugueses dos Jogos Olímpicos
     static vector<Funcionario> funcionarios;
+    /// Vetor de objetos Atleta.
+    /// Permite guardar os atletas portugueses dos Jogos Olímpicos
     static vector<Atleta> vatletas;
     static vector<Pais*> paises;
     map<string,vector<int>> medalhas;
 public:
+    /// Construtor vazio de Jogosol.
     Jogosol();
-    static vector<Pais*> getPaises();
     static vector<Atleta> getVAtletas();
     static vector<Funcionario> getFuncionarios();
     static vector<Modalidade*> getModalidades();

@@ -52,8 +52,11 @@ void Jogosol::readFuncionarios()
 {
     ifstream file;
 
-    file.open("/Users/afonsocaiado/Desktop/FACULDADE/ANO 2 /SEM 1/AEDA/TRABALHO AEDA/TrabalhoAEDAParte1/funcionarios.txt", ios::in);
-
+    file.open("funcionarios.txt", ios::in);
+    if(file.fail()){
+        cout << "Ficheiro nao existe" << endl;
+        exit(0);
+    }
     while(!file.eof())
     {
         Funcionario f;
@@ -68,7 +71,11 @@ void Jogosol::readAtletas()
 {
     ifstream file;
 
-    file.open("/Users/afonsocaiado/Desktop/FACULDADE/ANO 2 /SEM 1/AEDA/TRABALHO AEDA/TrabalhoAEDAParte1/atletas.txt", ios::in);
+    file.open("atletas.txt", ios::in);
+    if(file.fail()){
+        cout << "Ficheiro nao existe" << endl;
+        exit(0);
+    }
 
     while(!file.eof())
     {
@@ -82,7 +89,11 @@ bool Jogosol::addFuncionario()
 {
     ofstream file;
 
-    file.open("/Users/afonsocaiado/Desktop/FACULDADE/ANO 2 /SEM 1/AEDA/TRABALHO AEDA/TrabalhoAEDAParte1/funcionarios.txt", ios::app);
+    file.open("funcionarios.txt", ios::app);
+    if(file.fail()){
+        cout << "Ficheiro nao existe" << endl;
+        exit(0);
+    }
 
     string nome, funcao, modalidade;
     char sexo;
@@ -113,7 +124,11 @@ bool Jogosol::addFuncionario()
     {
         ofstream filea;
 
-        filea.open(R"(/Users/afonsocaiado/Desktop/FACULDADE/ANO 2 /SEM 1/AEDA/TRABALHO AEDA/TrabalhoAEDAParte1/atletas.txt)", ios::app);
+        filea.open(R"(atletas.txt)", ios::app);
+        if(file.fail()){
+            cout << "Ficheiro nao existe" << endl;
+            exit(0);
+        }
 
         cout << "Modalidade: ";
         getline(cin, modalidade);

@@ -10,10 +10,15 @@ Modalidade::Modalidade(string nome)
 
    ifstream file;
 
-   string filename = "C:\\Users\\Fisica1\\Desktop\\AEDA\\Trabalho\\TrabalhoAEDAParte1\\" + to_lower(nome) + ".txt";
+   string filename = to_lower(nome) + ".txt";
+
 
    file.open(filename);
 
+   if(file.fail()){
+       cout << "Ficheiro incorreto" << endl;
+       exit(0);
+   }
    while(!file.eof())
    {
        Competicao c;
